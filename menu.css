@@ -1,25 +1,35 @@
 @media (max-width: 400px){
     body{
         margin: 0;
-        width: 100vw;
         height: 100vh;
         z-index: 0;
+        transition: 0.4s;
+    }
+    #app{
+        /* margin: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0; */
+        min-height: 100vh;
+        min-width: 100vw;
     }
     #hamburger{
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
         font-size: 30pt;
-        display: none;
+        transition: 0.25s;
     }
     #menu{
         width: 55vw;
         justify-content: flex-end;
-        border: 1px solid black;
         height: 100vh;
-        position: absolute;
-        right: 0;
+        position: fixed;
+        right: -55vw;
         display: block;
+        transition: 0.5s;
+        background-color: white;
+        top: 0;
     }
     #x-div{
         margin-top: 13%;
