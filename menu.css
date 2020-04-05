@@ -1,0 +1,76 @@
+@media (max-width: 400px){
+    body{
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+    }
+    #hamburger{
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        font-size: 30pt;
+        display: none;
+    }
+    #menu{
+        width: 55vw;
+        justify-content: flex-end;
+        border: 1px solid black;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        display: block;
+    }
+    #x-div{
+        margin-top: 13%;
+        margin-left: 7%;
+    }
+    #close{
+        font-size: 30pt;
+        cursor: pointer;
+        display: inline-block;
+    }
+    #close-container{
+        left:0;
+        position: relative;
+    }
+    #menu-content{
+        margin-left: 18%;
+        margin-top: 15%;
+        display: block;
+    }
+    #link-text{
+       font-family: 'Baloo Thambi 2', cursive;
+       font-size: 18pt;
+       cursor: pointer;
+    }
+    #link{
+        display: flex;
+        align-items: center;
+        margin-bottom: -10%;
+    }
+    #nav-icons{
+        font-size: 25pt;
+        height: 33.34px;
+        width: 33.34px;
+        margin-right: 8%;
+        cursor: pointer;
+    }
+    #help{
+        font-size: 20pt;
+        margin-right: 8%;
+        cursor: pointer;
+    }
+    #help-text{
+        font-family: 'Baloo Thambi 2', cursive;
+       font-size: 15pt;
+       cursor: pointer;
+    }
+    #help-link{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 15%;
+    }
+}
