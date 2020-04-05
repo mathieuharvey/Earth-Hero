@@ -1,5 +1,8 @@
 @media (max-width: 400px){
-   #menu-icon{
+    body{
+        margin: 0;
+    }
+   #hamburger{
        display: flex;
        justify-content: flex-end;
        cursor: pointer;
