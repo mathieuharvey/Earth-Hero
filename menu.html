@@ -12,14 +12,15 @@
 </head>
 
 <body>
-    <span id='hamburger' class="material-icons">
+    
+    <span id='hamburger' onclick='MenuToggle()' class="material-icons">
         menu
     </span>
  <div id='menu'>
     <div id='x-div'>
         
     <div id='close-container'>
-        <span id='close' class="material-icons">
+        <span id='close' onclick='MenuToggle()' class="material-icons">
             close
         </span>
     </div>
@@ -52,6 +53,9 @@
     </div>
 </div>
 
+
+<div id='app' onclick='CloseMenu()'></div>
+<script src='menu.js'></script>
 </body>
 
 </html>
