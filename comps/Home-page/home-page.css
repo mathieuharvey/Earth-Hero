@@ -1,0 +1,35 @@
+@media (max-width: 400px){
+    body{
+        margin: 0;
+    }
+   #hamburger{
+       display: flex;
+       justify-content: flex-end;
+       cursor: pointer;
+       font-size: 30pt;
+   }
+   .intro-text{
+    font-family: 'Baloo Thambi 2', cursive;
+    display: flex;
+    font-size: 15pt;
+    line-height: 22pt;
+   }
+   #content{
+       margin: 10%;
+   }
+   #get-started{
+       display: flex;
+       justify-content: center;
+       margin-top: 40%;
+   }
+   .green-button{
+       padding: 10px 50px 10px 50px;
+       background-color: #46c75f;
+       border-radius: 50px;
+       font-family: 'Baloo Thambi 2', cursive;
+       font-size: 15pt;
+       color: white;
+       box-shadow: 3px 3px 5px #6d6d6d8e;
+       cursor: pointer;
+   }
+}
