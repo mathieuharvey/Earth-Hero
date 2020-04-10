@@ -10,6 +10,7 @@
    }
    .intro-text{
     font-family: 'Baloo Thambi 2', cursive;
+    src: url("https://fonts.googleapis.com/icon?family=Material+Icons");
     display: flex;
     font-size: 15pt;
     line-height: 22pt;
@@ -27,6 +28,7 @@
        background-color: #46c75f;
        border-radius: 50px;
        font-family: 'Baloo Thambi 2', cursive;
+       src: url("https://fonts.googleapis.com/icon?family=Material+Icons");
        font-size: 15pt;
        color: white;
        box-shadow: 3px 3px 5px #6d6d6d8e;
