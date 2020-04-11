@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+@media (max-width: 400px){
+    #info-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #card-content {
+        font-family: 'Baloo Thambi 2', cursive;
+        width: 300px;
+        height: 550px;
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 0px 0px 5px rgba(196, 196, 196, 0.533);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    #card-category {
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 18px;
+        color: rgba(112, 112, 112);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+    }
+    #card-title {
+        padding: 5px 0px 0px 0px;
+        font-size: 18px;
+    }
+    #card-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    #card-button {
+        width: 100px;
+        height: 40px;
+        border: black solid 0.5px ;
+        border-radius: 25px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+    }
+    hr {
+        border: rgba(112, 112, 112) 0.5px solid;
+    }
+    #next-icon {
+        margin-left: 10px;
+    }
+}
