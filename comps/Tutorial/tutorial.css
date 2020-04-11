@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @media (max-width: 400px){
     #hamburger{
         display: flex;
@@ -37,7 +39,17 @@
        display: flex;
        justify-content: center;
        margin-top: 40%;
-       
+    }
+    #explanation2{
+        font-family: 'Baloo Thambi 2', cursive;
+       font-size: 12pt;
+       color: rgb(102, 102, 102);
+       line-height: 17pt;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       margin-top: 40%;
+       display: none;
     }
     #explanation-container{
         margin: 12vw 12vw;
