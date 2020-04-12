@@ -69,4 +69,14 @@
         display: none;
         justify-content: center;
     }
+    #skip{
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 11pt;
+        color: rgb(102, 102, 102);
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }

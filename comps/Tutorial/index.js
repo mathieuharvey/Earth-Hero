@@ -34,6 +34,8 @@ const Tutorial = () => <div id='tutorial-page'>
         // onClick={SwitchPage}
         /></div>
 
+        <div id='skip'>Skip Tutorial</div>
+
 </div>
 
 var switch_state = false;
