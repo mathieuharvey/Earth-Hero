@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@media (max-width: 400px){
+#globe{
+    height: 4vh;
+    cursor: pointer;
+}
+#icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+}
+#home{
+    display: none;
+}
+}

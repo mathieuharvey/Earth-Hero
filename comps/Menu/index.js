@@ -1,26 +1,26 @@
 import React from 'react';
 import './menu.css';
 
-const Menu = () => <div id='menu'>
+const Menu = () => <div>
 
-    <span id='hamburger' onClick={MenuToggle} class="material-icons">
+<span id='hamburger' onClick={MenuToggle} className="material-icons">
         menu
     </span>
- <div id='menu'></div>
+ <div id='menu'>
     <div id='x-div'>
-
-        <div id='close-container'>
-            <span id='close' onClick={MenuToggle} className="material-icons">
-                close
-            </span>
-        </div>
-
+        
+    <div id='close-container'>
+        <span id='close' onClick={MenuToggle} className="material-icons">
+            close
+        </span>
     </div>
+
+</div>
     <div id='menu-content'>
         <div id='link'>
-            <span id='nav-icons' className="material-icons">
-                home
-                </span>
+        <span id='nav-icons' className="material-icons">
+            home
+            </span>
             <p id='link-text'>Home</p>
         </div>
 
@@ -28,20 +28,23 @@ const Menu = () => <div id='menu'>
         <div id='link'>
             <span id='nav-icons' className="material-icons">
                 assignment
-                    </span>
-            <p id='link-text'>My Score</p>
-        </div>
+                </span>
+                <p id='link-text'>My Score</p>
+            </div>
 
 
         <div id='help-link'>
             <span id='help' className="material-icons">
                 help_outline
-                    </span>
-            <p id='help-text'>Help</p>
-        </div>
+                </span>
+                <p id='help-text'>Help</p>
+            </div>
 
     </div>
-    <div id='app' onClick={CloseMenu}></div>
+</div>
+
+
+<div id='app' onClick={CloseMenu}></div>
 </div>
 
 //functions
