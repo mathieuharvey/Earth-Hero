@@ -5,9 +5,9 @@ import GreenButton from '../../comps/Green-button';
 const logoImg = require('./earth-hero-logo-vertical.svg');
 
 const HomePage = () => <div id='home-page'>
-    <span id='hamburger' className="material-icons">
+    {/* <span id='hamburger' className="material-icons">
             menu
-            </span>
+            </span> */}
     
      <div id='content'>
         <img src={logoImg} />
