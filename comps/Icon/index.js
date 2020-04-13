@@ -1,22 +1,17 @@
 import React from 'react';
-import './icons.css';
+import './icon.css';
 import HomePage from '../Home-page';
-import Menu from '../Menu';
 
 const iconImg = require('../../images/favicon.png');
 
-const Icons = () => <div>
+const Icon = () => <div>
     <div id='icons'>
         <img id='globe' onClick={ToHome} src={iconImg} />
 
-         {/* <span id='hamburger' className="material-icons">
-            menu
-            </span> */}
         </div>
         
         <div id='home'><HomePage /></div>
 
-        <div id='menu'><Menu /></div>
 </div>
 
 
@@ -25,4 +20,4 @@ function ToHome(){
 }
 
 
-export default Icons;
+export default Icon;
