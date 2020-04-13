@@ -2,10 +2,13 @@ import React from 'react';
 import './tutorial.css';
 import GreenButton from '../../comps/Green-button';
 import Icons from '../Icons';
+import ChooseCategory from '../Choose-Category';
+// import Menu from '../Menu';
 
 const iconImg = require('./favicon.png');
 
 const Tutorial = () => <div id='tutorial-page'>
+    <div id='tutorial-subdiv'>
         {/* <div id='icons'>
         <img id='globe' src={iconImg} />
 
@@ -31,11 +34,14 @@ const Tutorial = () => <div id='tutorial-page'>
 
 <div id='start'><GreenButton
         text="Okay, let's start!"
-        // onClick={SwitchPage}
+        onClick={SkipTutorial}
         /></div>
 
-        <div id='skip'>Skip Tutorial</div>
-
+        <div onClick={SkipTutorial} id='skip'>Skip Tutorial</div>
+        
+        </div>
+        <div id='category-page'><ChooseCategory/></div>
+        {/* <div><Menu /></div> */}
 </div>
 
 var switch_state = false;
@@ -50,5 +56,11 @@ function SwitchMessage(){
         document.querySelector("#next").style.display = 'none';
         document.querySelector("#start").style.display = 'flex';
     }
+}
+
+function SkipTutorial(){
+    document.querySelector("#tutorial-subdiv").style.display = 'none';
+    document.querySelector("#category-page").style.display = 'block';
+
 }
 export default Tutorial;

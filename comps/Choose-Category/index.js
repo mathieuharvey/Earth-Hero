@@ -1,11 +1,13 @@
 import React from 'react';
 import './choose-category.css';
 import Icons from '../../comps/Icons';
+import Menu from '../Menu';
 
 const GlobalWarmingImg = require('./globalwarming.png');
 const PollutionImg = require('./pollution.png');
 
 const ChooseCategory = () => <div id='choose-category'>
+    
     <div><Icons /></div>
     <div id='text-container'>
         <p id='text'>Choose an environmental problem you want to learn about.</p>
@@ -25,7 +27,7 @@ const ChooseCategory = () => <div id='choose-category'>
     <div id='Button-text'>
         <div id='button'>Next</div>
     </div>
-
+    <div><Menu /></div>
 </div>
 
 
