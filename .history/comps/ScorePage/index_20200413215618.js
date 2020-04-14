@@ -20,21 +20,14 @@ const ScorePage = () => <div id='score-page'>
             <div class='score'></div>
             <div class='score'></div>
         </div>
-
+        
         <div id='explanation-container'>
             <p id='explanation'>Progress</p>
         </div>
-
         <hr class="line"></hr>
-
         <div id="progress_bar">
             <div class='progress'></div>
         </div>
-
-        <div id="topic_button"><GreenButton
-            text='Pick another topic'
-        /></div>
-
 
 </div>
  

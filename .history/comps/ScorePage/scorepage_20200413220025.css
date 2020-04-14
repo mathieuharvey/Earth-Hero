@@ -53,6 +53,10 @@
         color: rgb(102, 102, 102);
         line-height: 17pt;
     }
+    #start{
+        /* display: none;
+        justify-content: center; */
+    }
     .line{
         width: 75%;
         margin-top: -10%;
@@ -71,8 +75,5 @@
         width: 60vw;
         box-shadow: 3px 3px 3px rgba(15, 15, 15, 0.151);
         margin-top: -9%;
-    }
-    #topic_button{
-        margin-top: 10%;
     }
 }

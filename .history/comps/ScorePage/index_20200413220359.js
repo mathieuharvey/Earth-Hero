@@ -31,7 +31,7 @@ const ScorePage = () => <div id='score-page'>
             <div class='progress'></div>
         </div>
 
-        <div id="topic_button"><GreenButton
+        <div id="topic_"><GreenButton
             text='Pick another topic'
         /></div>
 
