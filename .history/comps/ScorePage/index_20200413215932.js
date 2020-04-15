@@ -30,11 +30,7 @@ const ScorePage = () => <div id='score-page'>
         <div id="progress_bar">
             <div class='progress'></div>
         </div>
-
-        <div id="topic_button"><GreenButton
-            text='Pick another topic'
-        /></div>
-
+        
 
 </div>
  
