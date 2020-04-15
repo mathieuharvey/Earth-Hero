@@ -1,8 +1,8 @@
 import React from 'react';
 import './tutorial.css';
 import GreenButton from '../../comps/Green-button';
-import Icon from '../Icon';
-import ChooseCategory from '../Choose-Category';
+import Icon from '../../comps/Icon';
+// import ChooseCategory from '../../comps/Choose-Category';
 // import Menu from '../Menu';
 
 const iconImg = require('./favicon.png');
@@ -40,7 +40,7 @@ const Tutorial = () => <div id='tutorial-page'>
         <div onClick={SkipTutorial} id='skip'>Skip Tutorial</div>
         
         </div>
-        <div id='category-page'><ChooseCategory/></div>
+        {/* <div id='category-page'><ChooseCategory/></div> */}
         {/* <div><Menu /></div> */}
 </div>
 

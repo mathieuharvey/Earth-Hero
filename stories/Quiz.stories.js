@@ -1,5 +1,5 @@
 import React from 'react';
-import Quiz from '../comps/Quiz';
+import Quiz from '../pages/Quiz';
 
 export default {
     title: 'Quiz',
