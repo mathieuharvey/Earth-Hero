@@ -1,7 +1,7 @@
 import React from 'react';
 import './tutorial.css';
 import GreenButton from '../../comps/Green-button';
-import Icons from '../Icons';
+import Icon from '../Icon';
 import ChooseCategory from '../Choose-Category';
 // import Menu from '../Menu';
 
@@ -16,7 +16,7 @@ const Tutorial = () => <div id='tutorial-page'>
             menu
             </span>
         </div> */}
-        <div><Icons /></div>
+        <div><Icon /></div>
         <div id='tutorial-container'>
             <div id='tutorial'></div>
         </div>
