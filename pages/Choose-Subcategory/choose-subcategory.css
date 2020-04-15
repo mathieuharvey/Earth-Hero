@@ -1,7 +1,102 @@
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @media (max-width: 400px){
-    #icons-flex{
+    #header{
+    font-family: 'Baloo Thambi 2', cursive;
+    display: flex;
+    font-size: 12pt;
+    line-height: 15pt;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    justify-content: center;
+    width: 60vw;
+    }
+    #header-container{
         display: flex;
+        justify-content: center;
+        margin-top: 13%;
+    }
+    .drop-down{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        width: 60vw;
+        height: 7vh;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+    }
+    #droughts{
+        font-family: 'Baloo Thambi 2', cursive;
+        display: flex;
+        font-size: 14pt;
+        text-align: center;
+    }
+    #down-arrow{
+        font-size: 21pt;
+        transition: 0.3s;
+    }
+    #down-arrow2{
+        font-size: 21pt;
+        transition: 0.3s;
+    }
+    #container{
+        display: flex;
+        justify-content: center;
+        margin-top: 12%;
+        transition: 0.5s;
+    }
+    #container2{
+        display: flex;
+        justify-content: center;
+        margin-top: 8%;
+        transition: 0.5s;
+    }
+    #button{
+        padding: 7px 45px 7px 45px;
+        background-color: #8f8f8f65;
+        border-radius: 50px;
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 15pt;
+        color: white;
+        cursor: pointer;
+        margin-top: 20%;
+        }        
+        #Button-text{
+            display: flex;
+            justify-content: center;
+        }
+    #choice{
+        display: flex;
+        align-items: center;
+        margin-left: 18%;
+        height: 8vh;
+    }
+    .circle{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-right: 5%;
+        box-shadow: 0px 3px 5px #7c7c7c8f;
+        cursor: pointer;
+    }
+    #wildfires{
+        font-family: 'Baloo Thambi 2', cursive;
+        display: flex;
+        font-size: 13pt;
+        text-align: center;
+        cursor: pointer;
+    }
+    #drought-options{
+        display: block;
+        margin-top: 4%;
+        display: none;
+        transition: 0.5s;
+    }
+    #flood-options{
+        display: block;
+        margin-top: 4%;
+        display: none;
+        transition: 0.5s;
     }
 }
