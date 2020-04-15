@@ -1,6 +1,6 @@
 import React from 'react';
 import './icon.css';
-import HomePage from '../Home-page';
+import HomePage from '../../pages/Home-page';
 
 const iconImg = require('../../images/favicon.png');
 

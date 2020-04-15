@@ -1,7 +1,7 @@
 import React from 'react';
 import './choose-category.css';
 import Icon from '../../comps/Icon';
-import Menu from '../Menu';
+import Menu from '../../comps/Menu';
 
 const GlobalWarmingImg = require('./globalwarming.png');
 const PollutionImg = require('./pollution.png');
