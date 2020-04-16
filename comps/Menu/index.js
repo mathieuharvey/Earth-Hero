@@ -64,7 +64,7 @@ function OpenMenu(){
     document.querySelector("body").style.backgroundColor = 'rgba(180,180,180,0.5)';
 
     setTimeout(function(){
-        document.querySelector("#menu").style.opacity = 1;
+        // document.querySelector("#menu").style.opacity = 1;
     }, 100);
     
     menu_state = true;
@@ -77,10 +77,10 @@ function CloseMenu(){
         document.querySelector("#hamburger").style.opacity = 1;
         
     }, 400);
-    document.querySelector("#menu").style.right = "-55vw";
+    document.querySelector("#menu").style.right = "-65vw";
     document.querySelector("body").style.backgroundColor = 'transparent';
 
-    document.querySelector("#menu").style.opacity = 0;
+    // document.querySelector("#menu").style.opacity = 0;
     menu_state = false;
 }
 

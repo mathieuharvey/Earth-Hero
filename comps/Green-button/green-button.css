@@ -1,17 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
-@media(max-width: 400px){
+@media(max-width: 480px){
 .button{
-    padding: 10px 50px 10px 50px;
+    padding: 10px 60px 10px 60px;
     background-color: #46c75f;
     border-radius: 50px;
     font-family: 'Baloo Thambi 2', cursive;
-    font-size: 15pt;
+    font-size: 18pt;
     color: white;
     box-shadow: 3px 3px 5px #6d6d6d8e;
     cursor: pointer;
     /* margin-top: 10%; */
-    position: fixed;
-    bottom: 80px;
+    position: relative;
+    bottom: 25px;
 }
 .text{
     display: flex;

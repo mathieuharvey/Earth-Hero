@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
-@media (max-width: 400px){
+@media (max-width: 480px){
     body{
         margin: 0;
         height: 100vh;
@@ -19,18 +19,18 @@
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
-        font-size: 30pt;
+        font-size: 43pt;
         transition: 0.25s;
         top: 0;
         right: 0;
         position: absolute;
     }
     #menu{
-        width: 55vw;
+        width: 65vw;
         justify-content: flex-end;
-        height: 100vh;
+        height: 100%;
         position: fixed;
-        right: -55vw;
+        right: -65vw;
         display: block;
         transition: 0.5s;
         background-color: white;

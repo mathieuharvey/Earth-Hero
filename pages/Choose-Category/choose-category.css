@@ -1,15 +1,19 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
-@media (max-width: 400px){
+
     #text{
     font-family: 'Baloo Thambi 2', cursive;
     display: flex;
-    font-size: 12pt;
+    font-size: 15pt;
     line-height: 15pt;
     color: rgb(102, 102, 102);
     text-align: center;
     justify-content: center;
-    width: 60vw;
+    width: 70vw;
+    }
+    #choose-category{
+        width: auto;
+        height: 100%;
     }
     #text-container{
         display: flex;
@@ -32,7 +36,7 @@
     #globalwarming-title{
         font-family: 'Baloo Thambi 2', cursive;
         display: flex;
-        font-size: 12pt;
+        font-size: 15pt;
         justify-content: center;
     }
     #pollution-icon{
@@ -51,7 +55,7 @@
     #pollution-title{
         font-family: 'Baloo Thambi 2', cursive;
         display: flex;
-        font-size: 12pt;
+        font-size: 15pt;
         justify-content: center;
     }
     #button{
@@ -69,4 +73,3 @@
         display: flex;
         justify-content: center;
     }
-}
