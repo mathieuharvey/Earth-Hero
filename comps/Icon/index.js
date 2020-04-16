@@ -1,23 +1,23 @@
 import React from 'react';
 import './icon.css';
 import HomePage from '../../pages/Home-page';
+import Link from 'next/link';
 
 const iconImg = require('../../images/favicon.png');
 
 const Icon = () => <div>
     <div id='icons'>
-        <img id='globe' onClick={ToHome} src={iconImg} />
-
+        <Link href='/Home-page'><img id='globe' src={iconImg} /></Link>
         </div>
         
-        <div id='home'><HomePage /></div>
+        {/* <div id='home'><HomePage /></div> */}
 
 </div>
 
 
-function ToHome(){
-    document.querySelector("#home").style.display = 'flex';
-}
+// function ToHome(){
+//     document.querySelector("#home").style.display = 'flex';
+// }
 
 
 export default Icon;
