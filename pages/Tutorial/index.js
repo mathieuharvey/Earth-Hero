@@ -3,19 +3,14 @@ import './tutorial.css';
 import GreenButton from '../../comps/Green-button';
 import Icon from '../../comps/Icon';
 // import ChooseCategory from '../../comps/Choose-Category';
-// import Menu from '../Menu';
+import Menu from '../../comps/Menu';
+import Link from 'next/Link';
 
 const iconImg = require('./favicon.png');
 
 const Tutorial = () => <div id='tutorial-page'>
     <div id='tutorial-subdiv'>
-        {/* <div id='icons'>
-        <img id='globe' src={iconImg} />
-
-         <span id='hamburger' className="material-icons">
-            menu
-            </span>
-        </div> */}
+        
         <div><Icon /></div>
         <div id='tutorial-container'>
             <div id='tutorial'></div>
@@ -32,16 +27,21 @@ const Tutorial = () => <div id='tutorial-page'>
         onClick={SwitchMessage}
         /></div>
 
-<div id='start'><GreenButton
+{/* <div id='start'><GreenButton
         text="Okay, let's start!"
         onClick={SkipTutorial}
-        /></div>
+        /></div> */}
 
-        <div onClick={SkipTutorial} id='skip'>Skip Tutorial</div>
+        <div id='center'><Link href='/Choose-Category'><div className='green-button' id='start'>Okay, let's go!</div></Link></div>
+
+
+        {/* <div onClick={SkipTutorial} id='skip'>Skip Tutorial</div> */}
+
+        <div id='skip'><Link href='/Choose-Category'><div>Skip Tutorial</div></Link></div>
         
         </div>
-        {/* <div id='category-page'><ChooseCategory/></div> */}
-        {/* <div><Menu /></div> */}
+        
+        <div><Menu /></div>
 </div>
 
 var switch_state = false;
@@ -58,9 +58,8 @@ function SwitchMessage(){
     }
 }
 
-function SkipTutorial(){
-    document.querySelector("#tutorial-subdiv").style.display = 'none';
-    document.querySelector("#category-page").style.display = 'block';
-
-}
+// function SkipTutorial(){
+//     document.querySelector("#tutorial-subdiv").style.display = 'none';
+//     document.querySelector("#category-page").style.display = 'block';
+// }
 export default Tutorial;
