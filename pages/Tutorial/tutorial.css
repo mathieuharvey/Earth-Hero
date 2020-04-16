@@ -82,4 +82,21 @@
     #category-page{
         display: none;
     }
+    .green-button{
+       padding: 10px 50px 10px 50px;
+       background-color: #46c75f;
+       border-radius: 50px;
+       font-family: 'Baloo Thambi 2', cursive;
+       src: url("https://fonts.googleapis.com/icon?family=Material+Icons");
+       font-size: 15pt;
+       color: white;
+       box-shadow: 3px 3px 5px #6d6d6d8e;
+       cursor: pointer;
+       position: absolute;
+       bottom: 20%;
+   }
+   #center{
+       display: flex;
+       justify-content: center;
+   }
 }
