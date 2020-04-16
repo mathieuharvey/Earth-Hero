@@ -36,9 +36,9 @@ const Tutorial = () => <div id='tutorial-page'>
 
 
         {/* <div onClick={SkipTutorial} id='skip'>Skip Tutorial</div> */}
-
+        <div id='skip-container'>
         <div id='skip'><Link href='/Choose-Category'><div>Skip Tutorial</div></Link></div>
-        
+        </div>
         </div>
         
         <div><Menu /></div>

@@ -38,7 +38,9 @@
        text-align: center;
        display: flex;
        justify-content: center;
-       margin-top: 40%;
+       margin-top: 30%;
+       /* position: fixed;
+       bottom: 150px; */
     }
     #explanation2{
         font-family: 'Baloo Thambi 2', cursive;
@@ -48,7 +50,7 @@
        text-align: center;
        display: flex;
        justify-content: center;
-       margin-top: 40%;
+       margin-top: 30%;
        display: none;
     }
     #explanation3{
@@ -59,7 +61,7 @@
         text-align: center;
         display: flex;
         justify-content: center;
-        margin-top: 40%;
+        margin-top: 30%;
         display: none;
     }
     #explanation-container{
@@ -68,6 +70,8 @@
     #start{
         display: none;
         justify-content: center;
+        position: fixed;
+       bottom: 80px;
     }
     #skip{
         font-family: 'Baloo Thambi 2', cursive;
@@ -75,9 +79,15 @@
         color: rgb(102, 102, 102);
         display: flex;
         justify-content: center;
-        margin-top: 5%;
+        margin-top: 10%;
         text-decoration: underline;
         cursor: pointer;
+        position: fixed;
+        bottom: 50px;
+    }
+    #skip-container{
+        display: flex;
+        justify-content: center;
     }
     #category-page{
         display: none;
@@ -87,13 +97,12 @@
        background-color: #46c75f;
        border-radius: 50px;
        font-family: 'Baloo Thambi 2', cursive;
-       src: url("https://fonts.googleapis.com/icon?family=Material+Icons");
        font-size: 15pt;
        color: white;
        box-shadow: 3px 3px 5px #6d6d6d8e;
        cursor: pointer;
-       position: absolute;
-       bottom: 20%;
+       display: flex;
+       justify-content: center;
    }
    #center{
        display: flex;
