@@ -1,12 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@media (max-width: 400px){
+@media (max-width: 480px){
     #hamburger{
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
         font-size: 30pt;
         transition: 0.25s;
+    }
+    #tutorial-page{
+        height: 100%;
     }
     #icons{
         display: flex;
@@ -38,7 +41,7 @@
        text-align: center;
        display: flex;
        justify-content: center;
-       margin-top: 30%;
+       margin-top: 10%;
        /* position: fixed;
        bottom: 150px; */
     }
@@ -50,7 +53,7 @@
        text-align: center;
        display: flex;
        justify-content: center;
-       margin-top: 30%;
+       margin-top: 10%;
        display: none;
     }
     #explanation3{
@@ -61,7 +64,7 @@
         text-align: center;
         display: flex;
         justify-content: center;
-        margin-top: 30%;
+        margin-top: 10%;
         display: none;
     }
     #explanation-container{
@@ -70,12 +73,12 @@
     #start{
         display: none;
         justify-content: center;
-        position: fixed;
-       bottom: 80px;
+        position: relative;
+       bottom: 10px;
     }
     #skip{
         font-family: 'Baloo Thambi 2', cursive;
-        font-size: 11pt;
+        font-size: 14pt;
         color: rgb(102, 102, 102);
         display: flex;
         justify-content: center;
@@ -83,7 +86,7 @@
         text-decoration: underline;
         cursor: pointer;
         position: fixed;
-        bottom: 50px;
+        bottom: 0px;
     }
     #skip-container{
         display: flex;
@@ -92,8 +95,8 @@
     #category-page{
         display: none;
     }
-    .green-button{
-       padding: 10px 50px 10px 50px;
+    /* .green-button{
+       padding: 8px 45px 8px 45px;
        background-color: #46c75f;
        border-radius: 50px;
        font-family: 'Baloo Thambi 2', cursive;
@@ -103,7 +106,7 @@
        cursor: pointer;
        display: flex;
        justify-content: center;
-   }
+   } */
    #center{
        display: flex;
        justify-content: center;

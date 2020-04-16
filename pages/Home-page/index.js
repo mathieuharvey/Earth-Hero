@@ -8,7 +8,7 @@ const logoImg = require('./earth-hero-logo-vertical.svg');
 const HomePage = () => <div id='home-page'>
     
      <div id='content'>
-        <img src={logoImg} />
+        <img  id='logo' src={logoImg} />
         
         <p className='intro-text'>Hi, Earth Hero!</p>
         <p className='intro-text'>Let's get started on making a change and saving our planet!</p>

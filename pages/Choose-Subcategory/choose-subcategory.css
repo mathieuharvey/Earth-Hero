@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@media (max-width: 400px){
+
     #header{
     font-family: 'Baloo Thambi 2', cursive;
     display: flex;
-    font-size: 12pt;
+    font-size: 15pt;
     line-height: 15pt;
     color: rgb(102, 102, 102);
     text-align: center;
@@ -53,15 +53,15 @@
         transition: 0.5s;
     }
     #button{
-        padding: 7px 45px 7px 45px;
+        padding: 10px 60px 10px 60px;
         background-color: #8f8f8f65;
         border-radius: 50px;
         font-family: 'Baloo Thambi 2', cursive;
-        font-size: 15pt;
+        font-size: 18pt;
         color: white;
         cursor: pointer;
-        position: fixed;
-        bottom: 100px;
+        position: relative;
+        top: 20%;
         }        
         #Button-text{
             display: flex;
@@ -136,4 +136,6 @@
        background: #46c75f;
    }
    /* end of css for radio buttons */
+#choose-subcategory{
+    height: 100%;
 }
