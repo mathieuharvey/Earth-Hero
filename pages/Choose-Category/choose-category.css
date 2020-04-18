@@ -59,11 +59,11 @@
         justify-content: center;
     }
     #button{
-    padding: 7px 45px 7px 45px;
+    padding: 15px 60px 15px 60px;
     background-color: #8f8f8f65;
     border-radius: 50px;
     font-family: 'Baloo Thambi 2', cursive;
-    font-size: 15pt;
+    font-size: 17pt;
     color: white;
     /* box-shadow: 3px 3px 5px #6d6d6d8e; */
     cursor: pointer;

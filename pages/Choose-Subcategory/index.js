@@ -15,7 +15,7 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 <div id='container' onClick={ToggleDrought}>
     <div className='drop-down'>
         <p id='droughts'>Droughts</p>
-        <span id='down-arrow' class="material-icons">
+        <span id='down-arrow' className="material-icons">
             keyboard_arrow_down
         </span>
 

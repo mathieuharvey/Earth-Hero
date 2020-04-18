@@ -1,5 +1,6 @@
 import React from 'react';
 import './menu.css';
+import Link from 'next/link';
 
 const Menu = () => <div>
 
@@ -18,26 +19,26 @@ const Menu = () => <div>
 </div>
     <div id='menu-content'>
         <div id='link'>
-        <span id='nav-icons' className="material-icons">
+        <Link href='/Home-page'><span id='nav-icons' className="material-icons">
             home
-            </span>
-            <p id='link-text'>Home</p>
+            </span></Link>
+            <Link href='/Home-page'><p id='link-text'>Home</p></Link>
         </div>
 
 
         <div id='link'>
-            <span id='nav-icons' className="material-icons">
+        <Link href='/ScorePage'><span id='nav-icons' className="material-icons">
                 assignment
-                </span>
-                <p id='link-text'>My Score</p>
+                </span></Link>
+                <Link href='/ScorePage'><p id='link-text'>My Score</p></Link>
             </div>
 
 
         <div id='help-link'>
-            <span id='help' className="material-icons">
+        <Link href='/Tutorial'><span id='help' className="material-icons">
                 help_outline
-                </span>
-                <p id='help-text'>Help</p>
+                </span></Link>
+                <Link href='/Tutorial'><p id='help-text'>Help</p></Link>
             </div>
 
     </div>
