@@ -2,7 +2,6 @@ import React from 'react';
 import './tutorial.css';
 import GreenButton from '../../comps/Green-button';
 import Icon from '../../comps/Icon';
-// import ChooseCategory from '../../comps/Choose-Category';
 import Menu from '../../comps/Menu';
 import Link from 'next/Link';
 
@@ -35,7 +34,6 @@ const Tutorial = () => <div id='tutorial-page'>
         <div id='center'><Link href='/Choose-Category'><div className='green-button' id='start'>Okay, let's go!</div></Link></div>
 
 
-        {/* <div onClick={SkipTutorial} id='skip'>Skip Tutorial</div> */}
         <div id='skip-container'>
         <div id='skip'><Link href='/Choose-Category'><div>Skip Tutorial</div></Link></div>
         </div>
@@ -58,8 +56,4 @@ function SwitchMessage(){
     }
 }
 
-// function SkipTutorial(){
-//     document.querySelector("#tutorial-subdiv").style.display = 'none';
-//     document.querySelector("#category-page").style.display = 'block';
-// }
 export default Tutorial;

@@ -95,7 +95,7 @@
     #category-page{
         display: none;
     }
-    /* .green-button{
+    .green-button{
        padding: 8px 45px 8px 45px;
        background-color: #46c75f;
        border-radius: 50px;
@@ -106,7 +106,7 @@
        cursor: pointer;
        display: flex;
        justify-content: center;
-   } */
+   }
    #center{
        display: flex;
        justify-content: center;
