@@ -40,6 +40,10 @@
         font-size: 21pt;
         transition: 0.3s;
     }
+    #down-arrow3{
+        font-size: 21pt;
+        transition: 0.3s;
+    }
     #container{
         display: flex;
         justify-content: center;
@@ -75,13 +79,19 @@
         text-align: center;
         cursor: pointer;
     }
-    #drought-options{
+    #air-options{
         display: block;
         margin-top: 4%;
         display: none;
         transition: 0.5s;
     }
-    #flood-options{
+    #water-options{
+        display: block;
+        margin-top: 4%;
+        display: none;
+        transition: 0.5s;
+    }
+    #land-options{
         display: block;
         margin-top: 4%;
         display: none;
