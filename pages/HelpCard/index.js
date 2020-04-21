@@ -4,6 +4,8 @@ import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
 import InfoCard from '../../comps/Information Cards';
 
+var CardSideImg = require('../../images/card-side.svg');
+
 const HelpCard = () => <div id="helpcard">
         <Icon />
         <InfoCard 
@@ -12,6 +14,7 @@ const HelpCard = () => <div id="helpcard">
             text= ""
             button= ""/>
         <Menu />
+        <img id='card-side-left' src={CardSideImg} />
     </div>
 
 
