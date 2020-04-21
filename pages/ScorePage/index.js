@@ -12,13 +12,13 @@ const ScorePage = () => <div id='score-page'>
         </div>
 
         <div id='score-container'>
-            <div class='score'></div>
-            <div class='score'></div>
-            <div class='score'></div>
-            <div class='score'></div>
-            <div class='score'></div>
-            <div class='score'></div>
-            <div class='score'></div>
+            <button class='score'><b>Topic 1</b></button>
+            <button class='score'><b>Topic 1</b></button>
+            <button class='score'><b>Topic 1</b></button>
+            <button class='score'><b>Topic 1</b></button>
+            <button class='score'><b>Topic 1</b></button>
+            <button class='score'><b>Topic 1</b></button>
+            <button class='score'><b>Topic 1</b></button>
         </div>
 
         <div id='explanation-container'>
