@@ -35,7 +35,7 @@ const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice}) => <di
         </label>
     </div>
     <div id='Button-text'>
-        <Link href='./ScorePage'><div id='button'>Next</div></Link>
+        <Link href='./ScorePage'><div id='button1'>Next</div></Link>
     </div>
 
 </div>
