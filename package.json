@@ -8,8 +8,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "dev": "next",
-  "build": "next build",
-  "start": "next start"
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
