@@ -1,10 +1,9 @@
-
 import React from 'react';
 import './dropdown.css';
 
-const DropButton = ({text, onClick}) => <div onClick={onClick} id='drop-button'>
+const DropButton = ({text, onClick}) => <div onClick={onClick} id='green-button'>
     <div className='text'>
-        <div className='button'>{text}</div>
+        <div className='drop-button'>{text}</div>
     </div>
 </div>
 

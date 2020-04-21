@@ -26,12 +26,12 @@
         box-shadow: 3px 3px 3px rgba(15, 15, 15, 0.151);
         margin-top: 2%;
     }
-    #score-container{
+     #score-container{
         display: grid;
         align-items: center;
         justify-content: center;
         margin-top: 15%;
-    }
+    } 
     #explanation{
        font-family: 'Baloo Thambi 2', cursive;
        font-size: 12pt;
@@ -39,7 +39,7 @@
        line-height: 17pt;
        display: flex;
     }
-    #explanation-container{
+    #progress-container{
         margin: 12vw 12vw;
     }
     #my_score_container{
@@ -75,4 +75,190 @@
     #topic_button{
         margin-top: 10%;
     }
+
+
+
+
+
+
+    #header{
+        font-family: 'Baloo Thambi 2', cursive;
+        display: flex;
+        font-size: 15pt;
+        line-height: 15pt;
+        color: rgb(102, 102, 102);
+        text-align: center;
+        justify-content: center;
+        width: 60vw;
+        }
+        #choose-subcategory{
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        #header-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 13%;
+        }
+        .drop-down{
+            background-color: rgb(209, 206, 206);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            width: 60vw;
+            height: 7vh;
+            border-bottom: none;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        #topic-one{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #down-arrow{
+            font-size: 21pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow2{
+            font-size: 21pt;
+            transition: 0.3s;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            margin-top: 12%;
+            transition: 0.5s;
+        }
+        #container2{
+            display: flex;
+            justify-content: center;
+            margin-top: 8%;
+            transition: 0.5s;
+        }
+        #button{
+            padding: 10px 60px 10px 60px;
+            background-color: #8f8f8f65;
+            border-radius: 50px;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 18pt;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            top: 20%;
+            margin-top: 10%;
+            }        
+            #Button-text{
+                display: flex;
+                justify-content: center;
+            }
+        #wildfires{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 13pt;
+            text-align: center;
+            cursor: pointer;
+        }
+        #topic_one-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+            margin-top: -16%;
+        }
+        #answer_one{            
+            background-color: rgb(238, 236, 236);
+            border-radius: 1px 1px 15px 15px;
+            margin: 0% 20% 0% 20%;
+            padding: 10% 0% 0% 0%;
+            margin-top: 7%;
+        }
+
+        #topic_two-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+            margin-top: -16%;
+        }
+        #answer_two{            
+            background-color: rgb(238, 236, 236);
+            border-radius: 1px 1px 15px 15px;
+            margin: 0% 20% 0% 20%;
+            padding: 10% 0% 0% 0%;
+            margin-top: 7%;
+        }
+
+        /* css for radio butons */
+        .container{
+            /* background-color: blue; */
+            display: block;
+            position: relative;
+            margin-left: 18%;
+            padding-left: 12%;
+            margin-top: 1%;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
+        }
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+          }
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 24px;
+            width: 24px;
+            box-shadow: 0px 3px 5px #7c7c7c8f;
+            background-color: white;
+            border-radius: 50%;
+          }
+          .container input:checked ~ .checkmark {
+            background-color: white;
+          }
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+            /* transition: 0.3s ease-in-out; */
+          }
+          .container input:checked ~ .checkmark:after {
+            display: block;
+          }
+          .container .checkmark:after {
+            top: 4px;
+           left: 4px;
+           width: 16px;
+           height: 16px;
+           border-radius: 50%;
+           background: #46c75f;
+       }
+       /* end of css for radio buttons */
+    #choose-subcategory{
+        height: 100%;
+    }
+
+
+
+
+
+
+
+
 }
