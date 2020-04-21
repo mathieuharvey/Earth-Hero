@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
+
+#cards-stack {
+    position: fixed;
+    left: -10px;
+    top: 200px;
+}
+
+#take-quiz {
+    position: fixed;
+    bottom: 50px;
+}
+
+#lesson-completed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#take-quiz-text {
+    font-family: 'Baloo Thambi 2', cursive;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    left: 20%;
+    width: 70%;
+    position: absolute;
+}
+
+@media (max-width: 300px){
+    #cards-stack {
+        display: none;
+    }
+}

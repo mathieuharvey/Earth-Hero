@@ -5,9 +5,11 @@
     top: 200px;
 }
 
-#card-side-left {
-    position: fixed;
-    left: -10px;
-    top: 200px;
-    transform: rotate(180deg);
+@media (max-width: 300px){
+    #card-side-left {
+        display: none;
+    }
+    #card-side-right {
+        display: none;
+    }
 }

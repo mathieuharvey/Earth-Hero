@@ -3,3 +3,18 @@
     right: -10px;
     top: 200px;
 }
+
+#card-side-left {
+    position: fixed;
+    left: -10px;
+    top: 200px;
+}
+
+@media (max-width: 300px){
+    #card-side-right {
+        display: none;
+    }
+    #card-side-left {
+        display: none;
+    }
+}
