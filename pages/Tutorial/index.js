@@ -3,7 +3,7 @@ import './tutorial.css';
 import GreenButton from '../../comps/Green-button';
 import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 const iconImg = require('./favicon.png');
 

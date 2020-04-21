@@ -1,8 +1,8 @@
 import React from 'react';
-import DropButton from '../comps/DropButton';
+import DropButton from '../comps/Drop-down';
 
 export default {
-    title: 'DropButton',
+    title: 'Drop-button',
     component: DropButton,
 };
 
