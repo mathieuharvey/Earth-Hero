@@ -90,7 +90,7 @@
             background: #46c75f;
         }
         /* end of css for radio buttons */
-        #button{
+        #button1{
             padding: 10px 60px 10px 60px;
             background-color: #8f8f8f65;
             border-radius: 50px;
@@ -99,8 +99,8 @@
             color: white;
             cursor: pointer;
             position: relative;
-            top: 20%;
             margin-top: 10%;
+            top: 100px;
             }        
             #Button-text{
                 display: flex;

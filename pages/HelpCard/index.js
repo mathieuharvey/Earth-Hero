@@ -3,6 +3,7 @@ import './help.css';
 import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
 import InfoCard from '../../comps/Information Cards';
+import Router from 'next/router';
 
 var CardSideImgLeft = require('../../images/card-left.svg');
 var checkmarkIcon = require('../../images/checkmark.svg');
@@ -24,7 +25,7 @@ const HelpCard = () => {
             text= ""
         />
         <Menu />
-        <img id='card-side-left' src={CardSideImgLeft} />
+        <img id='card-side-left' src={CardSideImgLeft} onClick={() => {Router.push('/ProblemCard')}}/>
     </div>
 
 }
