@@ -11,6 +11,15 @@
     justify-content: center;
     width: 60vw;
     }
+    #choose-subcategory{
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
     #header-container{
         display: flex;
         justify-content: center;
@@ -124,6 +133,7 @@
         content: "";
         position: absolute;
         display: none;
+        /* transition: 0.3s ease-in-out; */
       }
       .container input:checked ~ .checkmark:after {
         display: block;
