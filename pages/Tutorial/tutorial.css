@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@media (max-width: 480px){
+
     #hamburger{
         display: flex;
         justify-content: flex-end;
@@ -10,6 +10,13 @@
     }
     #tutorial-page{
         height: 100%;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     #icons{
         display: flex;
@@ -111,4 +118,3 @@
        display: flex;
        justify-content: center;
    }
-}

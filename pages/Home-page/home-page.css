@@ -6,6 +6,13 @@
     }
     #home-page{
         height: 100%;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
    #hamburger{
        display: flex;
@@ -42,7 +49,8 @@
        box-shadow: 3px 3px 5px #6d6d6d8e;
        cursor: pointer;
        position: fixed;
-       bottom: 30px;
+       bottom: 25px;
+       /* margin-top: 1%; */
    }
    .linked-button{
        padding: 10px 50px 10px 50px;
