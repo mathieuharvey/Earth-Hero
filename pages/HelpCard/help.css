@@ -1,0 +1,6 @@
+#card-side-left {
+    position: fixed;
+    left: -10px;
+    top: 200px;
+    transform: rotate(180deg);
+}

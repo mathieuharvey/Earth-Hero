@@ -1,9 +1,7 @@
 import React from 'react';
 import './quiz.css';
-import GreenButton from '../../comps/Green-button';
+import Link from 'next/link';
 
-var unselected = require("../../images/circle-unselected.svg");
-var selected = require("../../images/circle-selected.svg");
 const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice}) => <div id='quiz-container'>
     <div id="quiz-category">{category}</div>
     <div id="quiz-information">
@@ -13,31 +11,44 @@ const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice}) => <di
     <hr />
     <div id="quiz-question" >{quizQuestion}</div>
     <div className="quiz-choices">
-        <img src={unselected} onClick={SelectChoice} className="circle"/> {quizChoice}
+        <label  onClick={HighlightButton} className='container1'><p>{quizChoice}</p>
+            <input type='radio' name='radio' />
+            <span  onClick={HighlightButton} className='checkmark'></span>
+        </label>
     </div>
     <div className="quiz-choices">
-        <img src={unselected} onClick={SelectChoice} className="circle"/> {quizChoice}
+        <label  onClick={HighlightButton} className='container1'><p>{quizChoice}</p>
+            <input type='radio' name='radio' />
+            <span  onClick={HighlightButton} className='checkmark'></span>
+        </label>
     </div>
     <div className="quiz-choices">
-        <img src={unselected} onClick={SelectChoice} className="circle"/> {quizChoice}
+        <label  onClick={HighlightButton} className='container1'><p>{quizChoice}</p>
+            <input type='radio' name='radio' />
+            <span  onClick={HighlightButton} className='checkmark'></span>
+        </label>
     </div>
     <div className="quiz-choices">
-        <img src={unselected} onClick={SelectChoice} className="circle"/> {quizChoice}
+        <label  onClick={HighlightButton} className='container1'><p>{quizChoice}</p>
+            <input type='radio' name='radio' />
+            <span  onClick={HighlightButton} className='checkmark'></span>
+        </label>
     </div>
-    <div><GreenButton
-        text='Next Question'
-        onClick={DefaultClick}
-        /></div>
+    <div id='Button-text'>
+        <Link href='./ScorePage'><div id='button'>Next</div></Link>
+    </div>
 
 </div>
 
-function DefaultClick(){
-    alert("Default function");
+function HighlightButton(){
+    document.querySelector("#button").style.backgroundColor = '#46c75f';
 }
 
-function SelectChoice() {
-    src={selected}
-}
+// function NextQuizQuestion(){
+//     if (){
+
+//     }
+// }
 
 Quiz.defaultProps = {
     category: "Category",
