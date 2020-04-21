@@ -11,6 +11,7 @@ const InfoCard = ({ category, title, text, button}) => <div id='info-card'>
         <div>{button}</div>
         <img id="next-icon" src={nextIcon}/>
     </div>
+    <div id='white-space'></div>
     </div>
 </div>
 
