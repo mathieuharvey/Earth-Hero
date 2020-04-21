@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
-@media(max-width: 480px){
+
 .button{
     padding: 10px 60px 10px 60px;
     background-color: #46c75f;
@@ -16,5 +16,4 @@
 .text{
     display: flex;
     justify-content: center;
-}
 }
