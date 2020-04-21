@@ -1,5 +1,6 @@
 import React from 'react';
 import './menu.css';
+import Link from 'next/link';
 
 const Menu = () => <div>
 
@@ -18,26 +19,26 @@ const Menu = () => <div>
 </div>
     <div id='menu-content'>
         <div id='link'>
-        <span id='nav-icons' className="material-icons">
+        <Link href='/Home-page'><span id='nav-icons' className="material-icons">
             home
-            </span>
-            <p id='link-text'>Home</p>
+            </span></Link>
+            <Link href='/Home-page'><p id='link-text'>Home</p></Link>
         </div>
 
 
         <div id='link'>
-            <span id='nav-icons' className="material-icons">
+        <Link href='/ScorePage'><span id='nav-icons' className="material-icons">
                 assignment
-                </span>
-                <p id='link-text'>My Score</p>
+                </span></Link>
+                <Link href='/ScorePage'><p id='link-text'>My Score</p></Link>
             </div>
 
 
         <div id='help-link'>
-            <span id='help' className="material-icons">
+        <Link href='/Tutorial'><span id='help' className="material-icons">
                 help_outline
-                </span>
-                <p id='help-text'>Help</p>
+                </span></Link>
+                <Link href='/Tutorial'><p id='help-text'>Help</p></Link>
             </div>
 
     </div>
@@ -64,7 +65,7 @@ function OpenMenu(){
     document.querySelector("body").style.backgroundColor = 'rgba(180,180,180,0.5)';
 
     setTimeout(function(){
-        document.querySelector("#menu").style.opacity = 1;
+        // document.querySelector("#menu").style.opacity = 1;
     }, 100);
     
     menu_state = true;
@@ -77,10 +78,10 @@ function CloseMenu(){
         document.querySelector("#hamburger").style.opacity = 1;
         
     }, 400);
-    document.querySelector("#menu").style.right = "-55vw";
+    document.querySelector("#menu").style.right = "-65vw";
     document.querySelector("body").style.backgroundColor = 'transparent';
 
-    document.querySelector("#menu").style.opacity = 0;
+    // document.querySelector("#menu").style.opacity = 0;
     menu_state = false;
 }
 

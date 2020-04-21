@@ -1,12 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@media (max-width: 400px){
+
     #hamburger{
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
         font-size: 30pt;
         transition: 0.25s;
+    }
+    #tutorial-page{
+        height: 100%;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     #icons{
         display: flex;
@@ -38,7 +48,9 @@
        text-align: center;
        display: flex;
        justify-content: center;
-       margin-top: 40%;
+       margin-top: 10%;
+       /* position: fixed;
+       bottom: 150px; */
     }
     #explanation2{
         font-family: 'Baloo Thambi 2', cursive;
@@ -48,7 +60,7 @@
        text-align: center;
        display: flex;
        justify-content: center;
-       margin-top: 40%;
+       margin-top: 10%;
        display: none;
     }
     #explanation3{
@@ -59,7 +71,7 @@
         text-align: center;
         display: flex;
         justify-content: center;
-        margin-top: 40%;
+        margin-top: 10%;
         display: none;
     }
     #explanation-container{
@@ -68,5 +80,41 @@
     #start{
         display: none;
         justify-content: center;
+        position: relative;
+       bottom: 10px;
     }
-}
+    #skip{
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 14pt;
+        color: rgb(102, 102, 102);
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+        text-decoration: underline;
+        cursor: pointer;
+        position: fixed;
+        bottom: 0px;
+    }
+    #skip-container{
+        display: flex;
+        justify-content: center;
+    }
+    #category-page{
+        display: none;
+    }
+    .green-button{
+       padding: 8px 45px 8px 45px;
+       background-color: #46c75f;
+       border-radius: 50px;
+       font-family: 'Baloo Thambi 2', cursive;
+       font-size: 15pt;
+       color: white;
+       box-shadow: 3px 3px 5px #6d6d6d8e;
+       cursor: pointer;
+       display: flex;
+       justify-content: center;
+   }
+   #center{
+       display: flex;
+       justify-content: center;
+   }

@@ -1,14 +1,27 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
-@media (max-width: 400px){
+
     body{
         margin: 0;
+    }
+    #home-page{
+        height: 100%;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
    #hamburger{
        display: flex;
        justify-content: flex-end;
        cursor: pointer;
        font-size: 30pt;
+   }
+   #logo{
+       margin: auto;
    }
    .intro-text{
     font-family: 'Baloo Thambi 2', cursive;
@@ -26,14 +39,22 @@
        margin-top: 40%;
    }
    .green-button{
-       padding: 10px 50px 10px 50px;
+       padding: 20px 60px 20px 60px;
        background-color: #46c75f;
        border-radius: 50px;
        font-family: 'Baloo Thambi 2', cursive;
        src: url("https://fonts.googleapis.com/icon?family=Material+Icons");
-       font-size: 15pt;
+       font-size: 18pt;
        color: white;
        box-shadow: 3px 3px 5px #6d6d6d8e;
        cursor: pointer;
+       position: fixed;
+       bottom: 25px;
+       /* margin-top: 1%; */
    }
-}
+   .linked-button{
+       padding: 10px 50px 10px 50px;
+       background-color: #46c75f;
+       border-radius: 50px;
+       font-family: 'Baloo Thambi 2', cursive;
+   }

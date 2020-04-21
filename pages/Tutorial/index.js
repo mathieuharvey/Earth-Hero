@@ -1,19 +1,16 @@
 import React from 'react';
 import './tutorial.css';
 import GreenButton from '../../comps/Green-button';
-import Icons from '../Icons';
+import Icon from '../../comps/Icon';
+import Menu from '../../comps/Menu';
+import Link from 'next/Link';
 
 const iconImg = require('./favicon.png');
 
 const Tutorial = () => <div id='tutorial-page'>
-        {/* <div id='icons'>
-        <img id='globe' src={iconImg} />
-
-         <span id='hamburger' className="material-icons">
-            menu
-            </span>
-        </div> */}
-        <div><Icons /></div>
+    <div id='tutorial-subdiv'>
+        
+        <div><Icon /></div>
         <div id='tutorial-container'>
             <div id='tutorial'></div>
         </div>
@@ -29,11 +26,20 @@ const Tutorial = () => <div id='tutorial-page'>
         onClick={SwitchMessage}
         /></div>
 
-<div id='start'><GreenButton
+{/* <div id='start'><GreenButton
         text="Okay, let's start!"
-        // onClick={SwitchPage}
-        /></div>
+        onClick={SkipTutorial}
+        /></div> */}
 
+        <div id='center'><Link href='/Choose-Category'><div className='green-button' id='start'>Okay, let's go!</div></Link></div>
+
+
+        <div id='skip-container'>
+        <div id='skip'><Link href='/Choose-Category'><div>Skip Tutorial</div></Link></div>
+        </div>
+        </div>
+        
+        <div><Menu /></div>
 </div>
 
 var switch_state = false;
@@ -49,4 +55,5 @@ function SwitchMessage(){
         document.querySelector("#start").style.display = 'flex';
     }
 }
+
 export default Tutorial;

@@ -18,7 +18,7 @@ InfoCard.defaultProps = {
     category: "Category",
     title: "What is it?",
     text: "Wildfires are fires that are out of control and burn in the wildland vegetation. They can burn forests, savannas, grasslands, and many other ecosystems. Wildfires can start from either natural occurrence or by humans. For instance, a natural occurrence would be a lightning strike, and a human cause could be from making a spark. Wildfires are most prone to start when the ecosystem is dry. This is why areas where it does not rain often are most likely to have wildfires. Sometimes wildfires can be good for the ecosystems by killing bad diseases and insects that harm trees, but quite often wildfires spread fast and are very dangerous.",
-    button: "Got it!",
+    button: "",
 }
 
 export default InfoCard;

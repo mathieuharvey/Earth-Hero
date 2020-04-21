@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+    #header{
+    font-family: 'Baloo Thambi 2', cursive;
+    display: flex;
+    font-size: 15pt;
+    line-height: 15pt;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    justify-content: center;
+    width: 60vw;
+    }
+    #pollution-subcategory{
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    #header-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 13%;
+    }
+    .drop-down{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        width: 60vw;
+        height: 7vh;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+    }
+    #droughts{
+        font-family: 'Baloo Thambi 2', cursive;
+        display: flex;
+        font-size: 14pt;
+        text-align: center;
+    }
+    #down-arrow{
+        font-size: 21pt;
+        transition: 0.3s;
+    }
+    #down-arrow2{
+        font-size: 21pt;
+        transition: 0.3s;
+    }
+    #down-arrow3{
+        font-size: 21pt;
+        transition: 0.3s;
+    }
+    #container{
+        display: flex;
+        justify-content: center;
+        margin-top: 12%;
+        transition: 0.5s;
+    }
+    #container2{
+        display: flex;
+        justify-content: center;
+        margin-top: 8%;
+        transition: 0.5s;
+    }
+    #button{
+        padding: 10px 60px 10px 60px;
+        background-color: #8f8f8f65;
+        border-radius: 50px;
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 18pt;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        top: 20%;
+        margin-top: 10%;
+        }        
+        #Button-text{
+            display: flex;
+            justify-content: center;
+        }
+    #wildfires{
+        font-family: 'Baloo Thambi 2', cursive;
+        display: flex;
+        font-size: 13pt;
+        text-align: center;
+        cursor: pointer;
+    }
+    #air-options{
+        display: block;
+        margin-top: 4%;
+        display: none;
+        transition: 0.5s;
+    }
+    #water-options{
+        display: block;
+        margin-top: 4%;
+        display: none;
+        transition: 0.5s;
+    }
+    #land-options{
+        display: block;
+        margin-top: 4%;
+        display: none;
+        transition: 0.5s;
+    }
+    /* css for radio butons */
+    .container{
+        display: block;
+        position: relative;
+        margin-left: 18%;
+        padding-left: 12%;
+        margin-top: 10%;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 13pt;
+    }
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 24px;
+        width: 24px;
+        box-shadow: 0px 3px 5px #7c7c7c8f;
+        background-color: white;
+        border-radius: 50%;
+      }
+      .container input:checked ~ .checkmark {
+        background-color: white;
+      }
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+      .container .checkmark:after {
+        top: 4px;
+       left: 4px;
+       width: 16px;
+       height: 16px;
+       border-radius: 50%;
+       background: #46c75f;
+   }
+   /* end of css for radio buttons */
+#choose-subcategory{
+    height: 100%;
+}

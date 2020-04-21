@@ -1,12 +1,12 @@
 import React from 'react';
 import './Scorepage.css';
 import GreenButton from '../../comps/Green-button';
-import Icons from '../Icons';
+import Icon from '../../comps/Icon';
 
 
 const ScorePage = () => <div id='score-page'>
 
-        <div><Icons /></div>
+        <div><Icon /></div>
         <div id="my_score_container">
             <p class="my_score">My Score</p>
         </div>

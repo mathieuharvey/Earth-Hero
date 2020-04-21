@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+@media (max-width: 400px){
+    #quiz-container {
+        font-family: 'Baloo Thambi 2', cursive;
+        margin: 50px
+    }
+    #quiz-category {
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 18px;
+        color: rgba(112, 112, 112);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+    }
+    #quiz-information {
+        display: flex;
+        justify-content: space-between;
+    }
+    #quiz-question {
+        font-size: 16px;
+        text-align: center;
+        color: rgba(112, 112, 112);
+        margin-top: 58px;
+        margin-bottom: 42px;
+    }
+    .quiz-choices {
+        display: flex;
+        align-items: center;
+    }
+    .circle {
+        cursor: pointer;
+    }
+}

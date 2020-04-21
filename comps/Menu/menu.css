@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
-@media (max-width: 400px){
+
     body{
         margin: 0;
-        height: 100vh;
+        height: 100%;
         z-index: 0;
         transition: 0.4s;
     }
@@ -12,22 +12,25 @@
         width: 100vw;
         height: 100vh;
         z-index: 0; */
-        min-height: 100vh;
+        min-height: 100%;
         min-width: 100vw;
     }
     #hamburger{
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
-        font-size: 30pt;
+        font-size: 43pt;
         transition: 0.25s;
+        top: 0;
+        right: 0;
+        position: absolute;
     }
     #menu{
-        width: 55vw;
+        width: 65vw;
         justify-content: flex-end;
-        height: 100vh;
+        height: 100%;
         position: fixed;
-        right: -55vw;
+        right: -65vw;
         display: block;
         transition: 0.5s;
         background-color: white;
@@ -85,4 +88,3 @@
         bottom: 0;
         padding-bottom: 15%;
     }
-}

@@ -1,5 +1,5 @@
 import React from 'react';
-import ScorePage from '../comps/ScorePage';
+import ScorePage from '../pages/ScorePage';
 
 export default {
     title: 'Score Page',

@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
+
+    #text{
+    font-family: 'Baloo Thambi 2', cursive;
+    display: flex;
+    font-size: 15pt;
+    line-height: 15pt;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    justify-content: center;
+    width: 70vw;
+    }
+    #choose-category{
+        width: auto;
+        height: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+    #text-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 13%;
+    }
+    #globalwarming-icon{
+        display: flex;
+        justify-content: center;
+        margin-top: 13%;
+    }
+    #globalwarming{
+        border-radius: 50%;
+        width: auto;
+        height: 15vh;
+        box-shadow: 2px 3px 5px #6d6d6d5b;
+        cursor: pointer;
+        transition: 0.25s;
+    }
+    #globalwarming-title{
+        font-family: 'Baloo Thambi 2', cursive;
+        display: flex;
+        font-size: 15pt;
+        justify-content: center;
+    }
+    #pollution-icon{
+        display: flex;
+        justify-content: center;
+        margin-top: 13%;
+    }
+    #pollution{
+        border-radius: 50%;
+        width: auto;
+        height: 15vh;
+        box-shadow: 2px 3px 5px #6d6d6d5b;
+        cursor: pointer;
+        transition: 0.25s;
+    }
+    #pollution-title{
+        font-family: 'Baloo Thambi 2', cursive;
+        display: flex;
+        font-size: 15pt;
+        justify-content: center;
+    }
+    #button{
+    padding: 15px 60px 15px 60px;
+    background-color: #8f8f8f65;
+    border-radius: 50px;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 17pt;
+    color: white;
+    /* box-shadow: 3px 3px 5px #6d6d6d8e; */
+    cursor: pointer;
+    margin-top: 10%;
+    }
+    #Button-text{
+        display: flex;
+        justify-content: center;
+    }
