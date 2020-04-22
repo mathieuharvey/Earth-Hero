@@ -6,13 +6,16 @@ import Menu from '../../comps/Menu';
 import Link from 'next/link';
 
 const iconImg = require('./favicon.png');
+const Tut1 = require('./tutorialgif1.gif');
 
 const Tutorial = () => <div id='tutorial-page'>
     <div id='tutorial-subdiv'>
         
         <div><Icon /></div>
         <div id='tutorial-container'>
-            <div id='tutorial'></div>
+            <div id='tutorial'>
+                <img id='tut1' src={Tut1} />
+            </div>
         </div>
 
         <div id='explanation-container'>

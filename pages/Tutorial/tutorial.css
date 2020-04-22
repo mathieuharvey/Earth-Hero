@@ -31,9 +31,22 @@
         background-color: white;
         border: 1px solid rgba(122, 122, 122, 0.199);
         border-radius: 10px;
-        height: 40vh;
-        width: 70vw;
+        height: 50%;
+        width: 60%;
         box-shadow: 3px 3px 5px rgba(110, 110, 110, 0.151);
+        padding: 4px;
+    }
+    #tut1 img{
+        margin: auto;
+        height: auto;
+        width: 100%;
+        max-width: 1000px;
+        display: block;
+    }
+    #tut1 {
+        width: 100%;
+        margin: auto;
+        border-radius: 10px;
     }
     #tutorial-container{
         display: flex;
@@ -92,8 +105,8 @@
         margin-top: 10%;
         text-decoration: underline;
         cursor: pointer;
-        position: fixed;
-        bottom: 0px;
+        /* position: fixed;
+        bottom: 0px; */
     }
     #skip-container{
         display: flex;
