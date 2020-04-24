@@ -106,7 +106,7 @@
             margin-top: 13%;
         }
         .drop-down{
-            background-color: rgb(209, 206, 206);
+            background-color: rgb(233, 230, 230);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -116,6 +116,8 @@
             border-bottom: none;
             cursor: pointer;
             border-radius: 30px;
+            margin-top: -10%;
+            
         }
         #topic-one{
             font-family: 'Baloo Thambi 2', cursive;
@@ -125,6 +127,55 @@
             margin-left: 6%;
             color: rgb(94, 94, 94);
         }
+        #topic-two{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-three{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-four{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-five{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-six{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-seven{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+
         #down-arrow{
             font-size: 21pt;
             margin-right: 4%;
@@ -133,8 +184,41 @@
         }
         #down-arrow2{
             font-size: 21pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
             transition: 0.3s;
         }
+        #down-arrow3{
+            font-size: 21pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow4{
+            font-size: 21pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow5{
+            font-size: 21pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow6{
+            font-size: 21pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow7{
+            font-size: 21pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+
         #container{
             display: flex;
             justify-content: center;
@@ -148,17 +232,90 @@
             transition: 0.5s;
         }
         #button{
-            padding: 10px 60px 10px 60px;
+            padding: 10px 30px 10px 30px;
             background-color: #8f8f8f65;
             border-radius: 50px;
             font-family: 'Baloo Thambi 2', cursive;
-            font-size: 18pt;
+            font-size: 14pt;
             color: white;
             cursor: pointer;
             position: relative;
             top: 20%;
-            margin-top: 10%;
+            margin: 5% 15% 5% 15%;
             }        
+        #button2{
+                padding: 10px 30px 10px 30px;
+                background-color: #8f8f8f65;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            #button3{
+                padding: 10px 30px 10px 30px;
+                background-color: #8f8f8f65;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            #button4{
+                padding: 10px 30px 10px 30px;
+                background-color: #8f8f8f65;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            #button5{
+                padding: 10px 30px 10px 30px;
+                background-color: #8f8f8f65;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            #button6{
+                padding: 10px 30px 10px 30px;
+                background-color: #8f8f8f65;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            #button7{
+                padding: 10px 30px 10px 30px;
+                background-color: #8f8f8f65;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            
             #Button-text{
                 display: flex;
                 justify-content: center;
@@ -174,7 +331,7 @@
             display: block;
             display: none;
             transition: 0.5s;
-            margin-top: -16%;
+            margin-top: -14%;
         }
         #answer_one{            
             background-color: rgb(238, 236, 236);
@@ -188,7 +345,7 @@
             display: block;
             display: none;
             transition: 0.5s;
-            margin-top: -16%;
+            margin-top: -14%;
         }
         #answer_two{            
             background-color: rgb(238, 236, 236);
@@ -197,6 +354,77 @@
             padding: 10% 0% 0% 0%;
             margin-top: 7%;
         }
+
+        #topic_three-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+            margin-top: -14%;
+        }
+        #answer_three{            
+            background-color: rgb(238, 236, 236);
+            border-radius: 1px 1px 15px 15px;
+            margin: 0% 20% 0% 20%;
+            padding: 10% 0% 0% 0%;
+            margin-top: 7%;
+        }
+
+        #topic_four-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+            margin-top: -14%;
+        }
+        #answer_four{            
+            background-color: rgb(238, 236, 236);
+            border-radius: 1px 1px 15px 15px;
+            margin: 0% 20% 0% 20%;
+            padding: 10% 0% 0% 0%;
+            margin-top: 7%;
+        }
+
+        #topic_five-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+            margin-top: -14%;
+        }
+        #answer_five{            
+            background-color: rgb(238, 236, 236);
+            border-radius: 1px 1px 15px 15px;
+            margin: 0% 20% 0% 20%;
+            padding: 10% 0% 0% 0%;
+            margin-top: 7%;
+        }
+
+        #topic_six-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+            margin-top: -14%;
+        }
+        #answer_six{            
+            background-color: rgb(238, 236, 236);
+            border-radius: 1px 1px 15px 15px;
+            margin: 0% 20% 0% 20%;
+            padding: 10% 0% 0% 0%;
+            margin-top: 7%;
+        }
+
+        #topic_seven-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+            margin-top: -14%;
+        }
+        #answer_seven{            
+            background-color: rgb(238, 236, 236);
+            border-radius: 1px 1px 15px 15px;
+            margin: 0% 20% 0% 20%;
+            padding: 10% 0% 0% 0%;
+            margin-top: 7%;
+        }
+
 
         /* css for radio butons */
         .container{
