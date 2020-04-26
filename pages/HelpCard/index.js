@@ -23,6 +23,7 @@ const HelpCard = () => {
             category= "Category"
             title= "What can I do to help?"
             text= ""
+            buttonid='/Quiz'
         />
         <Menu />
         <img id='card-side-left' src={CardSideImgLeft} onClick={() => {Router.push('/ProblemCard')}}/>
