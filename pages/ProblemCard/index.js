@@ -11,7 +11,7 @@ var CardSideImgLeft = require('../../images/card-left.svg');
 const ProblemCard = () => <div id="helpcard">
         <Icon />
         <InfoCard 
-            category= "Category"
+            category= "Wildfires"
             title= "Why is this a problem?"
             text= "Wildfires destroy homes of humans and animals and are also a major health risk. Because of wildfires, many are left without their homes, but also animals who live in the forests. Approximately 800 million animals have died due to wildfires so far. Wildfires also produce smoke that is inhaled by adults and children who live in the affected areas. This is very dangerous, causing breathing problems and even lung damage for many."
             buttonid='/HelpCard'

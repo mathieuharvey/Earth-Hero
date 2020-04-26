@@ -4,16 +4,22 @@ import Router from 'next/router';
 
 var nextIcon = require("../../images/Icon awesome-arrow-right.svg");
 
-const InfoCard = ({ category, title, text, buttonid, button }) => <div id='info-card'>
+const InfoCard = ({ category, title, text, help1, help2, help3, help4, buttonid, button }) => <div id='info-card'>
     <div id='card-category'>{category}</div>
     <div id='card-content'>
         <div id='card-title'>{title}<hr></hr></div>
-        <div id='card-text'>{text}</div>
+        <div id='card-text'>
+            <div>{text}</div>
+            <div className='paragraphs'>{help1}</div>
+            <div className='paragraphs'>{help2}</div>
+            <div className='paragraphs'>{help3}</div>
+            <div className='paragraphs'>{help4}</div>
+        </div>
         <div id='button-id' onClick={() => {Router.push(buttonid)}}>
             <div id='card-button'>
-            <div>{button}</div>
-            <img id="next-icon" src={nextIcon}/>
-    </div>
+                <div>{button}</div>
+                <img id="next-icon" src={nextIcon}/>
+            </div>
         </div>
         <div id='white-space'></div>
     </div>
