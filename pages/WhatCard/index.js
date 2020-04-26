@@ -4,7 +4,6 @@ import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
 import InfoCard from '../../comps/Information Cards';
 import Router from 'next/router';
-import CardButton from '../../comps/Buttons For Info Card';
 
 var CardSideImg = require('../../images/card-side.svg');
 
