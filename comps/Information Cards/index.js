@@ -1,15 +1,15 @@
 import React from 'react';
 import './infocard.css';
+import CardButton from '../Buttons For Info Card';
+import Link from 'next/link';
 
-var nextIcon = require("../../images/Icon awesome-arrow-right.svg");
-const InfoCard = ({ category, title, text, button}) => <div id='info-card'>
+const InfoCard = ({ category, title, text, buttonid }) => <div id='info-card'>
     <div id='card-category'>{category}</div>
     <div id='card-content'>
         <div id='card-title'>{title}<hr></hr></div>
         <div id='card-text'>{text}</div>
-    <div id='card-button'>
-        <div>{button}</div>
-        <img id="next-icon" src={nextIcon}/>
+    <div>
+        <CardButton onClick={() => {Router.push({buttonid})}}/>
     </div>
     <div id='white-space'></div>
     </div>
