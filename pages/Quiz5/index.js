@@ -16,30 +16,30 @@ const Quiz5 = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizC
         <div id="quiz-question" >{quizQuestion}</div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice1}</p>
-                <input type='radio' name='radio' />
+                <input onClick={SelectedChoice} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice2}</p>
-                <input type='radio' name='radio' />
+                <input onClick={SelectedChoice} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice3}</p>
-                <input type='radio' name='radio' />
+                <input onClick={SelectedChoice} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice4}</p>
-                <input type='radio' name='radio' />
+                <input onClick={SelectedChoice} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
-        <div id='Button-text'>
-            <Link href='./ScorePage'><div id='button1'>Next</div></Link>
+        <div onClick={NextQuizQuestion} id='Button-text'>
+            <div onClick={NextQuizQuestion} id='button1'>Next</div>
         </div>
 
     </div>
@@ -50,11 +50,20 @@ function HighlightButtonQuiz(){
     document.querySelector("#button1").style.backgroundColor = '#46c75f';
 }
 
-// function NextQuizQuestion(){
-//     if (){
+//added by cc
+var selected = false;
+function SelectedChoice(){
+    selected = true;
+}
 
-//     }
-// }
+function NextQuizQuestion(){
+    if (selected === true){
+        window.location.pathname = '/ScorePage';
+    }else{
+
+    }
+}
+//
 
 Quiz5.defaultProps = {
     category: "Wildfires",

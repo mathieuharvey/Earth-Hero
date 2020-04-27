@@ -7,6 +7,15 @@
 #wildfires-1 {
     width: 100%;
 }
+#whatcard{
+    -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
 
 @media (max-width: 300px){
     #card-side-left {

@@ -26,6 +26,13 @@
         top: 0;
         right: 0;
         position: absolute;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     #menu{
         width: 65vw;
@@ -38,6 +45,13 @@
         background-color: white;
         top: 0;
         z-index: 10;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     #x-div{
         margin-top: 13%;
