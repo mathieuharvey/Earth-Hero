@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 const iconImg = require('./favicon.png');
 const Tut1 = require('./tutorialgif1.gif');
+const Tut2 = require('./tut2.gif');
 
 const Tutorial = () => <div id='tutorial-page'>
     <div id='tutorial-subdiv'>
@@ -15,6 +16,7 @@ const Tutorial = () => <div id='tutorial-page'>
         <div id='tutorial-container'>
             <div id='tutorial'>
                 <img id='tut1' src={Tut1} />
+                <img id='tut2' src={Tut2} />
             </div>
         </div>
 
@@ -50,6 +52,8 @@ function SwitchMessage(){
     if(switch_state === false){
     document.querySelector("#explanation1").style.display = 'none';
     document.querySelector("#explanation2").style.display = 'flex';
+    document.querySelector("#tut1").style.display = 'none';
+    document.querySelector("#tut2").style.display = 'block';
     switch_state = true;
     }else if(switch_state === true){
         document.querySelector("#explanation2").style.display = 'none';
