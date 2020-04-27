@@ -11,7 +11,7 @@ const ScorePage = () => <div id='score-page'>
 {/* logo & title */}
         <div><Icon /></div>
         <div id="my_score_container">
-            <p class="my_score">My Score</p>
+            <p className="my_score">My Score</p>
         </div>
 {/* end of logo and title */}
 
@@ -350,10 +350,10 @@ const ScorePage = () => <div id='score-page'>
             <p id='explanation'>Progress</p>
         </div>
 
-        <hr class="line"></hr>
+        <hr className="line"></hr>
 
         <div id="progress_bar">
-            <div class='progress'></div>
+            <div className='progress'></div>
         </div>
 
         <div id="topic_button"><GreenButton
