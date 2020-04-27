@@ -15,12 +15,14 @@ const LessonCompleted = () => {
             <p>Great! You know a lot more on Wildfires now. <br /> Ready to take the Quiz?</p>
         </div>
         <Link href='/Quiz'><div id='take-quiz'>
-            <GreenButton text='Take the Quiz'/>
+            <GreenButton onClick={Nothing} text='Take the Quiz'/>
         </div></Link>
         <img src={CardsStack} id='cards-stack'/>
     </div>
     <Menu />
     </div>
 }
-
+function Nothing(){
+    
+}
 export default LessonCompleted;

@@ -10,19 +10,12 @@
     #gray{
         height: 100vh;
         width: 100vw;
-        z-index: 10;
+        z-index: 0;
         transition: 0.4s;
         position: absolute;
         top: 0;
         right:0;
-    }
-    #app{
-        /* margin: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 0; */
-        min-height: 100%;
-        min-width: 100vw;
+        display: none;
     }
     #hamburger{
         display: flex;
@@ -44,6 +37,7 @@
         transition: 0.5s;
         background-color: white;
         top: 0;
+        z-index: 10;
     }
     #x-div{
         margin-top: 13%;

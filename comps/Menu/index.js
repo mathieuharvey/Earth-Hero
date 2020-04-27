@@ -3,7 +3,7 @@ import './menu.css';
 import Link from 'next/link';
 
 const Menu = () => <div>
-    <div id='gray'>
+    
 
 <span id='hamburger' onClick={MenuToggle} className="material-icons">
         menu
@@ -44,9 +44,9 @@ const Menu = () => <div>
 
     </div>
 </div>
-</div>
 
-<div id='app' onClick={CloseMenu}></div>
+<div id='gray' onClick={CloseMenu}></div>
+
 </div>
 
 //functions
@@ -63,6 +63,7 @@ function MenuToggle(){
 function OpenMenu(){
     document.querySelector("#menu").style.right = "0";
     document.querySelector("#hamburger").style.opacity = '0';
+    document.querySelector("#gray").style.display = 'block';
     document.querySelector("#gray").style.backgroundColor = 'rgba(180,180,180,0.5)';
 
     setTimeout(function(){
@@ -80,7 +81,7 @@ function CloseMenu(){
         
     }, 400);
     document.querySelector("#menu").style.right = "-65vw";
-    document.querySelector("#gray").style.backgroundColor = 'transparent';
+    document.querySelector("#gray").style.display = 'none';
 
     // document.querySelector("#menu").style.opacity = 0;
     menu_state = false;
