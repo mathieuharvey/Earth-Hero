@@ -2,12 +2,14 @@ import React from 'react';
 import './menu.css';
 import Link from 'next/link';
 
-const Menu = () => <div>
-    
+const Hamburger = require('./hamburger.svg');
 
-<span id='hamburger' onClick={MenuToggle} className="material-icons">
+const Menu = () => <div>
+
+<img id='hamburger' onClick={MenuToggle} src={Hamburger} />
+{/* <span id='hamburger' onClick={MenuToggle} className="material-icons">
         menu
-    </span>
+    </span> */}
  <div id='menu'>
     <div id='x-div'>
         
