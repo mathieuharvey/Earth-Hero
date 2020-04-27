@@ -4,6 +4,13 @@
     #quiz-container {
         font-family: 'Baloo Thambi 2', cursive;
         margin: 50px;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     #quiz-category {
         font-family: 'Baloo Thambi 2', cursive;
@@ -42,6 +49,7 @@
             padding-left: 10px;
             margin-top: 10%; */
             cursor: pointer;
+            margin-top: 5%;
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
@@ -60,9 +68,11 @@
             position: absolute;
             opacity: 0;
             cursor: pointer;
+            top: 0;
         }
         .checkmark {
             position: absolute;
+            top: 20%;
             left: 0;
             height: 24px;
             width: 24px;
