@@ -48,6 +48,19 @@
         margin: auto;
         border-radius: 10px;
     }
+    #tut2 {
+        width: 100%;
+        margin: auto;
+        border-radius: 10px;
+        display: none;
+    }
+    #tut2 img{
+        margin: auto;
+        height: auto;
+        width: 100%;
+        max-width: 1000px;
+        display: block;
+    }
     #tutorial-container{
         display: flex;
         justify-content: center;
