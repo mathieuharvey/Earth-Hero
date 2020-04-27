@@ -1,7 +1,10 @@
 #card-side-left {
-    position: fixed;
+    position: absolute;
     left: -10px;
     top: 200px;
+}
+#wildfires-3 {
+    width: 100%;
 }
 
 @media (max-width: 300px){

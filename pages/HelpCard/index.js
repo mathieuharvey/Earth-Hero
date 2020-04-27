@@ -7,6 +7,7 @@ import Router from 'next/router';
 
 var CardSideImgLeft = require('../../images/card-left.svg');
 var checkmarkIcon = require('../../images/checkmark.svg');
+var wildfires3 = require('../../images/wildfire_3.png');
 
 const HelpCard = () => {
 
@@ -31,6 +32,7 @@ const HelpCard = () => {
         />
         <Menu />
         <img id='card-side-left' src={CardSideImgLeft} onClick={() => {Router.push('/ProblemCard')}}/>
+        <img id='wildfires-3' src={wildfires3}/>
     </div>
 
 }

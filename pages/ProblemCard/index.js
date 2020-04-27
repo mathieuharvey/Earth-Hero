@@ -5,8 +5,9 @@ import Menu from '../../comps/Menu';
 import InfoCard from '../../comps/Information Cards';
 import Router from 'next/router';
 
-var CardSideImg = require('../../images/card-side.svg');
+var CardSideImg = require('../../images/card-side.png');
 var CardSideImgLeft = require('../../images/card-left.svg');
+var wildfires2 = require('../../images/wildfire_2.png')
 
 const ProblemCard = () => <div id="helpcard">
         <Icon />
@@ -18,6 +19,7 @@ const ProblemCard = () => <div id="helpcard">
             button= "Next"/>
         <img id='card-side-right' src={CardSideImg} onClick={() => {Router.push('/HelpCard')}}/>
         <img id='card-side-left' src={CardSideImgLeft} onClick={() => {Router.push('/WhatCard')}}/>
+        <img id='wildfires-2' src={wildfires2}/>
         <Menu />
     </div>
 
