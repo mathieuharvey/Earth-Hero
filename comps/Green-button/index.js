@@ -7,13 +7,13 @@ const GreenButton = ({text, onClick}) => <div onClick={onClick} id='green-button
     </div>
 </div>
 
-// function DefaultClick(){
-//     alert("Default function");
-// }
+function DefaultClick(){
+    alert("Default function");
+}
 
 GreenButton.defaultProps = {
     text:'Default Text',
-    // onClick:DefaultClick
+    onClick:DefaultClick
 }
 
 export default GreenButton;

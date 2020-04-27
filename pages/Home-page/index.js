@@ -1,6 +1,5 @@
 import React from 'react';
 import './home-page.css';
-import GreenButton from '../../comps/Green-button';
 import Link from 'next/link';
 
 const logoImg = require('./earth-hero-logo-vertical.svg');
@@ -26,8 +25,5 @@ const HomePage = () => <div id='home-page'>
 
 </div>
 
-function DefaultClick(){
-    alert("Default function");
-}
 
 export default HomePage;
