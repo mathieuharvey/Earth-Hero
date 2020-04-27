@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
 
-const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice}) => <div>
+const Quiz5 = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizChoice2, quizChoice3, quizChoice4}) => <div>
  <Icon />
     <div id='quiz-container'>
         <div id="quiz-category">{category}</div>
@@ -15,25 +15,25 @@ const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice}) => <di
         <hr />
         <div id="quiz-question" >{quizQuestion}</div>
         <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice}</p>
+            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice1}</p>
                 <input type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice}</p>
+            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice2}</p>
                 <input type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice}</p>
+            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice3}</p>
                 <input type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice}</p>
+            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice4}</p>
                 <input type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
@@ -41,6 +41,7 @@ const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice}) => <di
         <div id='Button-text'>
             <Link href='./ScorePage'><div id='button1'>Next</div></Link>
         </div>
+
     </div>
     <Menu />
 </div>
@@ -55,12 +56,15 @@ function HighlightButtonQuiz(){
 //     }
 // }
 
-Quiz.defaultProps = {
-    category: "Category",
-    quizName: "Question 1",
-    quizNumber: "1/5",
-    quizQuestion: "Question goes here...",
-    quizChoice: "Choice"
+Quiz5.defaultProps = {
+    category: "Wildfires",
+    quizName: "Question 5",
+    quizNumber: "5/5",
+    quizQuestion: "Which of the following is a way you can help prevent wildfires?",
+    quizChoice1: "Not distinguishing your fire",
+    quizChoice2: "Starting a fire when it's windy",
+    quizChoice3: "Never leaving your fire unattended",
+    quizChoice4: "Throwing away lit matches"
 }
 
-export default Quiz;
+export default Quiz5;
