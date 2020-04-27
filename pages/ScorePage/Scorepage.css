@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@media (max-width: 400px){
     #hamburger{
         display: flex;
         justify-content: flex-end;
@@ -105,7 +104,7 @@
             justify-content: center;
             margin-top: 13%;
         }
-        .drop-down{
+        .drop-down1{
             background-color: rgb(233, 230, 230);
             display: flex;
             align-items: center;
@@ -231,7 +230,7 @@
             margin-top: 8%;
             transition: 0.5s;
         }
-        #button{
+        #button1{
             padding: 10px 30px 10px 30px;
             background-color: #8f8f8f65;
             border-radius: 50px;
@@ -242,7 +241,7 @@
             position: relative;
             top: 20%;
             margin: 5% 15% 5% 15%;
-            }        
+    }        
         #button2{
                 padding: 10px 30px 10px 30px;
                 background-color: #8f8f8f65;
@@ -426,9 +425,7 @@
         }
 
 
-        /* css for radio butons */
         .container{
-            /* background-color: blue; */
             display: block;
             position: relative;
             margin-left: 18%;
@@ -481,12 +478,3 @@
     #choose-subcategory{
         height: 100%;
     }
-
-
-
-
-
-
-
-
-}

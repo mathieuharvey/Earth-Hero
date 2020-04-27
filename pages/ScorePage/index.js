@@ -17,7 +17,7 @@ const ScorePage = () => <div id='score-page'>
 
 {/* Topic 1 */}
         <div id='container' onClick={ToggleOne}>
-            <div className='drop-down'>
+            <div className='drop-down1'>
                 <p id='topic-one'>Topic 1</p>
                 <span id='down-arrow' className="material-icons">
                     keyboard_arrow_down
@@ -55,7 +55,7 @@ const ScorePage = () => <div id='score-page'>
             </div>
     
             <div id='Button-text'>
-                <div id='button'>Take Quiz Again</div>
+                <div id='button1'>Take Quiz Again</div>
             </div>
 
         </div>
@@ -65,7 +65,7 @@ const ScorePage = () => <div id='score-page'>
 
 {/* Topic 2 */}
 <div id='container' onClick={ToggleTwo}>
-            <div className='drop-down'>
+            <div className='drop-down1'>
                 <p id='topic-two'>Topic 2</p>
                 <span id='down-arrow2' className="material-icons">
                     keyboard_arrow_down
@@ -103,7 +103,8 @@ const ScorePage = () => <div id='score-page'>
             </div>
     
             <div id='Button-text'>
-e            </div>
+                    <div id='button2'>Take Quiz Again</div>
+            </div>
 
         </div>
 
@@ -111,7 +112,7 @@ e            </div>
 
 {/* Topic 3 */}
 <div id='container' onClick={ToggleThree}>
-            <div className='drop-down'>
+            <div className='drop-down1'>
                 <p id='topic-three'>Topic 3</p>
                 <span id='down-arrow3' className="material-icons">
                     keyboard_arrow_down
@@ -158,7 +159,7 @@ e            </div>
 
 {/* Topic 4 */}
 <div id='container' onClick={ToggleFour}>
-            <div className='drop-down'>
+            <div className='drop-down1'>
                 <p id='topic-four'>Topic 4</p>
                 <span id='down-arrow4' className="material-icons">
                     keyboard_arrow_down
@@ -205,7 +206,7 @@ e            </div>
 
 {/* Topic 5 */}
 <div id='container' onClick={ToggleFive}>
-            <div className='drop-down'>
+            <div className='drop-down1'>
                 <p id='topic-five'>Topic 5</p>
                 <span id='down-arrow5' className="material-icons">
                     keyboard_arrow_down
@@ -252,7 +253,7 @@ e            </div>
 
 {/* Topic 6 */}
 <div id='container' onClick={ToggleSix}>
-            <div className='drop-down'>
+            <div className='drop-down1'>
                 <p id='topic-six'>Topic 6</p>
                 <span id='down-arrow6' className="material-icons">
                     keyboard_arrow_down
@@ -299,7 +300,7 @@ e            </div>
 
 {/* Topic 7 */}
 <div id='container' onClick={ToggleSeven}>
-            <div className='drop-down'>
+            <div className='drop-down1'>
                 <p id='topic-seven'>Topic 7</p>
                 <span id='down-arrow7' className="material-icons">
                     keyboard_arrow_down
@@ -466,7 +467,7 @@ function ToggleSeven(){
 
 
 function BlueButton(){
-    document.querySelector("#button").style.backgroundColor = '#46c75f';
+    document.querySelector("#button1").style.backgroundColor = '#46c75f';
 }
 function TwoButton(){
     document.querySelector("#button2").style.backgroundColor = '#46c75f';
