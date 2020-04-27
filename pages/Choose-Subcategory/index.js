@@ -25,25 +25,25 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 <div id='drought-options'>
 
         <label  onClick={HighlightButton} className='container'>Wildfires
-            <input type='radio' name='radio' className='circle' />
+            <input type='radio' name='radio' onClick={ToWildfires} className='circle' />
             <span  onClick={HighlightButton} className='checkmark'></span>
             </label>
         
 
         <label  onClick={HighlightButton} className='container'>Water Shortage
-            <input type='radio' name='radio' />
+            <input type='radio' onClick={ToWaterShortage} name='radio' />
             <span  onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
         <label onClick={HighlightButton} className='container'>Famine
-            <input type='radio' name='radio' />
+            <input type='radio' onClick={ToFamine} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
         <label onClick={HighlightButton} className='container'>Wildlife
-            <input type='radio' name='radio' />
+            <input type='radio' onClick={ToWildlife} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
     
@@ -65,13 +65,13 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 
 <div id='flood-options'>
 <label onClick={HighlightButton} className='container'>Iceberg Melting
-            <input type='radio' name='radio' />
+            <input type='radio' onClick={ToIcebergMelting} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
         <label onClick={HighlightButton} className='container'>Cities
-            <input type='radio' name='radio' />
+            <input type='radio' onClick={ToCities} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
     
@@ -81,8 +81,8 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 
 
 
-<div id='Button-text'>
-        <div id='button'>Next</div>
+<div onClick={ToInfoCards} id='Button-text'>
+        <div onClick={ToInfoCards} id='button'>Next</div>
     </div>
 
 
@@ -125,6 +125,58 @@ function ToggleFlood(){
 
 function HighlightButton(){
     document.querySelector("#button").style.backgroundColor = '#46c75f';
+}
+
+
+var wildfires = false;
+function ToWildfires(){
+    wildfires = true;
+    // document.querySelector("#button").href = 'http://localhost:3000/WhatCard';
+    // window.location.pathname = '/WhatCard';
+}
+
+var watershortage = false;
+function ToWaterShortage(){
+    if(watershortage === false){
+        watershortage = true;
+}else if(watershortage === true){
+    ToFamine();
+    ToWildlife();
+    ToIcebergMelting();
+    ToCities();
+    ToWildfires();
+    watershortage = false;
+}
+}
+
+
+var famine = false;
+function ToFamine(){
+    famine = true;
+}
+
+var wildlife = false;
+function ToWildlife(){
+    wildlife = true;
+}
+
+var icebergmelting = false;
+function ToIcebergMelting(){
+    icebergmelting = true;
+}
+
+var cities = false;
+function ToCities(){
+    cities = true;
+}
+
+
+function ToInfoCards(){
+    if(wildfires === true){
+        window.location.pathname = '/WhatCard';
+    }else{
+        alert('nope');
+    }
 }
 
 export default ChooseSubCategory;
