@@ -175,7 +175,7 @@ function ToInfoCards(){
     if(wildfires === true){
         window.location.pathname = '/WhatCard';
     }else{
-        alert('nope');
+        // alert('nope');
     }
 }
 
