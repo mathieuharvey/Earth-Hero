@@ -1,6 +1,5 @@
 import React from 'react';
 import './home-page.css';
-import GreenButton from '../../comps/Green-button';
 import Link from 'next/link';
 import {mydata, ChangeData} from '../data';
 
@@ -30,8 +29,5 @@ const HomePage = () => <div id='home-page'>
 
 </div>
 
-function DefaultClick(){
-    alert("Default function");
-}
 
 export default HomePage;

@@ -3,24 +3,25 @@ import './information.css';
 import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
 import InfoCard from '../../comps/Information Cards';
-import Link from 'next/Link';
+import Router from 'next/router';
 
-var CardSideImg = require('../../images/card-side.svg');
+var CardSideImg = require('../../images/card-side.png');
+var wildfires1 = require('../../images/wildfire_1.png')
 
 const WhatCard = () => <div id="whatcard">
     <Icon />
     <div>
-        <InfoCard onClick={() => {<Link href='/ProblemCard'>{document.querySelector("#card-button")}</Link>}}
-            category="Category"
+        <InfoCard
+            category="Wildfires"
             title="What is it?"
             text="Wildfires are fires that are out of control and burn in the wildland vegetation. They can burn forests, savannas, grasslands, and many other ecosystems. Wildfires can start from either natural occurrence or by humans. For instance, a natural occurrence would be a lightning strike, and a human cause could be from making a spark. Wildfires are most prone to start when the ecosystem is dry. This is why areas where it does not rain often are most likely to have wildfires. Sometimes wildfires can be good for the ecosystems by killing bad diseases and insects that harm trees, but quite often wildfires spread fast and are very dangerous."
-            button="Got it!" 
-            />
+            button="Got it!"
+            buttonid='/ProblemCard'/>
     </div>
     <Menu />
-        <img id='card-side-right' src={CardSideImg} />
+    <img id='card-side-right' src={CardSideImg} onClick={() => {Router.push('/ProblemCard')}}/>
+    <img id='wildfires-1' src={wildfires1}/>
     </div>
-
 
 
 export default WhatCard;

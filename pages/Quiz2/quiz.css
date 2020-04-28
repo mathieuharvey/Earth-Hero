@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+    #quiz-container {
+        font-family: 'Baloo Thambi 2', cursive;
+        margin: 50px;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    #quiz-category {
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 18px;
+        color: rgba(112, 112, 112);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+    }
+    #quiz-information {
+        display: flex;
+        justify-content: space-between;
+    }
+    #quiz-question {
+        font-size: 16px;
+        text-align: center;
+        color: rgba(112, 112, 112);
+        margin-top: 58px;
+        margin-bottom: 42px;
+    }
+    .quiz-choices {
+        display: flex;
+        align-items: center;
+    }
+    .circle {
+        cursor: pointer;
+    }
+
+        /* css for radio butons */
+        .container1{
+            display: block;
+            position: relative;
+            /* margin-left: 0px;
+            padding-left: 10px;
+            margin-top: 10%; */
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
+        }
+
+        .container1 p {
+            padding-left: 40px;
+            line-height: 0;
+            padding-bottom: 5px;
+        }
+
+        .container1 input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .checkmark {
+            position: absolute;
+            left: 0;
+            height: 24px;
+            width: 24px;
+            box-shadow: 0px 3px 5px #7c7c7c8f;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .container1 input:checked ~ .checkmark {
+            background-color: white;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+            /* transition: 0.3s ease-in-out; */
+        }
+        .container1 input:checked ~ .checkmark:after {
+            display: block;
+        }
+        .container1 .checkmark:after {
+            top: 4px;
+            left: 4px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #46c75f;
+        }
+        /* end of css for radio buttons */
+        #button1{
+            padding: 10px 60px 10px 60px;
+            background-color: #8f8f8f65;
+            border-radius: 50px;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 18pt;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            margin-top: 10%;
+            top: 100px;
+            }        
+            #Button-text{
+                display: flex;
+                justify-content: center;
+            }
+    @media (max-width: 400px){
+
+    }

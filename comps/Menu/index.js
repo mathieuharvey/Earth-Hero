@@ -2,11 +2,14 @@ import React from 'react';
 import './menu.css';
 import Link from 'next/link';
 
+const Hamburger = require('./hamburger.svg');
+
 const Menu = () => <div>
 
-<span id='hamburger' onClick={MenuToggle} className="material-icons">
+<img id='hamburger' onClick={MenuToggle} src={Hamburger} />
+{/* <span id='hamburger' onClick={MenuToggle} className="material-icons">
         menu
-    </span>
+    </span> */}
  <div id='menu'>
     <div id='x-div'>
         
@@ -44,8 +47,8 @@ const Menu = () => <div>
     </div>
 </div>
 
+<div id='gray' onClick={CloseMenu}></div>
 
-<div id='app' onClick={CloseMenu}></div>
 </div>
 
 //functions
@@ -62,7 +65,8 @@ function MenuToggle(){
 function OpenMenu(){
     document.querySelector("#menu").style.right = "0";
     document.querySelector("#hamburger").style.opacity = '0';
-    document.querySelector("body").style.backgroundColor = 'rgba(180,180,180,0.5)';
+    document.querySelector("#gray").style.display = 'block';
+    document.querySelector("#gray").style.backgroundColor = 'rgba(180,180,180,0.5)';
 
     setTimeout(function(){
         // document.querySelector("#menu").style.opacity = 1;
@@ -79,7 +83,7 @@ function CloseMenu(){
         
     }, 400);
     document.querySelector("#menu").style.right = "-65vw";
-    document.querySelector("body").style.backgroundColor = 'transparent';
+    document.querySelector("#gray").style.display = 'none';
 
     // document.querySelector("#menu").style.opacity = 0;
     menu_state = false;

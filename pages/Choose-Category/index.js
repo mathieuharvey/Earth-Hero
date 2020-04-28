@@ -2,6 +2,7 @@ import React from 'react';
 import './choose-category.css';
 import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
+import Link from 'next/link';
 
 const GlobalWarmingImg = require('./globalwarming.png');
 const PollutionImg = require('./pollution.png');
@@ -24,8 +25,8 @@ const ChooseCategory = () => <div id='choose-category'>
 
     <p id='pollution-title'>Pollution</p>
 
-    <div id='Button-text'>
-        <div id='button'>Next</div>
+    <div onClick={ToGlobalWarmingSubcat} id='Button-text'>
+        <div onClick={ToGlobalWarmingSubcat} id='button'>Next</div>
     </div>
     <div><Menu /></div>
 </div>
@@ -64,6 +65,14 @@ function PollutionSelected(){
     document.querySelector("#globalwarming").style.height = '15vh';
     document.querySelector("#globalwarming").style.border = 'none';
     globalwarming_state = false;
+    }
+}
+
+function ToGlobalWarmingSubcat(){
+    if(globalwarming_state === true){
+        window.location.pathname = '/Choose-Subcategory';
+    }else if(pollution_state === true){
+        window.location.pathname = '/Pollution-Subcategory';
     }
 }
 // var pollution_state = false;

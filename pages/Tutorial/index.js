@@ -6,13 +6,20 @@ import Menu from '../../comps/Menu';
 import Link from 'next/link';
 
 const iconImg = require('./favicon.png');
+const Tut1 = require('./tutorialgif1.gif');
+const Tut2 = require('./tut2.gif');
+const Tut3 = require('./tut3.gif');
 
 const Tutorial = () => <div id='tutorial-page'>
     <div id='tutorial-subdiv'>
         
         <div><Icon /></div>
         <div id='tutorial-container'>
-            <div id='tutorial'></div>
+            <div id='tutorial'>
+                <img id='tut1' src={Tut1} />
+                <img id='tut2' src={Tut2} />
+                <img id='tut3' src={Tut3} />
+            </div>
         </div>
 
         <div id='explanation-container'>
@@ -47,10 +54,14 @@ function SwitchMessage(){
     if(switch_state === false){
     document.querySelector("#explanation1").style.display = 'none';
     document.querySelector("#explanation2").style.display = 'flex';
+    document.querySelector("#tut1").style.display = 'none';
+    document.querySelector("#tut2").style.display = 'block';
     switch_state = true;
     }else if(switch_state === true){
         document.querySelector("#explanation2").style.display = 'none';
         document.querySelector("#explanation3").style.display = 'flex';
+        document.querySelector("#tut3").style.display = 'block';
+        document.querySelector("#tut2").style.display = 'none';
         document.querySelector("#next").style.display = 'none';
         document.querySelector("#start").style.display = 'flex';
     }

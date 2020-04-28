@@ -7,23 +7,35 @@
         z-index: 0;
         transition: 0.4s;
     }
-    #app{
-        /* margin: 0;
-        width: 100vw;
+    #gray{
         height: 100vh;
-        z-index: 0; */
-        min-height: 100%;
-        min-width: 100vw;
+        width: 100vw;
+        z-index: 0;
+        transition: 0.4s;
+        position: absolute;
+        top: 0;
+        right:0;
+        display: none;
     }
     #hamburger{
         display: flex;
         justify-content: flex-end;
         cursor: pointer;
-        font-size: 43pt;
+        /* font-size: 43pt; */
+        height: 45px;
+        width: 50px;
+        margin: 10px;
         transition: 0.25s;
         top: 0;
         right: 0;
         position: absolute;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     #menu{
         width: 65vw;
@@ -35,6 +47,14 @@
         transition: 0.5s;
         background-color: white;
         top: 0;
+        z-index: 10;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     #x-div{
         margin-top: 13%;
