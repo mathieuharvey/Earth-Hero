@@ -2,6 +2,8 @@ import React from 'react';
 import './pollutionsubcategory.css';
 import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
+import {data, ChangeData} from '../../data';
+import Router from 'next/router';
 
 const PollutionSubcategory = () => <div id='pollution-subcategory'>
 
@@ -25,20 +27,29 @@ const PollutionSubcategory = () => <div id='pollution-subcategory'>
 
 <div id='air-options'>
 
-        <label  onClick={HighlightButton} className='container'>Carbon Footprint
-            <input type='radio' name='radio' className='circle' />
+        <label  onClick={()=>{
+            HighlightButton();
+            ChooseSub("carbonfootprint");
+            }} className='container'>Carbon Footprint
+            <input onClick={SelectedChoice} type='radio' name='radio' className='circle' />
             <span  onClick={HighlightButton} className='checkmark'></span>
             </label>
         
 
-        <label  onClick={HighlightButton} className='container'>Acid Rain
-            <input type='radio' name='radio' />
+        <label  onClick={()=>{
+            HighlightButton();
+            ChooseSub("acidrain");
+            }} className='container'>Acid Rain
+            <input onClick={SelectedChoice} type='radio' name='radio' />
             <span  onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
-        <label onClick={HighlightButton} className='container'>Respiratory Problems
-            <input type='radio' name='radio' />
+        <label onClick={()=>{
+            HighlightButton();
+            ChooseSub("respiratoryproblems");
+            }} className='container'>Respiratory Problems
+            <input onClick={SelectedChoice} type='radio' name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
 
@@ -53,27 +64,36 @@ const PollutionSubcategory = () => <div id='pollution-subcategory'>
 <div id='container2' onClick={ToggleWater}>
     <div className='drop-down'>
         <p id='droughts'>Water</p>
-        <span id='down-arrow2' class="material-icons">
+        <span id='down-arrow2' className="material-icons">
             keyboard_arrow_down
         </span>
     </div>
 </div>
 
 <div id='water-options'>
-<label onClick={HighlightButton} className='container'>Marine Life
-            <input type='radio' name='radio' />
+<label onClick={()=>{
+            HighlightButton();
+            ChooseSub("marinelife");
+            }} className='container'>Marine Life
+            <input onClick={SelectedChoice} type='radio' name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
-        <label onClick={HighlightButton} className='container'>Eutrophication
-            <input type='radio' name='radio' />
+        <label onClick={()=>{
+            HighlightButton();
+            ChooseSub("eutrophication");
+            }} className='container'>Eutrophication
+            <input onClick={SelectedChoice} type='radio' name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
-        <label onClick={HighlightButton} className='container'>Drinking Water
-            <input type='radio' name='radio' />
+        <label onClick={()=>{
+            HighlightButton();
+            ChooseSub("drinkingwater");
+            }} className='container'>Drinking Water
+            <input onClick={SelectedChoice} type='radio' name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
     
@@ -87,21 +107,27 @@ const PollutionSubcategory = () => <div id='pollution-subcategory'>
 <div id='container2' onClick={ToggleLand}>
     <div className='drop-down'>
         <p id='droughts'>Land</p>
-        <span id='down-arrow3' class="material-icons">
+        <span id='down-arrow3' className="material-icons">
             keyboard_arrow_down
         </span>
     </div>
 </div>
 
 <div id='land-options'>
-<label onClick={HighlightButton} className='container'>Cities
-            <input type='radio' name='radio' />
+<label onClick={()=>{
+            HighlightButton();
+            ChooseSub("pollutioncities");
+            }} className='container'>Cities
+            <input onClick={SelectedChoice} type='radio' name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
-        <label onClick={HighlightButton} className='container'>Wildlife
-            <input type='radio' name='radio' />
+        <label onClick={()=>{
+            HighlightButton();
+            ChooseSub("pollutionwildlife");
+            }} className='container'>Wildlife
+            <input onClick={SelectedChoice} type='radio' name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
     
@@ -111,8 +137,8 @@ const PollutionSubcategory = () => <div id='pollution-subcategory'>
 
 
 
-<div id='Button-text'>
-        <div id='button'>Next</div>
+<div onClick={ToInfoCards} id='Button-text'>
+        <div onClick={ToInfoCards} id='button'>Next</div>
     </div>
 
 
@@ -171,5 +197,24 @@ function HighlightButton(){
     document.querySelector("#button").style.backgroundColor = '#46c75f';
 }
 
+function ChooseSub(name){
+    console.log(data);
+    data.subcategory = name;
+    data.category = name;
+    ChangeData({subcategory: name, category: name});
+}
+
+var selected = false;
+function SelectedChoice(){
+    selected = true;
+}
+
+function ToInfoCards(){
+    if(selected === true){
+        Router.push('/WhatCard');
+    }else{
+        //
+    }
+}
 
 export default PollutionSubcategory;

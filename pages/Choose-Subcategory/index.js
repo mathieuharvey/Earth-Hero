@@ -3,6 +3,7 @@ import './choose-subcategory.css';
 import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
 import {data, ChangeData} from '../../data';
+import Router from 'next/router';
 
 const ChooseSubCategory = () => <div id='choose-subcategory'>
     <div id='flex-icons'>
@@ -26,7 +27,6 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 <div id='drought-options'>
 
         <label  onClick={()=>{
-            console.log("clicked");
             HighlightButton();
             ChooseSub("wildfires");
             }} className='container'>Wildfires
@@ -44,13 +44,19 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
         </label>
 
 
-        <label onClick={HighlightButton} className='container'>Famine
+        <label onClick={()=>{
+            HighlightButton();
+            ChooseSub("famine");
+            }} className='container'>Famine
             <input type='radio' onClick={SelectedChoice} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
-        <label onClick={HighlightButton} className='container'>Wildlife
+        <label onClick={()=>{
+            HighlightButton();
+            ChooseSub("wildlife");
+            }} className='container'>Wildlife
             <input type='radio' onClick={SelectedChoice} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
@@ -72,13 +78,19 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 </div>
 
 <div id='flood-options'>
-<label onClick={HighlightButton} className='container'>Iceberg Melting
+<label onClick={()=>{
+            HighlightButton();
+            ChooseSub("icebergmelting");
+            }} className='container'>Iceberg Melting
             <input type='radio' onClick={SelectedChoice} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
-        <label onClick={HighlightButton} className='container'>Cities
+        <label onClick={()=>{
+            HighlightButton();
+            ChooseSub("cities");
+            }} className='container'>Cities
             <input type='radio' onClick={SelectedChoice} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
@@ -179,9 +191,10 @@ function HighlightButton(){
 // }
 
 function ChooseSub(name){
-    data.subcategory = name;
     console.log(data);
-    ChangeData({subcategory: name});
+    data.subcategory = name;
+    data.category = name;
+    ChangeData({subcategory: name, category: name});
 }
 
 
@@ -192,7 +205,7 @@ function SelectedChoice(){
 
 function ToInfoCards(){
     if(selected === true){
-        window.location.pathname = '/WhatCard';
+        Router.push('/WhatCard');
     }else{
         //
     }
