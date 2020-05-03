@@ -194,6 +194,10 @@ function ChooseSub(name){
     console.log(data);
     data.subcategory = name;
     data.category = name;
+    data.help1 = name;
+    data.help2 = name;
+    data.help3 = name;
+    data.help4 = name;
     ChangeData({subcategory: name, category: name});
 }
 
