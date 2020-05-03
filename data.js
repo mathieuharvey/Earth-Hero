@@ -1,6 +1,10 @@
 export var data = {
     subcategory:"",
-    category: ""
+    category: "",
+    help1: "",
+    help2: "",
+    help3: "",
+    help4: ""
 }
 
 

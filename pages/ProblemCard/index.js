@@ -24,7 +24,7 @@ const ProblemCard = () => {
         text = "Famines cause people to develop serious diseases, and quite often death from starvation. Famines cause millions to suffer from hunger and starvation. Depending on how severe the famine is or how long it lasts, it can wipe out large numbers of people.";
         category = "Famine";
     }else if(data.subcategory === "wildlife"){
-        text = "Droughts harming the wildlife is no good. Imagine the place you live in being destroyed, and you have no supply of food or water. And on top of that, you are at risk of deadly diseases! This is why droughts affecting the wildlife is a huge concern that should be taken seriously";
+        text = "Droughts harming the wildlife is no good. Imagine the place you live in being destroyed, and you have no supply of food or water. And on top of that, you are at risk of deadly diseases! This is why droughts affecting the wildlife is a huge concern that should be taken seriously.";
         category = "Wildlife";
     }else if(data.subcategory === "icebergmelting"){
         text = "If icebergs are melting over the years, where is all that ice going? Well, it’s being melted into water right into the ocean which is now causing sea levels to rise. These rising sea levels can now lead to more problems such as flooding and erosion in some areas. Iceberg melting even puts polar bears in harm! This is because they have to swim farther between icebergs when hunting for food and are exerting more energy. This causes them to physically suffer and are struggling to reproduce. They are now listed as a threatened species.";
