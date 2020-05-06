@@ -29,12 +29,29 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_one-container'>
 
             <div id='answer_one'>
-                <label  onClick={BlueButton} className='container' >Question 1
-                    <span  onClick={BlueButton} ></span>
-                    </label>
+                
+                <p className='container' >
+                    Question 1 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 2 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 3 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 4 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 5 <span className='scorenum'>0/1</span>
+                </p>
                 
 
-                <label  onClick={BlueButton} className='container'>Question 2
+                {/* <label  onClick={BlueButton} className='container'>Question 2
                     <span  onClick={BlueButton} ></span>
                 </label>
 
@@ -50,7 +67,7 @@ const ScorePage = () => <div id='score-page'>
 
                 <label onClick={BlueButton} className='container'>Question 5
                     <span onClick={BlueButton} ></span>
-                </label>
+                </label> */}
 
             </div>
     
@@ -65,7 +82,7 @@ const ScorePage = () => <div id='score-page'>
 
 {/* Topic 2 */}
 <div id='container' onClick={ToggleTwo}>
-            <div className='drop-down1'>
+            <div className='drop-down2'>
                 <p id='topic-two'>Topic 2</p>
                 <span id='down-arrow2' className="material-icons">
                     keyboard_arrow_down
@@ -77,7 +94,28 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_two-container'>
 
             <div id='answer_two'>
-                <label  onClick={TwoButton} className='container' >Question 1
+
+                <p className='container' >
+                    Question 1 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 2 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 3 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 4 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 5 <span className='scorenum'>0/1</span>
+                </p>
+
+                {/* <label  onClick={TwoButton} className='container' >Question 1
                     <span  onClick={TwoButton} ></span>
                     </label>
                 
@@ -99,7 +137,7 @@ const ScorePage = () => <div id='score-page'>
                 <label onClick={TwoButton} className='container'>Question 5
                     <span onClick={TwoButton} ></span>
                 </label>
-
+ */}
             </div>
     
             <div id='Button-text'>
@@ -112,7 +150,7 @@ const ScorePage = () => <div id='score-page'>
 
 {/* Topic 3 */}
 <div id='container' onClick={ToggleThree}>
-            <div className='drop-down1'>
+            <div className='drop-down3'>
                 <p id='topic-three'>Topic 3</p>
                 <span id='down-arrow3' className="material-icons">
                     keyboard_arrow_down
@@ -124,7 +162,28 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_three-container'>
 
             <div id='answer_three'>
-                <label  onClick={ThreeButton} className='container' >Question 1
+
+                <p className='container' >
+                    Question 1 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 2 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 3 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 4 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 5 <span className='scorenum'>0/1</span>
+                </p>
+
+                {/* <label  onClick={ThreeButton} className='container' >Question 1
                     <span  onClick={ThreeButton} ></span>
                     </label>
                 
@@ -145,7 +204,7 @@ const ScorePage = () => <div id='score-page'>
 
                 <label onClick={ThreeButton} className='container'>Question 5
                     <span onClick={ThreeButton} ></span>
-                </label>
+                </label> */}
 
             </div>
     
@@ -159,7 +218,7 @@ const ScorePage = () => <div id='score-page'>
 
 {/* Topic 4 */}
 <div id='container' onClick={ToggleFour}>
-            <div className='drop-down1'>
+            <div className='drop-down4'>
                 <p id='topic-four'>Topic 4</p>
                 <span id='down-arrow4' className="material-icons">
                     keyboard_arrow_down
@@ -171,7 +230,28 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_four-container'>
 
             <div id='answer_four'>
-                <label  onClick={FourButton} className='container' >Question 1
+
+                <p className='container' >
+                    Question 1 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 2 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 3 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 4 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 5 <span className='scorenum'>0/1</span>
+                </p>
+
+                {/* <label  onClick={FourButton} className='container' >Question 1
                     <span  onClick={FourButton} ></span>
                     </label>
                 
@@ -193,7 +273,7 @@ const ScorePage = () => <div id='score-page'>
                 <label onClick={FourButton} className='container'>Question 5
                     <span onClick={FourButton} ></span>
                 </label>
-
+ */}
             </div>
     
             <div id='Button-text'>
@@ -206,7 +286,7 @@ const ScorePage = () => <div id='score-page'>
 
 {/* Topic 5 */}
 <div id='container' onClick={ToggleFive}>
-            <div className='drop-down1'>
+            <div className='drop-down5'>
                 <p id='topic-five'>Topic 5</p>
                 <span id='down-arrow5' className="material-icons">
                     keyboard_arrow_down
@@ -218,7 +298,28 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_five-container'>
 
             <div id='answer_five'>
-                <label  onClick={FiveButton} className='container' >Question 1
+
+                <p className='container' >
+                    Question 1 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 2 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 3 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 4 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 5 <span className='scorenum'>0/1</span>
+                </p>
+
+                {/* <label  onClick={FiveButton} className='container' >Question 1
                     <span  onClick={FiveButton} ></span>
                     </label>
                 
@@ -240,7 +341,7 @@ const ScorePage = () => <div id='score-page'>
                 <label onClick={FiveButton} className='container'>Question 5
                     <span onClick={FiveButton} ></span>
                 </label>
-
+ */}
             </div>
     
             <div id='Button-text'>
@@ -253,7 +354,7 @@ const ScorePage = () => <div id='score-page'>
 
 {/* Topic 6 */}
 <div id='container' onClick={ToggleSix}>
-            <div className='drop-down1'>
+            <div className='drop-down6'>
                 <p id='topic-six'>Topic 6</p>
                 <span id='down-arrow6' className="material-icons">
                     keyboard_arrow_down
@@ -265,7 +366,28 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_six-container'>
 
             <div id='answer_six'>
-                <label  onClick={SixButton} className='container' >Question 1
+
+                <p className='container' >
+                    Question 1 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 2 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 3 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 4 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 5 <span className='scorenum'>0/1</span>
+                </p>
+
+                {/* <label  onClick={SixButton} className='container' >Question 1
                     <span  onClick={SixButton} ></span>
                     </label>
                 
@@ -287,7 +409,7 @@ const ScorePage = () => <div id='score-page'>
                 <label onClick={SixButton} className='container'>Question 5
                     <span onClick={SixButton} ></span>
                 </label>
-
+ */}
             </div>
     
             <div id='Button-text'>
@@ -300,7 +422,7 @@ const ScorePage = () => <div id='score-page'>
 
 {/* Topic 7 */}
 <div id='container' onClick={ToggleSeven}>
-            <div className='drop-down1'>
+            <div className='drop-down7'/*onClick={WhiteTopic}*/>
                 <p id='topic-seven'>Topic 7</p>
                 <span id='down-arrow7' className="material-icons">
                     keyboard_arrow_down
@@ -312,7 +434,28 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_seven-container'>
 
             <div id='answer_seven'>
-                <label  onClick={SevenButton} className='container' >Question 1
+
+                <p className='container' id='one'>
+                    Question 1 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 2 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 3 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' >
+                    Question 4 <span className='scorenum'>0/1</span>
+                </p>
+                
+                <p className='container' id='five' >
+                    Question 5 <span className='scorenum'>0/1</span>
+                </p>
+
+                {/* <label  onClick={SevenButton} className='container' >Question 1
                     <span  onClick={SevenButton} ></span>
                     </label>
                 
@@ -334,7 +477,7 @@ const ScorePage = () => <div id='score-page'>
                 <label onClick={SevenButton} className='container'>Question 5
                     <span onClick={SevenButton} ></span>
                 </label>
-
+ */}
             </div>
     
             <div id='Button-text'>
@@ -464,29 +607,31 @@ function ToggleSeven(){
         seven_state = false;
     }
 }
+// function WhiteTopic(){
+//     document.querySelector(".drop-down7").style.backgroundColor = 'white';
+// }
 
-
-function BlueButton(){
-    document.querySelector("#button1").style.backgroundColor = '#46c75f';
-}
-function TwoButton(){
-    document.querySelector("#button2").style.backgroundColor = '#46c75f';
-}
-function ThreeButton(){
-    document.querySelector("#button3").style.backgroundColor = '#46c75f';
-}
-function FourButton(){
-    document.querySelector("#button4").style.backgroundColor = '#46c75f';
-}
-function FiveButton(){
-    document.querySelector("#button5").style.backgroundColor = '#46c75f';
-}
-function SixButton(){
-    document.querySelector("#button6").style.backgroundColor = '#46c75f';
-}
-function SevenButton(){
-    document.querySelector("#button7").style.backgroundColor = '#46c75f';
-}
+// function BlueButton(){
+//     document.querySelector("#button1").style.backgroundColor = '#46c75f';
+// }
+// function TwoButton(){
+//     document.querySelector("#button2").style.backgroundColor = '#46c75f';
+// }
+// function ThreeButton(){
+//     document.querySelector("#button3").style.backgroundColor = '#46c75f';
+// }
+// function FourButton(){
+//     document.querySelector("#button4").style.backgroundColor = '#46c75f';
+// }
+// function FiveButton(){
+//     document.querySelector("#button5").style.backgroundColor = '#46c75f';
+// }
+// function SixButton(){
+//     document.querySelector("#button6").style.backgroundColor = '#46c75f';
+// }
+// function SevenButton(){
+//     document.querySelector("#button7").style.backgroundColor = '#46c75f';
+// }
 
  ScorePage.defaultProps
 export default ScorePage;

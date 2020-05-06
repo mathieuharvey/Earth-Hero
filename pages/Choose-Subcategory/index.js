@@ -2,6 +2,8 @@ import React from 'react';
 import './choose-subcategory.css';
 import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
+import {data, ChangeData} from '../../data';
+import Router from 'next/router';
 
 const ChooseSubCategory = () => <div id='choose-subcategory'>
     <div id='flex-icons'>
@@ -24,26 +26,38 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 
 <div id='drought-options'>
 
-        <label  onClick={HighlightButton} className='container'>Wildfires
-            <input type='radio' name='radio' onClick={ToWildfires} className='circle' />
+        <label  onClick={()=>{
+            HighlightButton();
+            ChooseSub("wildfires");
+            }} className='container'>Wildfires
+            <input type='radio' name='radio' onClick={SelectedChoice} className='circle' />
             <span  onClick={HighlightButton} className='checkmark'></span>
             </label>
         
 
-        <label  onClick={HighlightButton} className='container'>Water Shortage
-            <input type='radio' onClick={ToWaterShortage} name='radio' />
+        <label  onClick={()=>{
+            HighlightButton();
+            ChooseSub("watershortage");
+            }} className='container'>Water Shortage
+            <input type='radio' onClick={SelectedChoice} name='radio' />
             <span  onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
-        <label onClick={HighlightButton} className='container'>Famine
-            <input type='radio' onClick={ToFamine} name='radio' />
+        <label onClick={()=>{
+            HighlightButton();
+            ChooseSub("famine");
+            }} className='container'>Famine
+            <input type='radio' onClick={SelectedChoice} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
-        <label onClick={HighlightButton} className='container'>Wildlife
-            <input type='radio' onClick={ToWildlife} name='radio' />
+        <label onClick={()=>{
+            HighlightButton();
+            ChooseSub("wildlife");
+            }} className='container'>Wildlife
+            <input type='radio' onClick={SelectedChoice} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
     
@@ -64,14 +78,20 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 </div>
 
 <div id='flood-options'>
-<label onClick={HighlightButton} className='container'>Iceberg Melting
-            <input type='radio' onClick={ToIcebergMelting} name='radio' />
+<label onClick={()=>{
+            HighlightButton();
+            ChooseSub("icebergmelting");
+            }} className='container'>Iceberg Melting
+            <input type='radio' onClick={SelectedChoice} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
 
 
-        <label onClick={HighlightButton} className='container'>Cities
-            <input type='radio' onClick={ToCities} name='radio' />
+        <label onClick={()=>{
+            HighlightButton();
+            ChooseSub("cities");
+            }} className='container'>Cities
+            <input type='radio' onClick={SelectedChoice} name='radio' />
             <span onClick={HighlightButton} className='checkmark'></span>
         </label>
     
@@ -128,54 +148,70 @@ function HighlightButton(){
 }
 
 
-var wildfires = false;
-function ToWildfires(){
-    wildfires = true;
-    // document.querySelector("#button").href = 'http://localhost:3000/WhatCard';
-    // window.location.pathname = '/WhatCard';
+// var wildfires = false;
+// function ToWildfires(){
+//     wildfires = true;
+//     // document.querySelector("#button").href = 'http://localhost:3000/WhatCard';
+//     // window.location.pathname = '/WhatCard';
+// }
+
+// var watershortage = false;
+// function ToWaterShortage(){
+//     if(watershortage === false){
+//         watershortage = true;
+// }else if(watershortage === true){
+//     ToFamine();
+//     ToWildlife();
+//     ToIcebergMelting();
+//     ToCities();
+//     ToWildfires();
+//     watershortage = false;
+// }
+// }
+
+
+// var famine = false;
+// function ToFamine(){
+//     famine = true;
+// }
+
+// var wildlife = false;
+// function ToWildlife(){
+//     wildlife = true;
+// }
+
+// var icebergmelting = false;
+// function ToIcebergMelting(){
+//     icebergmelting = true;
+// }
+
+// var cities = false;
+// function ToCities(){
+//     cities = true;
+// }
+
+function ChooseSub(name){
+    console.log(data);
+    data.subcategory = name;
+    data.category = name;
+    data.help1 = name;
+    data.help2 = name;
+    data.help3 = name;
+    data.help4 = name;
+    ChangeData({subcategory: name, category: name});
 }
 
-var watershortage = false;
-function ToWaterShortage(){
-    if(watershortage === false){
-        watershortage = true;
-}else if(watershortage === true){
-    ToFamine();
-    ToWildlife();
-    ToIcebergMelting();
-    ToCities();
-    ToWildfires();
-    watershortage = false;
-}
-}
 
-
-var famine = false;
-function ToFamine(){
-    famine = true;
+var selected = false;
+function SelectedChoice(){
+    selected = true;
 }
-
-var wildlife = false;
-function ToWildlife(){
-    wildlife = true;
-}
-
-var icebergmelting = false;
-function ToIcebergMelting(){
-    icebergmelting = true;
-}
-
-var cities = false;
-function ToCities(){
-    cities = true;
-}
-
 
 function ToInfoCards(){
-    if(wildfires === true){
-        window.location.pathname = '/WhatCard';
+    if(selected === true){
+        Router.push('/WhatCard');
     }else{
-        // alert('nope');
+        //
     }
 }
 

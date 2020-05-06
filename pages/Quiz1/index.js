@@ -1,50 +1,133 @@
-import React from 'react';
+import {useState} from 'react';
 import './quiz.css';
-import Link from 'next/link';
-import Icon from '../../comps/Icon';
-import Menu from '../../comps/Menu';
+import Router from 'next/router';
+import Quiz from '../../comps/Quiz';
 
-const Quiz1 = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizChoice2, quizChoice3, quizChoice4}) => <div>
- <Icon />
-    <div id='quiz-container'>
-        <div id="quiz-category">{category}</div>
-        <div id="quiz-information">
-            <div id="quiz-question-number">{quizName}</div>
-            <div>{quizNumber}</div>
-        </div>
-        <hr />
-        <div id="quiz-question" >{quizQuestion}</div>
-        <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice1}</p>
-                <input onClick={SelectedChoice} type='radio' name='radio' />
-                <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
-            </label>
-        </div>
-        <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice2}</p>
-                <input onClick={SelectedChoice} type='radio' name='radio' />
-                <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
-            </label>
-        </div>
-        <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice3}</p>
-                <input onClick={SelectedChoice} type='radio' name='radio' />
-                <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
-            </label>
-        </div>
-        {/* <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice4}</p>
-                <input type='radio' name='radio' />
-                <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
-            </label>
-        </div> */}
-        <div onClick={NextQuizQuestion} id='Button-text'>
-            <div onClick={NextQuizQuestion} id='button1'>Next</div>
-        </div>
+import {data} from '../../data';
 
+var index = 0;
+const quizarray = [
+    "Second question",
+    "Third question",
+    "Fourth Question",
+    "fifth quesiton"
+]
+
+
+
+
+const Quiz1 = () => {
+
+    var category = "";
+    var quizName = "";
+    var quizNumber = "";
+    var quizQuestion = "";
+    var quizChoice1 = "";
+    var quizChoice2 = "";
+    var quizChoice3 = "";
+    var quizChoice4 = "";
+    var buttonid = "";
+    if(data.subcategory === "wildfiresquiz"){
+        category = "Wildfires";
+        quizName = "Question 1";
+        quizNumber = "1/5";
+        quizQuestion = "What kind of environments are very likely to have wildfires start?";
+        quizChoice1 = "Wet and rainy environments";
+        quizChoice2 = "Dry environments";
+        quizChoice3 = "Snowy and cold environments";
+        buttonid = '';
+    }else if(data.subcategory === "watershortagequiz"){
+        category = "Water Shortage";
+        quizName = "Question 1";
+        quizNumber = "1/5";
+        quizQuestion = "True or false: Dry environments tend to suffer from water shortage more than wet environments.";
+        quizChoice1 = "True";
+        quizChoice2 = "False";
+        buttonid = switchQuestion;
+    }else if(data.subcategory === "faminequiz"){
+        category = "Famine";
+        quizName = "Question 1";
+        quizNumber = "1/5";
+        quizQuestion = "What is a famine?";
+        quizChoice1 = "A surplus amount of food in an area";
+        quizChoice2 = "A lack of water in an area";
+        quizChoice3 = "An extreme shortage of food in an area";
+        quizChoice4 = "An area that is very dry";
+        buttonid = '';
+    }
+
+    const [switchQuestion] = useState("");
+console.log(buttonid);
+    return <div id='quizcomp'>
+        {data.buttonid === <div id='button1' onClick={()=>{
+        switchQuestion(quizarray[index]);
+        index++; 
+        }
+    } />}
+        
+    <div>
+        <Quiz
+        category = {category}
+        quizName = {quizName}
+        quizNumber = {quizNumber}
+        quizQuestion = {quizQuestion}
+        quizChoice1 = {quizChoice1}
+        quizChoice2 = {quizChoice2}
+        quizChoice3 = {quizChoice3}
+        quizChoice4 = {quizChoice4}
+        buttonid={buttonid}
+        />
     </div>
-    <Menu />
-</div>
+    </div>
+    
+}
+
+
+
+
+
+
+// const Quiz1 = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizChoice2, quizChoice3, quizChoice4}) => <div>
+//  <Icon />
+//     <div id='quiz-container'>
+//         <div id="quiz-category">{category}</div>
+//         <div id="quiz-information">
+//             <div id="quiz-question-number">{quizName}</div>
+//             <div>{quizNumber}</div>
+//         </div>
+//         <hr />
+//         <div id="quiz-question" >{quizQuestion}</div>
+//         <div className="quiz-choices">
+//             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice1}</p>
+//                 <input onClick={SelectedChoice} type='radio' name='radio' />
+//                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
+//             </label>
+//         </div>
+//         <div className="quiz-choices">
+//             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice2}</p>
+//                 <input onClick={SelectedChoice} type='radio' name='radio' />
+//                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
+//             </label>
+//         </div>
+//         <div className="quiz-choices">
+//             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice3}</p>
+//                 <input onClick={SelectedChoice} type='radio' name='radio' />
+//                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
+//             </label>
+//         </div>
+//         {/* <div className="quiz-choices">
+//             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice4}</p>
+//                 <input type='radio' name='radio' />
+//                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
+//             </label>
+//         </div> */}
+//         <div onClick={NextQuizQuestion} id='Button-text'>
+//             <div onClick={NextQuizQuestion} id='button1'>Next</div>
+//         </div>
+
+//     </div>
+//     <Menu />
+// </div>
 
 function HighlightButtonQuiz(){
     document.querySelector("#button1").style.backgroundColor = '#46c75f';
@@ -64,6 +147,8 @@ function NextQuizQuestion(){
     }
 }
 //
+
+
 
 Quiz1.defaultProps = {
     category: "Wildfires",
