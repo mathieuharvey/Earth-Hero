@@ -1,6 +1,8 @@
 export var data = {
     subcategory:"",
     category: "",
+    lessons:"",
+    quiz:"",
     help1: "",
     help2: "",
     help3: "",
