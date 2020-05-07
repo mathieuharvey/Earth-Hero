@@ -15,43 +15,43 @@ const LessonCompleted = () => {
     if(data.lessons === "wildfireslesson"){
         category = "wildfires";
         ChangeQuiz("wildfiresquiz");
-    }else if(data.subcategory === "watershortagelesson"){
+    }else if(data.lessons === "watershortagelesson"){
         category = "water shortage";
         ChangeQuiz("watershortagequiz");
-    }else if(data.subcategory === "faminelesson"){
+    }else if(data.lessons === "faminelesson"){
         category = "famine";
         ChangeQuiz("faminequiz");
-    }else if(data.subcategory === "wildlifelesson"){
+    }else if(data.lessons === "wildlifelesson"){
         category = "wildlife affected by global warming";
         ChangeQuiz("wildlifequiz");
-    }else if(data.subcategory === "icebergmeltinglesson"){
+    }else if(data.lessons === "icebergmeltinglesson"){
         category = "iceberg melting";
         ChangeQuiz("icebergmeltingquiz");
-    }else if(data.subcategory === "citieslesson"){
+    }else if(data.lessons === "citieslesson"){
         category = "cities affected by global warming";
         ChangeQuiz("citiesquiz");
-    }else if(data.subcategory === "carbonfootprintlesson"){
+    }else if(data.lessons === "carbonfootprintlesson"){
         category = "carbon footprints";
         ChangeQuiz("carbonfootprintquiz");
-    }else if(data.subcategory === "acidrainlesson"){
+    }else if(data.lessons === "acidrainlesson"){
         category = "acid rain";
         ChangeQuiz("acidrainquiz");
-    }else if(data.subcategory === "respiratoryproblemslesson"){
+    }else if(data.lessons === "respiratoryproblemslesson"){
         category = "respiratory problems from pollution";
         ChangeQuiz("respiratoryproblemsquiz");
-    }else if(data.subcategory === "marinelifelesson"){
+    }else if(data.lessons === "marinelifelesson"){
         category = "marine life";
         ChangeQuiz("marinelifequiz");
-    }else if(data.subcategory === "eutrophicationlesson"){
+    }else if(data.lessons === "eutrophicationlesson"){
         category = "eutrophication";
         ChangeQuiz("eutrophicationquiz");
-    }else if(data.subcategory === "drinkingwaterlesson"){
+    }else if(data.lessons === "drinkingwaterlesson"){
         category = "drinking water affected by pollution";
         ChangeQuiz("drinkingwaterquiz");
-    }else if(data.subcategory === "pollutioncitieslesson"){
+    }else if(data.lessons === "pollutioncitieslesson"){
         category = "cities affected by pollution";
         ChangeQuiz("pollutioncitiesquiz");
-    }else if(data.subcategory === "pollutionwildlifelesson"){
+    }else if(data.lessons === "pollutionwildlifelesson"){
         category = "wildlife affected by pollution";
         ChangeQuiz("pollutionwildlifequiz");
     }
