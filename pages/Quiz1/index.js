@@ -204,10 +204,410 @@ const Quiz1 = () => {
                 quizChoice4: "False"
             }
         ]
+    }else if(data.quiz === "icebergmeltingquiz"){
+        category = "Iceberg Melting";
+        quizQuestions = [
+            {
+                quizName: "Question 1",
+                quizNumber: "1/4",
+                quizQuestion: "True or False: Polar bears are suffering because of the icebergs melting.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 2",
+                quizNumber: "2/4",
+                quizQuestion: "What leads to the icebergs melting?",
+                quizChoice1: "Droughts",
+                quizChoice2: "Polar bears",
+                quizChoice3: "A rise in temperatures",
+                quizChoice4: "Asteroids"
+            },
+            {
+                quizName: "Question 3",
+                quizNumber: "3/4",
+                quizQuestion: "True or False: Icebergs have been decreasing in size over several years.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 4",
+                quizNumber: "4/4",
+                quizQuestion: "True or False: Icebergs cause an increase in sea levels.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            }
+        ]
+    }else if(data.quiz === "citiesquiz"){
+        category = "Cities";
+        quizQuestions = [
+            {
+                quizName: "Question 1",
+                quizNumber: "1/4",
+                quizQuestion: "Floods are caused by:",
+                quizChoice1: "Icebergs melting",
+                quizChoice2: "Clogged drains",
+                quizChoice3: "Heavy precipitation",
+                quizChoice4: "All of the above" 
+            },
+            {
+                quizName: "Question 2",
+                quizNumber: "2/4",
+                quizQuestion: "True or False: Floods cause people to move out of their homes.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False" 
+            },
+            {
+                quizName: "Question 3",
+                quizNumber: "3/4",
+                quizQuestion: "True or False: When there are floods, the grounds are always able to absorb the water.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False" 
+            },
+            {
+                quizName: "Question 4",
+                quizNumber: "4/4",
+                quizQuestion: "True or False: Buildings are at a higher risk of sinking from floods.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False" 
+            }
+        ]
+    }else if(data.quiz === "carbonfootprintquiz"){
+        category = "Carbon Footprint";
+        quizQuestions = [
+            {
+                quizName: "Question 1",
+                quizNumber: "1/4",
+                quizQuestion: "Carbon footprints are made by a person's:",
+                quizChoice1: "Breathing",
+                quizChoice2: "Eating habits",
+                quizChoice3: "Carbon dioxide released",
+                quizChoice4: "Pets"
+            },
+            {
+                quizName: "Question 2",
+                quizNumber: "2/4",
+                quizQuestion: "A way to minimise your carbon footprint is to:",
+                quizChoice1: "Recycle",
+                quizChoice2: "Waste food",
+                quizChoice3: "Use a personal car",
+                quizChoice4: "All of the above"
+            },
+            {
+                quizName: "Question 3",
+                quizNumber: "3/4",
+                quizQuestion: "True/False: Things as simple as taking transportation can make a difference in reducing your carbon footprint.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 4",
+                quizNumber: "4/4",
+                quizQuestion: "True/False: A person's activities can show their carbon footprint amount.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            }
+        ]
+    }else if(data.quiz === "acidrainquiz"){
+        category = "Acid Rain";
+        quizQuestions = [
+            {
+                quizName: "Question 1",
+                quizNumber: "1/4",
+                quizQuestion: "True/False: Acid rain can harm animals.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 2",
+                quizNumber: "2/4",
+                quizQuestion: "Acid rain can come in the form of rain and…?",
+                quizChoice1: "Heat",
+                quizChoice2: "Tornados",
+                quizChoice3: "Snow",
+                quizChoice4: "Hurricanes"
+            },
+            {
+                quizName: "Question 3",
+                quizNumber: "3/4",
+                quizQuestion: "True or False: Acid rain helps speed up the growing rate of trees.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 4",
+                quizNumber: "4/4",
+                quizQuestion: "Acid rain is caused by:",
+                quizChoice1: "Droughts",
+                quizChoice2: "Air pollution",
+                quizChoice3: "Icebergs melting",
+                quizChoice4: "Famines"
+            }
+        ]
+    }else if(data.quiz === "respiratoryproblemsquiz"){
+        category = "Respiratory Problems";
+        quizQuestions = [
+            {
+                quizName: "Question 1",
+                quizNumber: "1/4",
+                quizQuestion: "True/False: Pollution can cause breathing problems.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 2",
+                quizNumber: "2/4",
+                quizQuestion: "Pollution can cause most damage to the:",
+                quizChoice1: "Lungs",
+                quizChoice2: "Kidneys",
+                quizChoice3: "Pancreas",
+                quizChoice4: "Left arm"
+            },
+            {
+                quizName: "Question 3",
+                quizNumber: "3/4",
+                quizQuestion: "Some of the symptoms of respiratory problems are:",
+                quizChoice1: "Difficulty breathing",
+                quizChoice2: "Diseases",
+                quizChoice3: "Coughing",
+                quizChoice4: "All of the above"
+            },
+            {
+                quizName: "Question 4",
+                quizNumber: "4/4",
+                quizQuestion: "True/False: Limiting your time outdoors in polluted area can cause less damage to your lungs.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            }
+        ]
+    }else if(data.quiz === "marinelifequiz"){
+        category = "Marine Life";
+        quizQuestions = [
+            {
+                quizName: "Question 1",
+                quizNumber: "1/4",
+                quizQuestion: "What is the main way the ocean is being polluted?",
+                quizChoice1: "Cardboard",
+                quizChoice2: "Laundry detergent",
+                quizChoice3: "Paper",
+                quizChoice4: "Plastic and garbage"
+            },
+            {
+                quizName: "Question 2",
+                quizNumber: "2/4",
+                quizQuestion: "What amount of plastic is being recycled every year?",
+                quizChoice1: "2%",
+                quizChoice2: "18%",
+                quizChoice3: "9%",
+                quizChoice4: "49%"
+            },
+            {
+                quizName: "Question 3",
+                quizNumber: "3/4",
+                quizQuestion: "True/False: Marine life are being harmed by the amount of plastic and garbage in the ocean.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 4",
+                quizNumber: "4/4",
+                quizQuestion: "True/False: When garbage is being transported to the landfills, most of the garbage ends up in the oceans",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            }
+        ]
+    }else if(data.quiz === "eutrophicationquiz"){
+        category = "Eutrophication";
+        quizQuestions = [
+            {
+                quizName: "Question 1",
+                quizNumber: "1/4",
+                quizQuestion: "What is Eutrophication?",
+                quizChoice1: "The gradual increase of phosphorus in an aging body of water",
+                quizChoice2: "The lack of food in an area",
+                quizChoice3: "A lack of water",
+                quizChoice4: "Pollutions within the air"
+            },
+            {
+                quizName: "Question 2",
+                quizNumber: "2/4",
+                quizQuestion: "True or False: Eutrophication leads to a decrease in plant growth.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 3",
+                quizNumber: "3/4",
+                quizQuestion: "True or False: Eutrophication can cause harm to the fish and make the water unsafe to drink.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 4",
+                quizNumber: "4/4",
+                quizQuestion: "A way to help reduce eutrophication around the world is to:",
+                quizChoice1: "Use a compost bin",
+                quizChoice2: "Limit your carbon footprint",
+                quizChoice3: "Use public transportation",
+                quizChoice4: "All of the above"
+            }
+        ]
+    }else if(data.quiz === "drinkingwaterquiz"){
+        category = "Drinking Water";
+        quizQuestions = [
+            {
+                quizName: "Question 1",
+                quizNumber: "1/4",
+                quizQuestion: "The majority of water on Earth is:",
+                quizChoice1: "Salt water (undrinkable)",
+                quizChoice2: "Fresh water (drinkable)",
+                quizChoice3: "Choice 3",
+                quizChoice4: "Choice 4"  
+            },
+            {
+                quizName: "Question 2",
+                quizNumber: "2/4",
+                quizQuestion: "True or False: Most of the water that is not salt water is still contaminated with poisonous chemicals.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 3",
+                quizNumber: "3/4",
+                quizQuestion: "True or False: The water that comes from the sinks, toilets, and showers end up polluting the water.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 4",
+                quizNumber: "4/4",
+                quizQuestion: "True or False: Without clean water, the ecosystem and wildlife will suffer.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            }
+        ]
+    }else if(data.quiz === "pollutioncitiesquiz"){
+        category = "Cities";
+        quizQuestions = [
+            {
+                quizName: "Question 1",
+                quizNumber: "1/4",
+                quizQuestion: "What is the main cause of pollution in cities?",
+                quizChoice1: "Television",
+                quizChoice2: "Air conditioning",
+                quizChoice3: "Cars",
+                quizChoice4: "Shops"
+            },
+            {
+                quizName: "Question 2",
+                quizNumber: "2/4",
+                quizQuestion: "True or False: The most polluted areas are the most populated ones.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 3",
+                quizNumber: "3/4",
+                quizQuestion: "People living in polluted areas are suffering from:",
+                quizChoice1: "Lung problems",
+                quizChoice2: "Diseases",
+                quizChoice3: "All of the above",
+                quizChoice4: "Choice 4"
+            },
+            {
+                quizName: "Question 4",
+                quizNumber: "4/4",
+                quizQuestion: "Some ways that you can help polluted cities are to:",
+                quizChoice1: "Buy from non eco-friendly companies",
+                quizChoice2: "Use a personal car to get somewhere",
+                quizChoice3: "Reduce your waste",
+                quizChoice4: "All of the above"
+            }
+        ]
+    }else if(data.quiz === "pollutionwildlifequiz"){
+        category = "Wildlife";
+        quizQuestions = [
+            {
+                quizName: "Question 1",
+                quizNumber: "1/4",
+                quizQuestion: "Pollution can be caused by the increase in temperature, garbage, and…?",
+                quizChoice1: "Acid rain",
+                quizChoice2: "Hibernation",
+                quizChoice3: "Biking",
+                quizChoice4: "All of the above"
+            },
+            {
+                quizName: "Question 2",
+                quizNumber: "2/4",
+                quizQuestion: "True or false: Higher pollution rates kill most of the wildlife.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 3",
+                quizNumber: "3/4",
+                quizQuestion: "True or False: Many of the wildlife mistaken the garbage for food.",
+                quizChoice1: "True",
+                quizChoice2: "False",
+                quizChoice3: "True",
+                quizChoice4: "False"
+            },
+            {
+                quizName: "Question 4",
+                quizNumber: "4/4",
+                quizQuestion: "A way to help wildlife is to:",
+                quizChoice1: "Not litter",
+                quizChoice2: "Bike or walk to places",
+                quizChoice3: "Recycle and take care of the environment",
+                quizChoice4: "All of the above"
+            }
+        ]
     }
 
     const [ind, setInd] = useState(0);
-    //console.log(buttonid);
+   
     return <div id='quizcomp'>
         {
         /*data.buttonid === <div id='button1' onClick={()=>{
@@ -295,7 +695,7 @@ function HighlightButtonQuiz(){
     document.querySelector("#button1").style.backgroundColor = '#46c75f';
 }
 
-//added by cc
+
 var selected = false;
 function SelectedChoice(){
     selected = true;
@@ -308,7 +708,7 @@ function NextQuizQuestion(){
 
     }
 }
-//
+
 
 
 
