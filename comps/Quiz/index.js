@@ -42,9 +42,9 @@ const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizCh
         </div>
 
 
-        <div id='Button-text'>
+        {/* <div id='Button-text'>
             <div id='button1'>Next</div>
-        </div>
+        </div> */}
 
         {/* <div onClick={() => {Router.push(buttonid)}} id='Button-text'>
             <div id='button1'>Next</div>
