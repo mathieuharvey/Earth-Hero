@@ -12,7 +12,7 @@ var CardsStack = require('../../images/cards-stack.svg');
 
 const LessonCompleted = () => {
     var category = "";
-    if(data.subcategory === "wildfireslesson"){
+    if(data.lessons === "wildfireslesson"){
         category = "wildfires";
         ChangeQuiz("wildfiresquiz");
     }else if(data.subcategory === "watershortagelesson"){
@@ -80,16 +80,7 @@ function Nothing(){
 }
 
 function ChangeQuiz(name){
-    data.subcategory = name;
-    data.category = name;
-    data.quizName = name;
-    data.quizNumber = name;
-    data.quizQuestion = name;
-    data.quizChoice1 = name;
-    data.quizChoice2 = name;
-    data.quizChoice3 = name;
-    data.quizChoice4 = name;
-    data.buttonid = name;
-    ChangeData({subcategory: name});
+    data.quiz = name;
+    ChangeData(data);
 }
 export default LessonCompleted;

@@ -27,15 +27,28 @@ const Quiz1 = () => {
     var quizChoice3 = "";
     var quizChoice4 = "";
     var buttonid = "";
-    if(data.subcategory === "wildfiresquiz"){
+    if(data.quiz === "wildfiresquiz"){
         category = "Wildfires";
-        quizName = "Question 1";
-        quizNumber = "1/5";
-        quizQuestion = "What kind of environments are very likely to have wildfires start?";
-        quizChoice1 = "Wet and rainy environments";
-        quizChoice2 = "Dry environments";
-        quizChoice3 = "Snowy and cold environments";
-        buttonid = '';
+        quizQuestions = [
+            {
+                quizName:"Question 1",
+                quizNumber:"1/5",
+                quizQuestion:"True or false: Dry environments tend to suffer from water shortage more than wet environments.",
+                quizChoice1:"True",
+                quizChoice2:"False",
+                quizChoice3:"True",
+                quizChoice4:"False"
+            },
+            {
+                quizName:"Question 2",
+                quizNumber:"1/5",
+                quizQuestion:"q2",
+                quizChoice1:"ba",
+                quizChoice2:"da",
+                quizChoice3:"ee",
+                quizChoice4:"ff"
+            }
+        ]
     }else if(data.subcategory === "watershortagequiz"){
         category = "Water Shortage";
         quizName = "Question 1";
@@ -56,27 +69,37 @@ const Quiz1 = () => {
         buttonid = '';
     }
 
-    const [switchQuestion] = useState("");
-console.log(buttonid);
+    const [ind, setInd] = useState(0);
+    //console.log(buttonid);
     return <div id='quizcomp'>
-        {data.buttonid === <div id='button1' onClick={()=>{
+        {
+        /*data.buttonid === <div id='button1' onClick={()=>{
         switchQuestion(quizarray[index]);
         index++; 
         }
-    } />}
+    } />
+*/
+    }
         
     <div>
         <Quiz
         category = {category}
-        quizName = {quizName}
-        quizNumber = {quizNumber}
-        quizQuestion = {quizQuestion}
-        quizChoice1 = {quizChoice1}
-        quizChoice2 = {quizChoice2}
-        quizChoice3 = {quizChoice3}
-        quizChoice4 = {quizChoice4}
+        quizName = {quizQuestions[ind].quizName}
+        quizNumber = {quizQuestions[ind].quizNumber}
+        quizQuestion = {quizQuestions[ind].quizQuestion}
+        quizChoice1 = {quizQuestions[ind].quizChoice1}
+        quizChoice2 = {quizQuestions[ind].quizChoice2}
+        quizChoice3 = {quizQuestions[ind].quizChoice3}
+        quizChoice4 = {quizQuestions[ind].quizChoice4}
         buttonid={buttonid}
         />
+        <button onClick={()=>{
+            if(ind >= quizQuestions.length-1){
+                Router.push("/results");
+            } else {
+                setInd(ind+1);
+            }
+        }}>NextQ</button>
     </div>
     </div>
     

@@ -146,9 +146,8 @@ const HelpCard = () => {
 }
 
 function ChangeLessonComplete(name){
-    data.subcategory = name;
-    data.category = name;
-    ChangeData({subcategory: name, category: name});
+    data.lessons = name;
+    ChangeData(data);
 }
 
 export default HelpCard;
