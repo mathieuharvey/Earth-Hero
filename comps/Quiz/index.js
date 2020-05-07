@@ -6,7 +6,7 @@ import Menu from '../../comps/Menu';
 import Router from 'next/router';
 import { data } from '../../data';
 
-const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizChoice2, quizChoice3, quizChoice4, buttonid}) => <div>
+const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizChoice2, quizChoice3, quizChoice4}) => <div>
  <Icon />
     <div id='quiz-container'>
         <div id="quiz-category">{category}</div>
@@ -58,11 +58,12 @@ function HighlightButtonQuiz(){
     document.querySelector("#button1").style.backgroundColor = '#46c75f';
 }
 
-//added by cc
+
 var selected = false;
 function SelectedChoice(){
     selected = true;
 }
+
 
 // function NextQuizQuestion(){
 //     if (selected === true){
