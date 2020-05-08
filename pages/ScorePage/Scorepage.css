@@ -516,9 +516,9 @@
         .container{
             display: block;
             position: relative;
-            margin-left: -5%;
+            /* margin-left: -5%; */
             padding-left: 12%;
-            margin-top: -5%;
+            /* margin-top: -5%; */
             cursor: pointer;
             -webkit-user-select: none;
             -moz-user-select: none;
