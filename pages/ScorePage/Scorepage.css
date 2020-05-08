@@ -264,43 +264,50 @@
         }
 
         #down-arrow{
-            font-size: 21pt;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
             margin-right: 4%;
             color: rgb(94, 94, 94);
             transition: 0.3s;
         }
         #down-arrow2{
-            font-size: 21pt;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
             margin-right: 4%;
             color: rgb(94, 94, 94);
             transition: 0.3s;
         }
         #down-arrow3{
-            font-size: 21pt;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
             margin-right: 4%;
             color: rgb(94, 94, 94);
             transition: 0.3s;
         }
         #down-arrow4{
-            font-size: 21pt;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
             margin-right: 4%;
             color: rgb(94, 94, 94);
             transition: 0.3s;
         }
         #down-arrow5{
-            font-size: 21pt;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
             margin-right: 4%;
             color: rgb(94, 94, 94);
             transition: 0.3s;
         }
         #down-arrow6{
-            font-size: 21pt;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
             margin-right: 4%;
             color: rgb(94, 94, 94);
             transition: 0.3s;
         }
         #down-arrow7{
-            font-size: 21pt;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
             margin-right: 4%;
             color: rgb(94, 94, 94);
             transition: 0.3s;
@@ -418,98 +425,42 @@
             display: block;
             display: none;
             transition: 0.5s;
-            margin-top: -14%;
-        }
-        #answer_one{            
-            background-color: rgb(233, 230, 230);
-            border-radius: 1px 1px 15px 15px;
-            margin: 0% 20% 0% 20%;
-            padding: 13% 0% 1% 0%;
-            margin-top: 7%;
         }
 
         #topic_two-container{
             display: block;
             display: none;
             transition: 0.5s;
-            margin-top: -14%;
-        }
-        #answer_two{            
-            background-color: rgb(233, 230, 230);
-            border-radius: 1px 1px 15px 15px;
-            margin: 0% 20% 0% 20%;
-            padding: 13% 0% 1% 0%;
-            margin-top: 7%;
         }
 
         #topic_three-container{
             display: block;
             display: none;
             transition: 0.5s;
-            margin-top: -14%;
-        }
-        #answer_three{            
-            background-color: rgb(233, 230, 230);
-            border-radius: 1px 1px 15px 15px;
-            margin: 0% 20% 0% 20%;
-            padding: 13% 0% 1% 0%;
-            margin-top: 7%;
         }
 
         #topic_four-container{
             display: block;
             display: none;
             transition: 0.5s;
-            margin-top: -14%;
-        }
-        #answer_four{            
-            background-color: rgb(233, 230, 230);
-            border-radius: 1px 1px 15px 15px;
-            margin: 0% 20% 0% 20%;
-            padding: 13% 0% 1% 0%;
-            margin-top: 7%;
         }
 
         #topic_five-container{
             display: block;
             display: none;
             transition: 0.5s;
-            margin-top: -14%;
-        }
-        #answer_five{            
-            background-color: rgb(233, 230, 230);
-            border-radius: 1px 1px 15px 15px;
-            margin: 0% 20% 0% 20%;
-            padding: 13% 0% 1% 0%;
-            margin-top: 7%;
         }
 
         #topic_six-container{
             display: block;
             display: none;
             transition: 0.5s;
-            margin-top: -14%;
-        }
-        #answer_six{            
-            background-color: rgb(233, 230, 230);
-            border-radius: 1px 1px 15px 15px;
-            margin: 0% 20% 0% 20%;
-            padding: 13% 0% 1% 0%;
-            margin-top: 7%;
         }
 
         #topic_seven-container{
             display: block;
             display: none;
             transition: 0.5s;
-            margin-top: -14%;
-        }
-        #answer_seven{            
-            background-color: rgb(233, 230, 230);
-            border-radius: 1px 1px 15px 15px;
-            margin: 0% 20% 0% 20%;
-            padding: 13% 0% 1% 0%;
-            margin-top: 7%;
         }
 
 

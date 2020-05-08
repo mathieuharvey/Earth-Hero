@@ -19,8 +19,8 @@ const ScorePage = () => <div id='score-page'>
         <div id='container' onClick={ToggleOne}>
             <div className='drop-down1'>
                 <p id='topic-one'>Topic 1</p>
-                <span id='down-arrow' className="material-icons">
-                    keyboard_arrow_down
+                <span id='down-arrow' >
+                    0/5
                 </span>
 
             </div>
@@ -29,7 +29,7 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_one-container'>
 
             <div id='answer_one'>
-                
+{/*                 
                 <p className='container' >
                     Question 1 <span className='scorenum'>0/1</span>
                 </p>
@@ -67,7 +67,7 @@ const ScorePage = () => <div id='score-page'>
 
                 <label onClick={BlueButton} className='container'>Question 5
                     <span onClick={BlueButton} ></span>
-                </label> */}
+                </label> */} 
 
             </div>
     
@@ -84,8 +84,8 @@ const ScorePage = () => <div id='score-page'>
 <div id='container' onClick={ToggleTwo}>
             <div className='drop-down2'>
                 <p id='topic-two'>Topic 2</p>
-                <span id='down-arrow2' className="material-icons">
-                    keyboard_arrow_down
+                <span id='down-arrow2' >
+                    0/5
                 </span>
 
             </div>
@@ -94,7 +94,7 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_two-container'>
 
             <div id='answer_two'>
-
+{/* 
                 <p className='container' >
                     Question 1 <span className='scorenum'>0/1</span>
                 </p>
@@ -113,7 +113,7 @@ const ScorePage = () => <div id='score-page'>
                 
                 <p className='container' >
                     Question 5 <span className='scorenum'>0/1</span>
-                </p>
+                </p> */}
 
                 {/* <label  onClick={TwoButton} className='container' >Question 1
                     <span  onClick={TwoButton} ></span>
@@ -152,8 +152,8 @@ const ScorePage = () => <div id='score-page'>
 <div id='container' onClick={ToggleThree}>
             <div className='drop-down3'>
                 <p id='topic-three'>Topic 3</p>
-                <span id='down-arrow3' className="material-icons">
-                    keyboard_arrow_down
+                <span id='down-arrow3' >
+                    0/5
                 </span>
 
             </div>
@@ -163,7 +163,7 @@ const ScorePage = () => <div id='score-page'>
 
             <div id='answer_three'>
 
-                <p className='container' >
+                {/* <p className='container' >
                     Question 1 <span className='scorenum'>0/1</span>
                 </p>
                 
@@ -181,7 +181,7 @@ const ScorePage = () => <div id='score-page'>
                 
                 <p className='container' >
                     Question 5 <span className='scorenum'>0/1</span>
-                </p>
+                </p> */}
 
                 {/* <label  onClick={ThreeButton} className='container' >Question 1
                     <span  onClick={ThreeButton} ></span>
@@ -220,8 +220,8 @@ const ScorePage = () => <div id='score-page'>
 <div id='container' onClick={ToggleFour}>
             <div className='drop-down4'>
                 <p id='topic-four'>Topic 4</p>
-                <span id='down-arrow4' className="material-icons">
-                    keyboard_arrow_down
+                <span id='down-arrow4' >
+                    0/5
                 </span>
 
             </div>
@@ -231,7 +231,7 @@ const ScorePage = () => <div id='score-page'>
 
             <div id='answer_four'>
 
-                <p className='container' >
+                {/* <p className='container' >
                     Question 1 <span className='scorenum'>0/1</span>
                 </p>
                 
@@ -249,7 +249,7 @@ const ScorePage = () => <div id='score-page'>
                 
                 <p className='container' >
                     Question 5 <span className='scorenum'>0/1</span>
-                </p>
+                </p> */}
 
                 {/* <label  onClick={FourButton} className='container' >Question 1
                     <span  onClick={FourButton} ></span>
@@ -288,8 +288,8 @@ const ScorePage = () => <div id='score-page'>
 <div id='container' onClick={ToggleFive}>
             <div className='drop-down5'>
                 <p id='topic-five'>Topic 5</p>
-                <span id='down-arrow5' className="material-icons">
-                    keyboard_arrow_down
+                <span id='down-arrow5' >
+                    0/5
                 </span>
 
             </div>
@@ -299,7 +299,7 @@ const ScorePage = () => <div id='score-page'>
 
             <div id='answer_five'>
 
-                <p className='container' >
+                {/* <p className='container' >
                     Question 1 <span className='scorenum'>0/1</span>
                 </p>
                 
@@ -317,7 +317,7 @@ const ScorePage = () => <div id='score-page'>
                 
                 <p className='container' >
                     Question 5 <span className='scorenum'>0/1</span>
-                </p>
+                </p> */}
 
                 {/* <label  onClick={FiveButton} className='container' >Question 1
                     <span  onClick={FiveButton} ></span>
@@ -356,8 +356,8 @@ const ScorePage = () => <div id='score-page'>
 <div id='container' onClick={ToggleSix}>
             <div className='drop-down6'>
                 <p id='topic-six'>Topic 6</p>
-                <span id='down-arrow6' className="material-icons">
-                    keyboard_arrow_down
+                <span id='down-arrow6' >
+                    0/5
                 </span>
 
             </div>
@@ -367,7 +367,7 @@ const ScorePage = () => <div id='score-page'>
 
             <div id='answer_six'>
 
-                <p className='container' >
+                {/* <p className='container' >
                     Question 1 <span className='scorenum'>0/1</span>
                 </p>
                 
@@ -386,7 +386,7 @@ const ScorePage = () => <div id='score-page'>
                 <p className='container' >
                     Question 5 <span className='scorenum'>0/1</span>
                 </p>
-
+ */}
                 {/* <label  onClick={SixButton} className='container' >Question 1
                     <span  onClick={SixButton} ></span>
                     </label>
@@ -422,12 +422,11 @@ const ScorePage = () => <div id='score-page'>
 
 {/* Topic 7 */}
 <div id='container' onClick={ToggleSeven}>
-            <div className='drop-down7'/*onClick={WhiteTopic}*/>
+            <div className='drop-down7' /*onClick={WhiteTopic}*/>
                 <p id='topic-seven'>Topic 7</p>
-                <span id='down-arrow7' className="material-icons">
-                    keyboard_arrow_down
+                <span id='down-arrow7' >
+                    0/5
                 </span>
-
             </div>
         </div>
 
@@ -435,7 +434,7 @@ const ScorePage = () => <div id='score-page'>
 
             <div id='answer_seven'>
 
-                <p className='container' id='one'>
+                {/* <p className='container' id='one'>
                     Question 1 <span className='scorenum'>0/1</span>
                 </p>
                 
@@ -453,7 +452,7 @@ const ScorePage = () => <div id='score-page'>
                 
                 <p className='container' id='five' >
                     Question 5 <span className='scorenum'>0/1</span>
-                </p>
+                </p> */}
 
                 {/* <label  onClick={SevenButton} className='container' >Question 1
                     <span  onClick={SevenButton} ></span>
@@ -514,11 +513,11 @@ var one_state = false;
 
 function ToggleOne(){
     if(one_state === false){
-    document.querySelector("#down-arrow").style.transform = 'rotate(180deg)';
-    document.querySelector("#topic_one-container").style.display = 'block';
+        document.querySelector(".drop-down1").style.backgroundColor = 'white';
+        document.querySelector("#topic_one-container").style.display = 'block';
     one_state = true;
     }else if(one_state === true){
-        document.querySelector("#down-arrow").style.transform = 'rotate(0deg)';
+        document.querySelector(".drop-down1").style.backgroundColor = 'rgb(233, 230, 230)';
         document.querySelector("#topic_one-container").style.display = 'none';
         one_state = false;
     }
@@ -528,11 +527,11 @@ var two_state = false;
 
 function ToggleTwo(){
     if(two_state === false){
-    document.querySelector("#down-arrow2").style.transform = 'rotate(180deg)';
-    document.querySelector("#topic_two-container").style.display = 'block';
+        document.querySelector(".drop-down2").style.backgroundColor = 'white';
+        document.querySelector("#topic_two-container").style.display = 'block';
     two_state = true;
     }else if(two_state === true){
-        document.querySelector("#down-arrow2").style.transform = 'rotate(0deg)';
+        document.querySelector(".drop-down2").style.backgroundColor = 'rgb(233, 230, 230)';
         document.querySelector("#topic_two-container").style.display = 'none';
         two_state = false;
     }
@@ -542,11 +541,11 @@ var three_state = false;
 
 function ToggleThree(){
     if(three_state === false){
-    document.querySelector("#down-arrow3").style.transform = 'rotate(180deg)';
-    document.querySelector("#topic_three-container").style.display = 'block';
+        document.querySelector(".drop-down3").style.backgroundColor = 'white';
+        document.querySelector("#topic_three-container").style.display = 'block';
     three_state = true;
     }else if(three_state === true){
-        document.querySelector("#down-arrow3").style.transform = 'rotate(0deg)';
+        document.querySelector(".drop-down3").style.backgroundColor = 'rgb(233, 230, 230)';
         document.querySelector("#topic_three-container").style.display = 'none';
         three_state = false;
     }
@@ -556,11 +555,11 @@ var four_state = false;
 
 function ToggleFour(){
     if(four_state === false){
-    document.querySelector("#down-arrow4").style.transform = 'rotate(180deg)';
-    document.querySelector("#topic_four-container").style.display = 'block';
+        document.querySelector(".drop-down4").style.backgroundColor = 'white';
+        document.querySelector("#topic_four-container").style.display = 'block';
     four_state = true;
     }else if(four_state === true){
-        document.querySelector("#down-arrow4").style.transform = 'rotate(0deg)';
+        document.querySelector(".drop-down4").style.backgroundColor = 'rgb(233, 230, 230)';
         document.querySelector("#topic_four-container").style.display = 'none';
         four_state = false;
     }
@@ -570,11 +569,11 @@ var five_state = false;
 
 function ToggleFive(){
     if(five_state === false){
-    document.querySelector("#down-arrow5").style.transform = 'rotate(180deg)';
-    document.querySelector("#topic_five-container").style.display = 'block';
+        document.querySelector(".drop-down5").style.backgroundColor = 'white';
+        document.querySelector("#topic_five-container").style.display = 'block';
     five_state = true;
     }else if(five_state === true){
-        document.querySelector("#down-arrow5").style.transform = 'rotate(0deg)';
+        document.querySelector(".drop-down5").style.backgroundColor = 'rgb(233, 230, 230)';
         document.querySelector("#topic_five-container").style.display = 'none';
         five_state = false;
     }
@@ -584,11 +583,11 @@ var six_state = false;
 
 function ToggleSix(){
     if(six_state === false){
-    document.querySelector("#down-arrow6").style.transform = 'rotate(180deg)';
-    document.querySelector("#topic_six-container").style.display = 'block';
+        document.querySelector(".drop-down6").style.backgroundColor = 'white';
+        document.querySelector("#topic_six-container").style.display = 'block';
     six_state = true;
     }else if(six_state === true){
-        document.querySelector("#down-arrow6").style.transform = 'rotate(0deg)';
+        document.querySelector(".drop-down6").style.backgroundColor = 'rgb(233, 230, 230)';
         document.querySelector("#topic_six-container").style.display = 'none';
         six_state = false;
     }
@@ -598,11 +597,12 @@ var seven_state = false;
 
 function ToggleSeven(){
     if(seven_state === false){
-    document.querySelector("#down-arrow7").style.transform = 'rotate(180deg)';
+    document.querySelector(".drop-down7").style.backgroundColor = 'white';
     document.querySelector("#topic_seven-container").style.display = 'block';
     seven_state = true;
     }else if(seven_state === true){
-        document.querySelector("#down-arrow7").style.transform = 'rotate(0deg)';
+        document.querySelector(".drop-down7").style.backgroundColor = 'rgb(233, 230, 230)';
+        document.querySelector("#container").style.boxShadow = "100px black";
         document.querySelector("#topic_seven-container").style.display = 'none';
         seven_state = false;
     }
