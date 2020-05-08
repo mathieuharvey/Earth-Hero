@@ -15,17 +15,20 @@ import {data} from '../../data';
 var ind = 0;
 
 
-const Quiz1 = () => {
-
-    var quizQuestions = "";
+const Quiz1 = () =>{
     var category = "";
-    var quizName = "";
-    var quizNumber = "";
-    var quizQuestion = "";
-    var quizChoice1 = "";
-    var quizChoice2 = "";
-    var quizChoice3 = "";
-    var quizChoice4 = "";
+    var quizQuestions = [
+     {
+        quizName: "",
+        quizNumber: "",
+        quizQuestion: "",
+        quizChoice1: "",
+        quizChoice2: "",
+        quizChoice3: "",
+        quizChoice4: ""
+     }
+ ];
+    
     if(data.quiz === "wildfiresquiz"){
         category = "Wildfires";
         quizQuestions = [
@@ -606,6 +609,7 @@ const Quiz1 = () => {
         ]
     }
 
+
     const [ind, setInd] = useState(0);
    
     return <div id='quizcomp'>
@@ -643,6 +647,7 @@ const Quiz1 = () => {
     </div>
     
 }
+
 
 
 
@@ -712,15 +717,15 @@ function NextQuizQuestion(){
 
 
 
-Quiz1.defaultProps = {
-    category: "Wildfires",
-    quizName: "Question 1",
-    quizNumber: "1/5",
-    quizQuestion: "What kind of environments are very likely to have wildfires start?",
-    quizChoice1: "Wet and rainy environments",
-    quizChoice2: "Dry environments",
-    quizChoice3: "Snowy and cold environments",
-    quizChoice4: ""
-}
+// Quiz1.defaultProps = {
+//     category: "Wildfires",
+//     quizName: "Question 1",
+//     quizNumber: "1/5",
+//     quizQuestion: "What kind of environments are very likely to have wildfires start?",
+//     quizChoice1: "Wet and rainy environments",
+//     quizChoice2: "Dry environments",
+//     quizChoice3: "Snowy and cold environments",
+//     quizChoice4: ""
+// }
 
 export default Quiz1;
