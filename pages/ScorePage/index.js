@@ -514,10 +514,12 @@ var one_state = false;
 function ToggleOne(){
     if(one_state === false){
         document.querySelector(".drop-down1").style.backgroundColor = 'white';
+        document.querySelector(".drop-down1").style.boxShadow = "0px 10px 10px  rgb(233, 230, 230)";
         document.querySelector("#topic_one-container").style.display = 'block';
     one_state = true;
     }else if(one_state === true){
         document.querySelector(".drop-down1").style.backgroundColor = 'rgb(233, 230, 230)';
+        document.querySelector(".drop-down1").style.boxShadow = "0px 10px 10px  white";
         document.querySelector("#topic_one-container").style.display = 'none';
         one_state = false;
     }
@@ -528,10 +530,12 @@ var two_state = false;
 function ToggleTwo(){
     if(two_state === false){
         document.querySelector(".drop-down2").style.backgroundColor = 'white';
+        document.querySelector(".drop-down2").style.boxShadow = "0px 10px 10px  rgb(233, 230, 230)";
         document.querySelector("#topic_two-container").style.display = 'block';
     two_state = true;
     }else if(two_state === true){
         document.querySelector(".drop-down2").style.backgroundColor = 'rgb(233, 230, 230)';
+        document.querySelector(".drop-down2").style.boxShadow = "0px 10px 10px  white";
         document.querySelector("#topic_two-container").style.display = 'none';
         two_state = false;
     }
@@ -542,10 +546,12 @@ var three_state = false;
 function ToggleThree(){
     if(three_state === false){
         document.querySelector(".drop-down3").style.backgroundColor = 'white';
+        document.querySelector(".drop-down3").style.boxShadow = "0px 10px 10px  rgb(233, 230, 230)";
         document.querySelector("#topic_three-container").style.display = 'block';
     three_state = true;
     }else if(three_state === true){
         document.querySelector(".drop-down3").style.backgroundColor = 'rgb(233, 230, 230)';
+        document.querySelector(".drop-down3").style.boxShadow = "0px 10px 10px  white";
         document.querySelector("#topic_three-container").style.display = 'none';
         three_state = false;
     }
@@ -556,10 +562,12 @@ var four_state = false;
 function ToggleFour(){
     if(four_state === false){
         document.querySelector(".drop-down4").style.backgroundColor = 'white';
+        document.querySelector(".drop-down4").style.boxShadow = "0px 10px 10px  rgb(233, 230, 230)";
         document.querySelector("#topic_four-container").style.display = 'block';
     four_state = true;
     }else if(four_state === true){
         document.querySelector(".drop-down4").style.backgroundColor = 'rgb(233, 230, 230)';
+        document.querySelector(".drop-down4").style.boxShadow = "0px 10px 10px  white";
         document.querySelector("#topic_four-container").style.display = 'none';
         four_state = false;
     }
@@ -570,10 +578,12 @@ var five_state = false;
 function ToggleFive(){
     if(five_state === false){
         document.querySelector(".drop-down5").style.backgroundColor = 'white';
+        document.querySelector(".drop-down5").style.boxShadow = "0px 10px 10px  rgb(233, 230, 230)";
         document.querySelector("#topic_five-container").style.display = 'block';
     five_state = true;
     }else if(five_state === true){
         document.querySelector(".drop-down5").style.backgroundColor = 'rgb(233, 230, 230)';
+        document.querySelector(".drop-down5").style.boxShadow = "0px 10px 10px  white";
         document.querySelector("#topic_five-container").style.display = 'none';
         five_state = false;
     }
@@ -584,10 +594,12 @@ var six_state = false;
 function ToggleSix(){
     if(six_state === false){
         document.querySelector(".drop-down6").style.backgroundColor = 'white';
+        document.querySelector(".drop-down6").style.boxShadow = "0px 10px 10px  rgb(233, 230, 230)";
         document.querySelector("#topic_six-container").style.display = 'block';
     six_state = true;
     }else if(six_state === true){
         document.querySelector(".drop-down6").style.backgroundColor = 'rgb(233, 230, 230)';
+        document.querySelector(".drop-down6").style.boxShadow = "0px 10px 10px  white";
         document.querySelector("#topic_six-container").style.display = 'none';
         six_state = false;
     }
@@ -598,11 +610,12 @@ var seven_state = false;
 function ToggleSeven(){
     if(seven_state === false){
     document.querySelector(".drop-down7").style.backgroundColor = 'white';
+    document.querySelector(".drop-down7").style.boxShadow = "0px 10px 10px  rgb(233, 230, 230)";
     document.querySelector("#topic_seven-container").style.display = 'block';
     seven_state = true;
     }else if(seven_state === true){
         document.querySelector(".drop-down7").style.backgroundColor = 'rgb(233, 230, 230)';
-        document.querySelector("#container").style.boxShadow = "100px black";
+        document.querySelector(".drop-down7").style.boxShadow = "0px 10px 10px  white";
         document.querySelector("#topic_seven-container").style.display = 'none';
         seven_state = false;
     }
