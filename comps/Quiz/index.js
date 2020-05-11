@@ -6,7 +6,7 @@ import Menu from '../../comps/Menu';
 import Router from 'next/router';
 import { data } from '../../data';
 
-const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizChoice2, quizChoice3, quizChoice4}) => <div>
+const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizChoice2, quizChoice3, quizChoice4, onSelect}) => <div>
  <Icon />
     <div id='quiz-container'>
         <div id="quiz-category">{category}</div>
@@ -18,25 +18,33 @@ const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizCh
         <div id="quiz-question" >{quizQuestion}</div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice1}</p>
-                <input onClick={SelectedChoice} type='radio' name='radio' />
+                <input onClick={()=>{
+                    onSelect(1);
+                }} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice2}</p>
-                <input onClick={SelectedChoice} type='radio' name='radio' />
+                <input onClick={()=>{
+                    onSelect(2);
+                }} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice3}</p>
-                <input onClick={SelectedChoice} type='radio' name='radio' />
+                <input onClick={()=>{
+                    onSelect(3);
+                }} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice4}</p>
-                <input type='radio' name='radio' />
+                <input onClick={()=>{
+                    onSelect(4);
+                }} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
@@ -59,10 +67,10 @@ function HighlightButtonQuiz(){
 }
 
 
-var selected = false;
-function SelectedChoice(){
-    selected = true;
-}
+// var selected = false;
+// function SelectedChoice(){
+//     selected = true;
+// }
 
 
 // function NextQuizQuestion(){
@@ -82,7 +90,8 @@ Quiz.defaultProps = {
     quizChoice1: "Wet and rainy environments",
     quizChoice2: "Dry environments",
     quizChoice3: "Snowy and cold environments",
-    quizChoice4: ""
+    quizChoice4: "",
+    onSelect:()=>{}
 }
 
 export default Quiz;

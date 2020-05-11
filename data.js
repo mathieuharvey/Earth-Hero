@@ -14,7 +14,9 @@ export var data = {
     quizChoice2: "",
     quizChoice3: "",
     quizChoice4: "",
-    buttonid: ""
+    wildfiresscore:[0,0,0,0,0],
+    watershortagescore:[0,0,0,0,0],
+    score:0
 }
 
 
