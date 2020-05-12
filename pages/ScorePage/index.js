@@ -60,10 +60,13 @@ const ScorePage = () => <div id='score-page'>
 
         <div id='topic_two-container'>
             <div id='Button-text'>
+
                 <div onClick={()=>{
             ChooseSub("watershortagequiz");
             {Router.push('/Quiz1')}
             }} id='button2'>Start Quiz</div>
+
+                <div id='button2'>Start Quiz</div>
             </div>
         </div>
 
@@ -95,7 +98,10 @@ const ScorePage = () => <div id='score-page'>
 {/* Topic 4 */}
         <div id='container' onClick={ToggleFour}>
             <div className='drop-down4'>
+
                 <p id='topic-four'>Wildlife</p>
+               
+
             </div>
         </div>
 
@@ -181,10 +187,14 @@ const ScorePage = () => <div id='score-page'>
 
                 <div id='topic_seven-container'>
                     <div id='Button-text'>
+
                         <div onClick={()=>{
             ChooseSub("carbonfootprintquiz");
             {Router.push('/Quiz1')}
             }} id='button7'>Start Quiz</div>
+=======
+                        <div id='button7'>Start Quiz</div>
+
                     </div>
                 </div>
 
@@ -199,10 +209,14 @@ const ScorePage = () => <div id='score-page'>
 
                 <div id='topic_eight-container'>
                     <div id='Button-text'>
+
                         <div onClick={()=>{
             ChooseSub("acidrainquiz");
             {Router.push('/Quiz1')}
             }} id='button8'>Start Quiz</div>
+=======
+                        <div id='button8'>Start Quiz</div>
+
                     </div>
                 </div>
 
@@ -217,10 +231,14 @@ const ScorePage = () => <div id='score-page'>
 
                 <div id='topic_nine-container'>
                     <div id='Button-text'>
+
                         <div onClick={()=>{
             ChooseSub("respiratoryproblemsquiz");
             {Router.push('/Quiz1')}
             }} id='button9'>Start Quiz</div>
+=======
+                        <div id='button9'>Start Quiz</div>
+
                     </div>
                 </div>
 
@@ -240,10 +258,14 @@ const ScorePage = () => <div id='score-page'>
 
                 <div id='topic_ten-container'>
                     <div id='Button-text'>
+
                         <div onClick={()=>{
             ChooseSub("marinelifequiz");
             {Router.push('/Quiz1')}
             }} id='button10'>Start Quiz</div>
+=======
+                        <div id='button10'>Start Quiz</div>
+
                     </div>
                 </div>
 
@@ -260,10 +282,14 @@ const ScorePage = () => <div id='score-page'>
 
                 <div id='topic_eleven-container'>
                     <div id='Button-text'>
+
                         <div onClick={()=>{
             ChooseSub("eutrophicationquiz");
             {Router.push('/Quiz1')}
             }} id='button11'>Start Quiz</div>
+=======
+                        <div id='button11'>Start Quiz</div>
+
                     </div>
                 </div>
 
@@ -284,6 +310,9 @@ const ScorePage = () => <div id='score-page'>
             ChooseSub("drinkingwaterquiz");
             {Router.push('/Quiz1')}
             }} id='button12'>Start Quiz</div>
+=======
+                        <div id='button12'>Start Quiz</div>
+
                     </div>
                 </div>
 
@@ -305,10 +334,14 @@ const ScorePage = () => <div id='score-page'>
 
                 <div id='topic_thirteen-container'>
                     <div id='Button-text'>
+
                         <div onClick={()=>{
             ChooseSub("pollutioncitiesquiz");
             {Router.push('/Quiz1')}
             }} id='button13'>Start Quiz</div>
+=======
+                        <div id='button13'>Start Quiz</div>
+
                     </div>
                 </div>
 
@@ -323,10 +356,14 @@ const ScorePage = () => <div id='score-page'>
 
                 <div id='topic_fourteen-container'>
                     <div id='Button-text'>
+
                         <div onClick={()=>{
             ChooseSub("pollutionwildlifequiz");
             {Router.push('/Quiz1')}
             }} id='button14'>Start Quiz</div>
+=======
+                        <div id='button14'>Start Quiz</div>
+
                     </div>
                 </div>
 
@@ -573,12 +610,15 @@ function ToggleFourteen(){
 //end of pollution
 
 
+
 function ChooseSub(name){
     console.log(data);
     data.quiz = name;
     ChangeData(data);
 }
 
+
+=======
 
 
  ScorePage.defaultProps
