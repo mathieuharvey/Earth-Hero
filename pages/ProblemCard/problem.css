@@ -9,8 +9,10 @@
     left: -10px;
     top: 200px;
 }
-#wildfires-2 {
+#problemcardimg {
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 #helpcard{
     -webkit-tap-highlight-color: transparent;

@@ -3,8 +3,10 @@
     left: -10px;
     top: 200px;
 }
-#wildfires-3 {
+#helpcardimg {
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 #helpcard{
     -webkit-tap-highlight-color: transparent;

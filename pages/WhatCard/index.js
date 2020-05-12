@@ -57,6 +57,7 @@ const WhatCard = () => {
         category = "Wildlife";
     }
     return <div id="whatcard">
+        <img id='whatcardimg' src={wildfires1}/>
     <Icon />
     <div>
         <InfoCard
@@ -68,7 +69,6 @@ const WhatCard = () => {
     </div>
     <Menu />
     <img id='card-side-right' src={CardSideImg} onClick={() => {Router.push('/ProblemCard')}}/>
-    <img id='wildfires-1' src={wildfires1}/>
     </div>
 }
 

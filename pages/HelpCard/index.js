@@ -127,6 +127,7 @@ const HelpCard = () => {
         document.getElementById('next-icon').style.margin = "5px";
         document.getElementById('next-icon').src = checkmarkIcon;
     }}> 
+    <img id='helpcardimg' src={wildfires3}/>
         <Icon />
         <InfoCard 
             category= {category}
@@ -140,7 +141,6 @@ const HelpCard = () => {
         />
         <Menu />
         <img id='card-side-left' src={CardSideImgLeft} onClick={() => {Router.push('/ProblemCard')}}/>
-        <img id='wildfires-3' src={wildfires3}/>
     </div>
 
 }
