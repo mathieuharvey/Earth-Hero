@@ -65,8 +65,6 @@ const ScorePage = () => <div id='score-page'>
             ChooseSub("watershortagequiz");
             {Router.push('/Quiz1')}
             }} id='button2'>Start Quiz</div>
-
-                <div id='button2'>Start Quiz</div>
             </div>
         </div>
 
@@ -192,9 +190,6 @@ const ScorePage = () => <div id='score-page'>
             ChooseSub("carbonfootprintquiz");
             {Router.push('/Quiz1')}
             }} id='button7'>Start Quiz</div>
-=======
-                        <div id='button7'>Start Quiz</div>
-
                     </div>
                 </div>
 
@@ -214,9 +209,6 @@ const ScorePage = () => <div id='score-page'>
             ChooseSub("acidrainquiz");
             {Router.push('/Quiz1')}
             }} id='button8'>Start Quiz</div>
-=======
-                        <div id='button8'>Start Quiz</div>
-
                     </div>
                 </div>
 
@@ -236,9 +228,6 @@ const ScorePage = () => <div id='score-page'>
             ChooseSub("respiratoryproblemsquiz");
             {Router.push('/Quiz1')}
             }} id='button9'>Start Quiz</div>
-=======
-                        <div id='button9'>Start Quiz</div>
-
                     </div>
                 </div>
 
@@ -263,9 +252,6 @@ const ScorePage = () => <div id='score-page'>
             ChooseSub("marinelifequiz");
             {Router.push('/Quiz1')}
             }} id='button10'>Start Quiz</div>
-=======
-                        <div id='button10'>Start Quiz</div>
-
                     </div>
                 </div>
 
@@ -287,9 +273,6 @@ const ScorePage = () => <div id='score-page'>
             ChooseSub("eutrophicationquiz");
             {Router.push('/Quiz1')}
             }} id='button11'>Start Quiz</div>
-=======
-                        <div id='button11'>Start Quiz</div>
-
                     </div>
                 </div>
 
@@ -310,9 +293,6 @@ const ScorePage = () => <div id='score-page'>
             ChooseSub("drinkingwaterquiz");
             {Router.push('/Quiz1')}
             }} id='button12'>Start Quiz</div>
-=======
-                        <div id='button12'>Start Quiz</div>
-
                     </div>
                 </div>
 
@@ -339,9 +319,6 @@ const ScorePage = () => <div id='score-page'>
             ChooseSub("pollutioncitiesquiz");
             {Router.push('/Quiz1')}
             }} id='button13'>Start Quiz</div>
-=======
-                        <div id='button13'>Start Quiz</div>
-
                     </div>
                 </div>
 
@@ -361,9 +338,6 @@ const ScorePage = () => <div id='score-page'>
             ChooseSub("pollutionwildlifequiz");
             {Router.push('/Quiz1')}
             }} id='button14'>Start Quiz</div>
-=======
-                        <div id='button14'>Start Quiz</div>
-
                     </div>
                 </div>
 
@@ -617,8 +591,6 @@ function ChooseSub(name){
     ChangeData(data);
 }
 
-
-=======
 
 
  ScorePage.defaultProps
