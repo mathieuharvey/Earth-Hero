@@ -7,9 +7,7 @@ const Hamburger = require('./hamburger.svg');
 const Menu = () => <div>
 
 <img id='hamburger' onClick={MenuToggle} src={Hamburger} />
-{/* <span id='hamburger' onClick={MenuToggle} className="material-icons">
-        menu
-    </span> */}
+
  <div id='menu'>
     <div id='x-div'>
         
@@ -51,6 +49,9 @@ const Menu = () => <div>
 
 </div>
 
+
+
+
 //functions
 var menu_state = false;
 
@@ -84,8 +85,6 @@ function CloseMenu(){
     }, 400);
     document.querySelector("#menu").style.right = "-65vw";
     document.querySelector("#gray").style.display = 'none';
-
-    // document.querySelector("#menu").style.opacity = 0;
     menu_state = false;
 }
 

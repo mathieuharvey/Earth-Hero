@@ -2,7 +2,7 @@ import React from 'react';
 import './choose-category.css';
 import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
-import Link from 'next/link';
+import Router from 'next/router';
 
 const GlobalWarmingImg = require('./globalwarming.png');
 const PollutionImg = require('./pollution.png');
@@ -70,26 +70,10 @@ function PollutionSelected(){
 
 function ToGlobalWarmingSubcat(){
     if(globalwarming_state === true){
-        window.location.pathname = '/Choose-Subcategory';
+        Router.push("/Choose-Subcategory");
     }else if(pollution_state === true){
-        window.location.pathname = '/Pollution-Subcategory';
+        Router.push("/Pollution-Subcategory");
     }
 }
-// var pollution_state = false;
-// var globalwarming_state = false;
-// function GlobalWarmingSelection(){
-//     if(globalwarming_state === false){
-//         document.querySelector("#globalwarming").style.height = '18vh';
-//         document.querySelector("#globalwarming").style.border = '5px solid #46c75f';
-//         document.querySelector("#pollution").style.height = '15vh';
-//         document.querySelector("#pollution").style.border = 'none';
-//         globalwarming_state === true;
-//     }else if(globalwarming_state === true){
-//         document.querySelector("#pollution").style.height = '18vh';
-//         document.querySelector("#pollution").style.border = '5px solid #46c75f';
-//         document.querySelector("#globalwarming").style.height = '15vh';
-//         document.querySelector("#globalwarming").style.border = 'none';
-//         globalwarming_state === false;
-//     }
-// }
+
 export default ChooseCategory;

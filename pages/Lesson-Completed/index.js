@@ -75,6 +75,7 @@ const LessonCompleted = () => {
     <Menu />
     </div>
 }
+
 function Nothing(){
     
 }

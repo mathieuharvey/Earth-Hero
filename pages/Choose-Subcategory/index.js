@@ -113,6 +113,9 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 </div>
 
 
+
+
+
 // toggle drought and flood state drop downs
 var drought_state = false;
 
@@ -143,52 +146,12 @@ function ToggleFlood(){
 //end of drop downs
 
 
+
+
 function HighlightButton(){
     document.querySelector("#button").style.backgroundColor = '#46c75f';
 }
 
-
-// var wildfires = false;
-// function ToWildfires(){
-//     wildfires = true;
-//     // document.querySelector("#button").href = 'http://localhost:3000/WhatCard';
-//     // window.location.pathname = '/WhatCard';
-// }
-
-// var watershortage = false;
-// function ToWaterShortage(){
-//     if(watershortage === false){
-//         watershortage = true;
-// }else if(watershortage === true){
-//     ToFamine();
-//     ToWildlife();
-//     ToIcebergMelting();
-//     ToCities();
-//     ToWildfires();
-//     watershortage = false;
-// }
-// }
-
-
-// var famine = false;
-// function ToFamine(){
-//     famine = true;
-// }
-
-// var wildlife = false;
-// function ToWildlife(){
-//     wildlife = true;
-// }
-
-// var icebergmelting = false;
-// function ToIcebergMelting(){
-//     icebergmelting = true;
-// }
-
-// var cities = false;
-// function ToCities(){
-//     cities = true;
-// }
 
 function ChooseSub(name){
     console.log(data);
