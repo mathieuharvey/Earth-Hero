@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+#background{
+    background-color: white;
+        border: 1px solid rgba(167, 167, 167, 0.199);
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px rgba(110, 110, 110, 0.151);
+        padding: 20%;
+        font-family: 'Baloo Thambi 2', cursive;
+       font-size: 22pt;
+}
+#background-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+#score{
+    font-family: 'Baloo Thambi 2', cursive;
+       font-size: 30pt;
+       align-self: center;
+       display: flex;
+       justify-content: center;
+       margin-top: 20px;
+}
+#toscore{
+    position: absolute;
+    bottom: 10%;
+}
+#buttoncontainer{
+    display: flex;
+    justify-content: center;
+}

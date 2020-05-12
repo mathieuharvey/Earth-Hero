@@ -72,16 +72,16 @@ const Quiz1 = () =>{
                 quizChoice4:"False",
                 answer:1
             },
-            {
-                quizName:"Question 5",
-                quizNumber:"5/5",
-                quizQuestion:"Which of the following is a way you can help prevent wildfires?",
-                quizChoice1:"Not extinguishing your fire",
-                quizChoice2:"Starting a fire when it's windy",
-                quizChoice3:"Never leaving your fire unattended",
-                quizChoice4:"Thowing away lit matches",
-                answer:3
-            }
+            // {
+            //     quizName:"Question 5",
+            //     quizNumber:"5/5",
+            //     quizQuestion:"Which of the following is a way you can help prevent wildfires?",
+            //     quizChoice1:"Not extinguishing your fire",
+            //     quizChoice2:"Starting a fire when it's windy",
+            //     quizChoice3:"Never leaving your fire unattended",
+            //     quizChoice4:"Thowing away lit matches",
+            //     answer:3
+            // }
         ]
     }else if(data.quiz === "watershortagequiz"){
         category = "Water Shortage";
@@ -126,16 +126,16 @@ const Quiz1 = () =>{
                 quizChoice4: "Choice 4",
                 answer:1
             },
-            {
-                quizName: "Question 5",
-                quizNumber: "5/5",
-                quizQuestion: "True or false: People who experience water shortage in their area may experience dehydration and disease.",
-                quizChoice1: "True",
-                quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
-                answer:1
-            }
+            // {
+            //     quizName: "Question 5",
+            //     quizNumber: "5/5",
+            //     quizQuestion: "True or false: People who experience water shortage in their area may experience dehydration and disease.",
+            //     quizChoice1: "True",
+            //     quizChoice2: "False",
+            //     quizChoice3: "True",
+            //     quizChoice4: "False",
+            //     answer:1
+            // }
         ]
     }else if(data.quiz === "faminequiz"){
         category = "Famine";
@@ -700,7 +700,7 @@ const Quiz1 = () =>{
                 console.log(data.score);
             }
             if(ind >= quizQuestions.length-1){
-                Router.push("/ScorePage");
+                Router.push("/QuizResult");
                 console.log(onclick);
             } else {
                 setInd(ind+1);

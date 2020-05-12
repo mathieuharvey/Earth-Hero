@@ -33,7 +33,7 @@ const Menu = () => <div>
         <Link href='/ScorePage'><span id='nav-icons' className="material-icons">
                 assignment
                 </span></Link>
-                <Link href='/ScorePage'><p id='link-text'>My Score</p></Link>
+                <Link href='/ScorePage'><p id='link-text'>Quizzes</p></Link>
             </div>
 
 

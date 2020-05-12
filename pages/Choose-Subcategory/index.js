@@ -198,7 +198,7 @@ function ChooseSub(name){
     data.help2 = name;
     data.help3 = name;
     data.help4 = name;
-    ChangeData({subcategory: name, category: name});
+    ChangeData(data);
 }
 
 
