@@ -65,11 +65,11 @@
     }
     .progress{
         background-color: rgb(255, 255, 255);
-        border: 1px solid rgba(236, 232, 232);
+        border: none;
         border-radius: 30px;
         height: 3vh;
         width: 60vw;
-        box-shadow: 3px 3px 3px rgba(15, 15, 15, 0.151);
+        box-shadow: 1px 2px 9px rgba(15, 15, 15, 0.151);
         margin-top: -9%;
     }
     #topic_button{
@@ -130,7 +130,7 @@
             border-bottom: none;
             cursor: pointer;
             border-radius: 30px;
-            margin-top: -10%;
+            margin-top: -5%;
             
         }
         .drop-down3{
@@ -144,7 +144,7 @@
             border-bottom: none;
             cursor: pointer;
             border-radius: 30px;
-            margin-top: -10%;
+            margin-top: -5%;
             
         }
         .drop-down4{
@@ -158,7 +158,7 @@
             border-bottom: none;
             cursor: pointer;
             border-radius: 30px;
-            margin-top: -10%;
+            margin-top: -5%;
             
         }
 
@@ -173,7 +173,7 @@
             border-bottom: none;
             cursor: pointer;
             border-radius: 30px;
-            margin-top: -10%;
+            margin-top: -5%;
             
         }
         .drop-down6{
@@ -187,7 +187,7 @@
             border-bottom: none;
             cursor: pointer;
             border-radius: 30px;
-            margin-top: -10%;
+            margin-top: -5%;
             
         }
         .drop-down7{
@@ -201,7 +201,7 @@
             border-bottom: none;
             cursor: pointer;
             border-radius: 30px;
-            margin-top: -10%;
+            margin-top: -5%;
             
         }
 
@@ -519,4 +519,40 @@
        /* end of css for radio buttons */
     #choose-subcategory{
         height: 100%;
+    }
+    p{
+        align-content: center;
+        justify-content: center;
+    }
+
+    .gw{
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 18pt;
+        color: rgb(102, 102, 102);
+        line-height: 17pt;
+        margin-bottom: 20%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;
+    }
+
+    .gwarming{
+        margin-top: -10%;
+    }
+
+    .po{
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 18pt;
+        color: rgb(102, 102, 102);
+        line-height: 17pt;
+        margin-bottom: 20%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;
+    }
+
+    .pollution{
+        margin-top:10%;
     }

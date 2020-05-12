@@ -12,17 +12,28 @@ const ScorePage = () => <div id='score-page'>
 {/* logo & title */}
         <div><Icon /></div>
         <div id="my_score_container">
-            <p className="my_score">My Score</p>
+            <p className="my_score">Quizzes</p>
         </div>
 {/* end of logo and title */}
+
+<div className="gwarming">
+    <hr/>
+    <h3 className="gw">Global Warming</h3>
+</div>
 
 {/* Topic 1 */}
         <div id='container' onClick={ToggleOne}>
             <div className='drop-down1'>
                 <p id='topic-one'>Wildfires</p>
+ Tanisha
+                {/* <span id='down-arrow' >
+                    0/5
+                </span> */}
+
                 <span id='down-arrow' >
                     {data.score}/4
                 </span>
+ master
 
             </div>
         </div>
@@ -73,7 +84,7 @@ const ScorePage = () => <div id='score-page'>
             </div>
     
             <div id='Button-text'>
-                <div id='button1'>Take Quiz Again</div>
+                <div id='button1'>Start Quiz</div>
             </div>
 
         </div>
@@ -84,10 +95,17 @@ const ScorePage = () => <div id='score-page'>
 {/* Topic 2 */}
 <div id='container' onClick={ToggleTwo}>
             <div className='drop-down2'>
+ Tanisha
+                <p id='topic-two'>Water Shortages</p>
+                {/* <span id='down-arrow2' >
+                    0/5
+                </span> */}
+
                 <p id='topic-two'>Water Shortage</p>
                 <span id='down-arrow2' >
                     {data.score}/4
                 </span>
+ master
 
             </div>
         </div>
@@ -142,7 +160,7 @@ const ScorePage = () => <div id='score-page'>
             </div>
     
             <div id='Button-text'>
-                    <div id='button2'>Take Quiz Again</div>
+                    <div id='button2'>Start Quiz</div>
             </div>
 
         </div>
@@ -153,9 +171,15 @@ const ScorePage = () => <div id='score-page'>
 <div id='container' onClick={ToggleThree}>
             <div className='drop-down3'>
                 <p id='topic-three'>Famine</p>
+ Tanisha
+                {/* <span id='down-arrow3' >
+                    0/5
+                </span> */}
+
                 <span id='down-arrow3' >
                     0/4
                 </span>
+ master
 
             </div>
         </div>
@@ -210,7 +234,7 @@ const ScorePage = () => <div id='score-page'>
             </div>
     
             <div id='Button-text'>
-                <div id='button3'>Take Quiz Again</div>
+                <div id='button3'>Start Quiz</div>
             </div>
 
         </div>
@@ -220,10 +244,10 @@ const ScorePage = () => <div id='score-page'>
 {/* Topic 4 */}
 <div id='container' onClick={ToggleFour}>
             <div className='drop-down4'>
-                <p id='topic-four'>Topic 4</p>
-                <span id='down-arrow4' >
+                <p id='topic-four'>Wild Life</p>
+                {/* <span id='down-arrow4' >
                     0/5
-                </span>
+                </span> */}
 
             </div>
         </div>
@@ -278,21 +302,27 @@ const ScorePage = () => <div id='score-page'>
             </div>
     
             <div id='Button-text'>
-                <div id='button4'>Take Quiz Again</div>
+                <div id='button4'>Start Quiz</div>
             </div>
 
         </div>
 
 {/* End of topic 4 */}
 
+<div className="pollution">
+    <hr/>
+    <h3 className="po">Pollution</h3>
+</div>
+
+
 {/* Topic 5 */}
 <div id='container' onClick={ToggleFive}>
             <div className='drop-down5'>
-                <p id='topic-five'>Topic 5</p>
-                <span id='down-arrow5' >
+                <p id='topic-five'>Iceberg Melting</p>
+                {/* <span id='down-arrow5' >
                     0/5
                 </span>
-
+ */}
             </div>
         </div>
 
@@ -346,7 +376,7 @@ const ScorePage = () => <div id='score-page'>
             </div>
     
             <div id='Button-text'>
-                <div id='button5'>Take Quiz Again</div>
+                <div id='button5'>Start Quiz</div>
             </div>
 
         </div>
@@ -356,11 +386,11 @@ const ScorePage = () => <div id='score-page'>
 {/* Topic 6 */}
 <div id='container' onClick={ToggleSix}>
             <div className='drop-down6'>
-                <p id='topic-six'>Topic 6</p>
-                <span id='down-arrow6' >
+                <p id='topic-six'>Cities</p>
+                {/* <span id='down-arrow6' >
                     0/5
                 </span>
-
+ */}
             </div>
         </div>
 
@@ -414,81 +444,15 @@ const ScorePage = () => <div id='score-page'>
             </div>
     
             <div id='Button-text'>
-                <div id='button6'>Take Quiz Again</div>
+                <div id='button6'>Start Quiz</div>
             </div>
 
         </div>
 
 {/* End of topic 6 */}
 
-{/* Topic 7 */}
-<div id='container' onClick={ToggleSeven}>
-            <div className='drop-down7' /*onClick={WhiteTopic}*/>
-                <p id='topic-seven'>Topic 7</p>
-                <span id='down-arrow7' >
-                    0/5
-                </span>
-            </div>
-        </div>
 
-        <div id='topic_seven-container'>
-
-            <div id='answer_seven'>
-
-                {/* <p className='container' id='one'>
-                    Question 1 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 2 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 3 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 4 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' id='five' >
-                    Question 5 <span className='scorenum'>0/1</span>
-                </p> */}
-
-                {/* <label  onClick={SevenButton} className='container' >Question 1
-                    <span  onClick={SevenButton} ></span>
-                    </label>
-                
-
-                <label  onClick={SevenButton} className='container'>Question 2
-                    <span  onClick={SevenButton} ></span>
-                </label>
-
-
-                <label onClick={SevenButton} className='container'>Question 3
-                    <span onClick={SevenButton} ></span>
-                </label>
-
-
-                <label onClick={SevenButton} className='container'>Question 4
-                    <span onClick={SevenButton} ></span>
-                </label>
-
-                <label onClick={SevenButton} className='container'>Question 5
-                    <span onClick={SevenButton} ></span>
-                </label>
- */}
-            </div>
-    
-            <div id='Button-text'>
-                <div id='button7'>Take Quiz Again</div>
-            </div>
-
-        </div>
-
-{/* End of topic 7 */}
-
-
+{/* 
         <div id='progress-container'>
             <p id='explanation'>Progress</p>
         </div>
@@ -499,9 +463,9 @@ const ScorePage = () => <div id='score-page'>
             <div className='progress'></div>
         </div>
 
-        <div id="topic_button"><GreenButton
+        {/* <div id="topic_button"><GreenButton
             text='Pick another topic'
-        /></div>
+        /></div> */}
 
 
     <div><Menu /></div>
@@ -608,53 +572,7 @@ function ToggleSix(){
 
 var seven_state = false;
 
-function ToggleSeven(){
-    if(seven_state === false){
-    document.querySelector(".drop-down7").style.backgroundColor = 'white';
-    document.querySelector(".drop-down7").style.boxShadow = "0px 10px 10px  rgb(233, 230, 230)";
-    document.querySelector("#topic_seven-container").style.display = 'block';
-    seven_state = true;
-    }else if(seven_state === true){
-        document.querySelector(".drop-down7").style.backgroundColor = 'rgb(233, 230, 230)';
-        document.querySelector(".drop-down7").style.boxShadow = "0px 10px 10px  white";
-        document.querySelector("#topic_seven-container").style.display = 'none';
-        seven_state = false;
-    }
-}
-// function WhiteTopic(){
-//     document.querySelector(".drop-down7").style.backgroundColor = 'white';
-// }
-
-// function BlueButton(){
-//     document.querySelector("#button1").style.backgroundColor = '#46c75f';
-// }
-// function TwoButton(){
-//     document.querySelector("#button2").style.backgroundColor = '#46c75f';
-// }
-// function ThreeButton(){
-//     document.querySelector("#button3").style.backgroundColor = '#46c75f';
-// }
-// function FourButton(){
-//     document.querySelector("#button4").style.backgroundColor = '#46c75f';
-// }
-// function FiveButton(){
-//     document.querySelector("#button5").style.backgroundColor = '#46c75f';
-// }
-// function SixButton(){
-//     document.querySelector("#button6").style.backgroundColor = '#46c75f';
-// }
-// function SevenButton(){
-//     document.querySelector("#button7").style.backgroundColor = '#46c75f';
-// }
 
  ScorePage.defaultProps
 export default ScorePage;
 
-
-            /* <button class='score'><b>Topic 1</b></button>
-            <button class='score'><b>Topic 1</b></button>
-            <button class='score'><b>Topic 1</b></button>
-            <button class='score'><b>Topic 1</b></button>
-            <button class='score'><b>Topic 1</b></button>
-            <button class='score'><b>Topic 1</b></button>
-            <button class='score'><b>Topic 1</b></button> */
