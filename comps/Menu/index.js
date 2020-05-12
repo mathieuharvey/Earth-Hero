@@ -28,6 +28,15 @@ const Menu = () => <div>
 
 
         <div id='link'>
+        <Link href='/Choose-Category'><span id='nav-icons' className="material-icons">
+                category
+                </span></Link>
+                <Link href='/Choose-Category'><p id='link-text'>Main Categories</p></Link>
+            </div>
+
+
+
+        <div id='link'>
         <Link href='/ScorePage'><span id='nav-icons' className="material-icons">
                 assignment
                 </span></Link>
