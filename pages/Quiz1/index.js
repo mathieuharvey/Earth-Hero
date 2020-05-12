@@ -3,7 +3,7 @@ import './quiz.css';
 import Router from 'next/router';
 import Quiz from '../../comps/Quiz';
 
-import {data} from '../../data';
+import {data, ChangeData} from '../../data';
 
 // var index = 0;
 // const quizarray = [
@@ -39,7 +39,8 @@ const Quiz1 = () =>{
                 quizChoice1:"Wet and rainy environments",
                 quizChoice2:"Dry environments",
                 quizChoice3:"Snowy and cold environments",
-                quizChoice4:"Choice 4"
+                quizChoice4:"Choice 4",
+                answer:2
             },
             {
                 quizName:"Question 2",
@@ -48,7 +49,8 @@ const Quiz1 = () =>{
                 quizChoice1:"Flooding",
                 quizChoice2:"Respiratory problems",
                 quizChoice3:"Cold temperatures",
-                quizChoice4:"Tsunamis"
+                quizChoice4:"Tsunamis",
+                answer:2
             },
             {
                 quizName:"Question 3",
@@ -57,7 +59,8 @@ const Quiz1 = () =>{
                 quizChoice1:"They kill off the surplus amount of wildlife",
                 quizChoice2:"They can burn old houses down",
                 quizChoice3:"They kill bad diseases and insects that harm trees",
-                quizChoice4:"They help produce heat in cold areas"
+                quizChoice4:"They help produce heat in cold areas",
+                answer:3
             },
             {
                 quizName:"Question 4",
@@ -66,17 +69,19 @@ const Quiz1 = () =>{
                 quizChoice1:"True",
                 quizChoice2:"False",
                 quizChoice3:"True",
-                quizChoice4:"False"
+                quizChoice4:"False",
+                answer:1
             },
-            {
-                quizName:"Question 5",
-                quizNumber:"5/5",
-                quizQuestion:"Which of the following is a way you can help prevent wildfires?",
-                quizChoice1:"Not extinguishing your fire",
-                quizChoice2:"Starting a fire when it's windy",
-                quizChoice3:"Never leaving your fire unattended",
-                quizChoice4:"Thowing away lit matches"
-            }
+            // {
+            //     quizName:"Question 5",
+            //     quizNumber:"5/5",
+            //     quizQuestion:"Which of the following is a way you can help prevent wildfires?",
+            //     quizChoice1:"Not extinguishing your fire",
+            //     quizChoice2:"Starting a fire when it's windy",
+            //     quizChoice3:"Never leaving your fire unattended",
+            //     quizChoice4:"Thowing away lit matches",
+            //     answer:3
+            // }
         ]
     }else if(data.quiz === "watershortagequiz"){
         category = "Water Shortage";
@@ -88,7 +93,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 2",
@@ -97,7 +103,8 @@ const Quiz1 = () =>{
                 quizChoice1: "The water is too cold",
                 quizChoice2: "The water is polluted",
                 quizChoice3: "The water has minerals in it",
-                quizChoice4: "Choice 4"
+                quizChoice4: "Choice 4",
+                answer:2
             },
             {
                 quizName: "Question 3",
@@ -106,7 +113,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Most of Earth's water is too expensive",
                 quizChoice2: "Most of Earth's water is too far away",
                 quizChoice3: "Most of Earth's water has bugs in it",
-                quizChoice4: "Most of Earth's water is salt water"
+                quizChoice4: "Most of Earth's water is salt water",
+                answer:4
             },
             {
                 quizName: "Question 4",
@@ -115,17 +123,19 @@ const Quiz1 = () =>{
                 quizChoice1: "Donate clean water to charities and families in need",
                 quizChoice2: "Keep the sink running often",
                 quizChoice3: "Take longer showers",
-                quizChoice4: "Choice 4"
+                quizChoice4: "Choice 4",
+                answer:1
             },
-            {
-                quizName: "Question 5",
-                quizNumber: "5/5",
-                quizQuestion: "True or false: People who experience water shortage in their area may experience dehydration and disease.",
-                quizChoice1: "True",
-                quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False"
-            }
+            // {
+            //     quizName: "Question 5",
+            //     quizNumber: "5/5",
+            //     quizQuestion: "True or false: People who experience water shortage in their area may experience dehydration and disease.",
+            //     quizChoice1: "True",
+            //     quizChoice2: "False",
+            //     quizChoice3: "True",
+            //     quizChoice4: "False",
+            //     answer:1
+            // }
         ]
     }else if(data.quiz === "faminequiz"){
         category = "Famine";
@@ -137,7 +147,8 @@ const Quiz1 = () =>{
                 quizChoice1: "A surplus amount of food in an area",
                 quizChoice2: "A lack of water in an area",
                 quizChoice3: "An extreme shortage of food in an area",
-                quizChoice4: "An area that is very dry"
+                quizChoice4: "An area that is very dry",
+                answer:3
             },
             {
                 quizName: "Question 2",
@@ -146,7 +157,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Floods",
                 quizChoice2: "Droughts",
                 quizChoice3: "Starvation",
-                quizChoice4: "A natural disaster"
+                quizChoice4: "A natural disaster",
+                answer:3
             },
             {
                 quizName: "Question 3",
@@ -155,7 +167,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 4",
@@ -164,7 +177,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:2
             }
         ]
     }else if(data.quiz === 'wildlifequiz'){
@@ -177,7 +191,8 @@ const Quiz1 = () =>{
                 quizChoice1: "They help keep wildlife healthy",
                 quizChoice2: "They can cause diseases that harm the wildlife",
                 quizChoice3: "Droughts allow the wildlife to live their best lives",
-                quizChoice4: "They provide more water that helps the wildlife"
+                quizChoice4: "They provide more water that helps the wildlife",
+                answer:2
             },
             {
                 quizName: "Question 2",
@@ -186,7 +201,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Diseases",
                 quizChoice2: "Wildfires",
                 quizChoice3: "Decrease of wildlife",
-                quizChoice4: "All of the above"
+                quizChoice4: "All of the above",
+                answer:4
             },
             {
                 quizName: "Question 3",
@@ -195,7 +211,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:2
             },
             {
                 quizName: "Question 4",
@@ -204,7 +221,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:2
             }
         ]
     }else if(data.quiz === "icebergmeltingquiz"){
@@ -217,7 +235,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 2",
@@ -226,7 +245,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Droughts",
                 quizChoice2: "Polar bears",
                 quizChoice3: "A rise in temperatures",
-                quizChoice4: "Asteroids"
+                quizChoice4: "Asteroids",
+                answer: 3
             },
             {
                 quizName: "Question 3",
@@ -235,7 +255,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 4",
@@ -244,7 +265,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             }
         ]
     }else if(data.quiz === "citiesquiz"){
@@ -257,7 +279,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Icebergs melting",
                 quizChoice2: "Clogged drains",
                 quizChoice3: "Heavy precipitation",
-                quizChoice4: "All of the above" 
+                quizChoice4: "All of the above",
+                answer:4
             },
             {
                 quizName: "Question 2",
@@ -266,7 +289,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False" 
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 3",
@@ -275,7 +299,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False" 
+                quizChoice4: "False",
+                answer:2
             },
             {
                 quizName: "Question 4",
@@ -284,7 +309,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False" 
+                quizChoice4: "False",
+                answer:1
             }
         ]
     }else if(data.quiz === "carbonfootprintquiz"){
@@ -297,7 +323,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Breathing",
                 quizChoice2: "Eating habits",
                 quizChoice3: "Carbon dioxide released",
-                quizChoice4: "Pets"
+                quizChoice4: "Pets",
+                answer:3
             },
             {
                 quizName: "Question 2",
@@ -306,7 +333,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Recycle",
                 quizChoice2: "Waste food",
                 quizChoice3: "Use a personal car",
-                quizChoice4: "All of the above"
+                quizChoice4: "All of the above",
+                answer:1
             },
             {
                 quizName: "Question 3",
@@ -315,7 +343,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 4",
@@ -324,7 +353,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             }
         ]
     }else if(data.quiz === "acidrainquiz"){
@@ -337,7 +367,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 2",
@@ -346,7 +377,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Heat",
                 quizChoice2: "Tornados",
                 quizChoice3: "Snow",
-                quizChoice4: "Hurricanes"
+                quizChoice4: "Hurricanes",
+                answer:3
             },
             {
                 quizName: "Question 3",
@@ -355,7 +387,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:2
             },
             {
                 quizName: "Question 4",
@@ -364,7 +397,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Droughts",
                 quizChoice2: "Air pollution",
                 quizChoice3: "Icebergs melting",
-                quizChoice4: "Famines"
+                quizChoice4: "Famines",
+                answer:2
             }
         ]
     }else if(data.quiz === "respiratoryproblemsquiz"){
@@ -377,7 +411,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 2",
@@ -386,7 +421,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Lungs",
                 quizChoice2: "Kidneys",
                 quizChoice3: "Pancreas",
-                quizChoice4: "Left arm"
+                quizChoice4: "Left arm",
+                answer:1
             },
             {
                 quizName: "Question 3",
@@ -395,7 +431,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Difficulty breathing",
                 quizChoice2: "Diseases",
                 quizChoice3: "Coughing",
-                quizChoice4: "All of the above"
+                quizChoice4: "All of the above",
+                answer:4
             },
             {
                 quizName: "Question 4",
@@ -404,7 +441,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             }
         ]
     }else if(data.quiz === "marinelifequiz"){
@@ -417,7 +455,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Cardboard",
                 quizChoice2: "Laundry detergent",
                 quizChoice3: "Paper",
-                quizChoice4: "Plastic and garbage"
+                quizChoice4: "Plastic and garbage",
+                answer:4
             },
             {
                 quizName: "Question 2",
@@ -426,7 +465,8 @@ const Quiz1 = () =>{
                 quizChoice1: "2%",
                 quizChoice2: "18%",
                 quizChoice3: "9%",
-                quizChoice4: "49%"
+                quizChoice4: "49%",
+                answer:3
             },
             {
                 quizName: "Question 3",
@@ -435,7 +475,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 4",
@@ -444,7 +485,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             }
         ]
     }else if(data.quiz === "eutrophicationquiz"){
@@ -457,7 +499,8 @@ const Quiz1 = () =>{
                 quizChoice1: "The gradual increase of phosphorus in an aging body of water",
                 quizChoice2: "The lack of food in an area",
                 quizChoice3: "A lack of water",
-                quizChoice4: "Pollutions within the air"
+                quizChoice4: "Pollutions within the air",
+                answer:1
             },
             {
                 quizName: "Question 2",
@@ -466,7 +509,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:2
             },
             {
                 quizName: "Question 3",
@@ -475,7 +519,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 4",
@@ -484,7 +529,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Use a compost bin",
                 quizChoice2: "Limit your carbon footprint",
                 quizChoice3: "Use public transportation",
-                quizChoice4: "All of the above"
+                quizChoice4: "All of the above",
+                answer:4
             }
         ]
     }else if(data.quiz === "drinkingwaterquiz"){
@@ -497,7 +543,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Salt water (undrinkable)",
                 quizChoice2: "Fresh water (drinkable)",
                 quizChoice3: "Choice 3",
-                quizChoice4: "Choice 4"  
+                quizChoice4: "Choice 4",
+                answer:1
             },
             {
                 quizName: "Question 2",
@@ -506,7 +553,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 3",
@@ -515,7 +563,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 4",
@@ -524,7 +573,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             }
         ]
     }else if(data.quiz === "pollutioncitiesquiz"){
@@ -537,7 +587,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Television",
                 quizChoice2: "Air conditioning",
                 quizChoice3: "Cars",
-                quizChoice4: "Shops"
+                quizChoice4: "Shops",
+                answer:3
             },
             {
                 quizName: "Question 2",
@@ -546,7 +597,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 3",
@@ -555,7 +607,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Lung problems",
                 quizChoice2: "Diseases",
                 quizChoice3: "All of the above",
-                quizChoice4: "Choice 4"
+                quizChoice4: "Choice 4",
+                answer:3
             },
             {
                 quizName: "Question 4",
@@ -564,7 +617,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Buy from non eco-friendly companies",
                 quizChoice2: "Use a personal car to get somewhere",
                 quizChoice3: "Reduce your waste",
-                quizChoice4: "All of the above"
+                quizChoice4: "All of the above",
+                answer:3
             }
         ]
     }else if(data.quiz === "pollutionwildlifequiz"){
@@ -577,7 +631,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Acid rain",
                 quizChoice2: "Hibernation",
                 quizChoice3: "Biking",
-                quizChoice4: "All of the above"
+                quizChoice4: "All of the above",
+                answer:1
             },
             {
                 quizName: "Question 2",
@@ -586,7 +641,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 3",
@@ -595,7 +651,8 @@ const Quiz1 = () =>{
                 quizChoice1: "True",
                 quizChoice2: "False",
                 quizChoice3: "True",
-                quizChoice4: "False"
+                quizChoice4: "False",
+                answer:1
             },
             {
                 quizName: "Question 4",
@@ -604,7 +661,8 @@ const Quiz1 = () =>{
                 quizChoice1: "Not litter",
                 quizChoice2: "Bike or walk to places",
                 quizChoice3: "Recycle and take care of the environment",
-                quizChoice4: "All of the above"
+                quizChoice4: "All of the above",
+                answer:4
             }
         ]
     }
@@ -632,11 +690,17 @@ const Quiz1 = () =>{
         quizChoice2 = {quizQuestions[ind].quizChoice2}
         quizChoice3 = {quizQuestions[ind].quizChoice3}
         quizChoice4 = {quizQuestions[ind].quizChoice4}
+        onSelect={QuizSelect}
         />
         <div id='Button-text'>
         <div id='button1' onClick={()=>{
+            if(quizQuestions[ind].answer === answer){
+                data.score++;
+                ChangeData(data);
+                console.log(data.score);
+            }
             if(ind >= quizQuestions.length-1){
-                Router.push("/ScorePage");
+                Router.push("/QuizResult");
                 console.log(onclick);
             } else {
                 setInd(ind+1);
@@ -648,7 +712,11 @@ const Quiz1 = () =>{
     
 }
 
+var answer = 0;
 
+function QuizSelect(num){
+    answer = num;
+}
 
 
 
