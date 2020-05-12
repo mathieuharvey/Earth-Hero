@@ -4,8 +4,10 @@
     right: 0px;
     top: 200px;
 }
-#wildfires-1 {
+#whatcardimg{
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 #whatcard{
     -webkit-tap-highlight-color: transparent;
