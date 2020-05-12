@@ -18,10 +18,9 @@ const QuizResult = () => <div id='quiz-result'>
     </div>
     
     </div>
-
     <div id='buttoncontainer'>
     <div onClick={() => {Router.push('/ScorePage')}} id='toscore'><GreenButton
-    text="See my Score Page" /></div>
+    text="Take another quiz" /></div>
     </div>
 
     <div><Menu /></div>
