@@ -70,7 +70,7 @@
         position: relative;
     }
     #menu-content{
-        margin-left: 18%;
+        margin-left: 12%;
         margin-top: 15%;
         display: block;
     }
@@ -82,7 +82,7 @@
     #link{
         display: flex;
         align-items: center;
-        margin-bottom: -10%;
+        /* margin-bottom: -10%; */
     }
     #nav-icons{
         font-size: 25pt;
