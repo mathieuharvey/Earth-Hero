@@ -44,10 +44,12 @@
     #down-arrow{
         font-size: 21pt;
         transition: 0.3s;
+        font-family: 'Material Icons';
     }
     #down-arrow2{
         font-size: 21pt;
         transition: 0.3s;
+        font-family: 'Material Icons';
     }
     #container{
         display: flex;
