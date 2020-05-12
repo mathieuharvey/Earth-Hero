@@ -25,15 +25,7 @@ const ScorePage = () => <div id='score-page'>
         <div id='container' onClick={ToggleOne}>
             <div className='drop-down1'>
                 <p id='topic-one'>Wildfires</p>
- Tanisha
-                {/* <span id='down-arrow' >
-                    0/5
-                </span> */}
-
-                <span id='down-arrow' >
-                    {data.score}/4
-                </span>
- master
+ 
 
             </div>
         </div>
@@ -41,45 +33,6 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_one-container'>
 
             <div id='answer_one'>
-{/*                 
-                <p className='container' >
-                    Question 1 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 2 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 3 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 4 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 5 <span className='scorenum'>0/1</span>
-                </p>
-                
-
-                {/* <label  onClick={BlueButton} className='container'>Question 2
-                    <span  onClick={BlueButton} ></span>
-                </label>
-
-
-                <label onClick={BlueButton} className='container'>Question 3
-                    <span onClick={BlueButton} ></span>
-                </label>
-
-
-                <label onClick={BlueButton} className='container'>Question 4
-                    <span onClick={BlueButton} ></span>
-                </label>
-
-                <label onClick={BlueButton} className='container'>Question 5
-                    <span onClick={BlueButton} ></span>
-                </label> */} 
 
             </div>
     
@@ -92,20 +45,14 @@ const ScorePage = () => <div id='score-page'>
 {/* End of topic 1 */}
 
 
+
 {/* Topic 2 */}
 <div id='container' onClick={ToggleTwo}>
             <div className='drop-down2'>
- Tanisha
-                <p id='topic-two'>Water Shortages</p>
-                {/* <span id='down-arrow2' >
-                    0/5
-                </span> */}
+ 
 
                 <p id='topic-two'>Water Shortage</p>
-                <span id='down-arrow2' >
-                    {data.score}/4
-                </span>
- master
+ 
 
             </div>
         </div>
@@ -113,50 +60,7 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_two-container'>
 
             <div id='answer_two'>
-{/* 
-                <p className='container' >
-                    Question 1 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 2 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 3 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 4 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 5 <span className='scorenum'>0/1</span>
-                </p> */}
 
-                {/* <label  onClick={TwoButton} className='container' >Question 1
-                    <span  onClick={TwoButton} ></span>
-                    </label>
-                
-
-                <label  onClick={TwoButton} className='container'>Question 2
-                    <span  onClick={TwoButton} ></span>
-                </label>
-
-
-                <label onClick={TwoButton} className='container'>Question 3
-                    <span onClick={TwoButton} ></span>
-                </label>
-
-
-                <label onClick={TwoButton} className='container'>Question 4
-                    <span onClick={TwoButton} ></span>
-                </label>
-
-                <label onClick={TwoButton} className='container'>Question 5
-                    <span onClick={TwoButton} ></span>
-                </label>
- */}
             </div>
     
             <div id='Button-text'>
@@ -167,19 +71,14 @@ const ScorePage = () => <div id='score-page'>
 
 {/* End of topic 2 */}
 
+
+
+
 {/* Topic 3 */}
 <div id='container' onClick={ToggleThree}>
             <div className='drop-down3'>
                 <p id='topic-three'>Famine</p>
- Tanisha
-                {/* <span id='down-arrow3' >
-                    0/5
-                </span> */}
-
-                <span id='down-arrow3' >
-                    0/4
-                </span>
- master
+ 
 
             </div>
         </div>
@@ -187,49 +86,6 @@ const ScorePage = () => <div id='score-page'>
         <div id='topic_three-container'>
 
             <div id='answer_three'>
-
-                {/* <p className='container' >
-                    Question 1 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 2 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 3 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 4 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 5 <span className='scorenum'>0/1</span>
-                </p> */}
-
-                {/* <label  onClick={ThreeButton} className='container' >Question 1
-                    <span  onClick={ThreeButton} ></span>
-                    </label>
-                
-
-                <label  onClick={ThreeButton} className='container'>Question 2
-                    <span  onClick={ThreeButton} ></span>
-                </label>
-
-
-                <label onClick={ThreeButton} className='container'>Question 3
-                    <span onClick={ThreeButton} ></span>
-                </label>
-
-
-                <label onClick={ThreeButton} className='container'>Question 4
-                    <span onClick={ThreeButton} ></span>
-                </label>
-
-                <label onClick={ThreeButton} className='container'>Question 5
-                    <span onClick={ThreeButton} ></span>
-                </label> */}
 
             </div>
     
@@ -241,13 +97,12 @@ const ScorePage = () => <div id='score-page'>
 
 {/* End of topic 3 */}
 
+
+
 {/* Topic 4 */}
 <div id='container' onClick={ToggleFour}>
             <div className='drop-down4'>
                 <p id='topic-four'>Wild Life</p>
-                {/* <span id='down-arrow4' >
-                    0/5
-                </span> */}
 
             </div>
         </div>
@@ -256,49 +111,6 @@ const ScorePage = () => <div id='score-page'>
 
             <div id='answer_four'>
 
-                {/* <p className='container' >
-                    Question 1 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 2 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 3 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 4 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 5 <span className='scorenum'>0/1</span>
-                </p> */}
-
-                {/* <label  onClick={FourButton} className='container' >Question 1
-                    <span  onClick={FourButton} ></span>
-                    </label>
-                
-
-                <label  onClick={FourButton} className='container'>Question 2
-                    <span  onClick={FourButton} ></span>
-                </label>
-
-
-                <label onClick={FourButton} className='container'>Question 3
-                    <span onClick={FourButton} ></span>
-                </label>
-
-
-                <label onClick={FourButton} className='container'>Question 4
-                    <span onClick={FourButton} ></span>
-                </label>
-
-                <label onClick={FourButton} className='container'>Question 5
-                    <span onClick={FourButton} ></span>
-                </label>
- */}
             </div>
     
             <div id='Button-text'>
@@ -315,14 +127,13 @@ const ScorePage = () => <div id='score-page'>
 </div>
 
 
+
+
 {/* Topic 5 */}
 <div id='container' onClick={ToggleFive}>
             <div className='drop-down5'>
                 <p id='topic-five'>Iceberg Melting</p>
-                {/* <span id='down-arrow5' >
-                    0/5
-                </span>
- */}
+    
             </div>
         </div>
 
@@ -330,49 +141,7 @@ const ScorePage = () => <div id='score-page'>
 
             <div id='answer_five'>
 
-                {/* <p className='container' >
-                    Question 1 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 2 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 3 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 4 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 5 <span className='scorenum'>0/1</span>
-                </p> */}
-
-                {/* <label  onClick={FiveButton} className='container' >Question 1
-                    <span  onClick={FiveButton} ></span>
-                    </label>
-                
-
-                <label  onClick={FiveButton} className='container'>Question 2
-                    <span  onClick={FiveButton} ></span>
-                </label>
-
-
-                <label onClick={FiveButton} className='container'>Question 3
-                    <span onClick={FiveButton} ></span>
-                </label>
-
-
-                <label onClick={FiveButton} className='container'>Question 4
-                    <span onClick={FiveButton} ></span>
-                </label>
-
-                <label onClick={FiveButton} className='container'>Question 5
-                    <span onClick={FiveButton} ></span>
-                </label>
- */}
+               
             </div>
     
             <div id='Button-text'>
@@ -383,14 +152,15 @@ const ScorePage = () => <div id='score-page'>
 
 {/* End of topic 5 */}
 
+
+
+
+
 {/* Topic 6 */}
 <div id='container' onClick={ToggleSix}>
             <div className='drop-down6'>
                 <p id='topic-six'>Cities</p>
-                {/* <span id='down-arrow6' >
-                    0/5
-                </span>
- */}
+        
             </div>
         </div>
 
@@ -398,49 +168,6 @@ const ScorePage = () => <div id='score-page'>
 
             <div id='answer_six'>
 
-                {/* <p className='container' >
-                    Question 1 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 2 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 3 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 4 <span className='scorenum'>0/1</span>
-                </p>
-                
-                <p className='container' >
-                    Question 5 <span className='scorenum'>0/1</span>
-                </p>
- */}
-                {/* <label  onClick={SixButton} className='container' >Question 1
-                    <span  onClick={SixButton} ></span>
-                    </label>
-                
-
-                <label  onClick={SixButton} className='container'>Question 2
-                    <span  onClick={SixButton} ></span>
-                </label>
-
-
-                <label onClick={SixButton} className='container'>Question 3
-                    <span onClick={SixButton} ></span>
-                </label>
-
-
-                <label onClick={SixButton} className='container'>Question 4
-                    <span onClick={SixButton} ></span>
-                </label>
-
-                <label onClick={SixButton} className='container'>Question 5
-                    <span onClick={SixButton} ></span>
-                </label>
- */}
             </div>
     
             <div id='Button-text'>
@@ -450,22 +177,6 @@ const ScorePage = () => <div id='score-page'>
         </div>
 
 {/* End of topic 6 */}
-
-
-{/* 
-        <div id='progress-container'>
-            <p id='explanation'>Progress</p>
-        </div>
-
-        <hr className="line"></hr>
-
-        <div id="progress_bar">
-            <div className='progress'></div>
-        </div>
-
-        {/* <div id="topic_button"><GreenButton
-            text='Pick another topic'
-        /></div> */}
 
 
     <div><Menu /></div>
