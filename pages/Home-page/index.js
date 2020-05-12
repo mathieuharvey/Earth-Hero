@@ -1,10 +1,7 @@
 import React from 'react';
 import './home-page.css';
 import Link from 'next/link';
-import {mydata, ChangeData} from '../../data';
 
-// mydata.select1 = "a new value";
-// ChangeData(mydata);
 
 const logoImg = require('./earth-hero-logo-vertical.svg');
 

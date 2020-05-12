@@ -96,6 +96,7 @@
         display: none;
         transition: 0.5s;
     }
+
     /* css for radio butons */
     .container{
         display: block;
@@ -133,7 +134,6 @@
         content: "";
         position: absolute;
         display: none;
-        /* transition: 0.3s ease-in-out; */
       }
       .container input:checked ~ .checkmark:after {
         display: block;
@@ -147,6 +147,7 @@
        background: #46c75f;
    }
    /* end of css for radio buttons */
+   
 #choose-subcategory{
     height: 100%;
 }
