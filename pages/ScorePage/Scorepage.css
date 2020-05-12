@@ -57,10 +57,10 @@
     }
     .my_score{
         font-family: 'Baloo Thambi 2', cursive;
-        font-size: 18pt;
+        font-size: 20pt;
         color: rgb(102, 102, 102);
         line-height: 17pt;
-        margin-bottom: 40%;
+        margin-bottom: 50%;
     }
     .line{
         width: 75%;
@@ -125,7 +125,7 @@
             border-bottom: none;
             cursor: pointer;
             border-radius: 30px;
-            margin-top: -10%;
+            margin-top: -5%;
             
         }
         .drop-down2{
@@ -214,6 +214,111 @@
             
         }
 
+        .drop-down8{
+            background-color: rgb(233, 230, 230);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            width: 60vw;
+            height: 7vh;
+            border-bottom: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: -5%;
+            
+        }
+
+        .drop-down9{
+            background-color: rgb(233, 230, 230);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            width: 60vw;
+            height: 7vh;
+            border-bottom: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: -5%;
+            
+        }
+
+        .drop-down10{
+            background-color: rgb(233, 230, 230);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            width: 60vw;
+            height: 7vh;
+            border-bottom: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: -5%;
+            
+        }
+
+        .drop-down11{
+            background-color: rgb(233, 230, 230);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            width: 60vw;
+            height: 7vh;
+            border-bottom: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: -5%;
+            
+        }
+
+        .drop-down12{
+            background-color: rgb(233, 230, 230);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            width: 60vw;
+            height: 7vh;
+            border-bottom: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: -5%;
+            
+        }
+
+        .drop-down13{
+            background-color: rgb(233, 230, 230);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            width: 60vw;
+            height: 7vh;
+            border-bottom: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: -5%;
+            
+        }
+
+        .drop-down14{
+            background-color: rgb(233, 230, 230);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            width: 60vw;
+            height: 7vh;
+            border-bottom: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-top: -5%;
+            
+        }
+
 
         #topic-one{
             font-family: 'Baloo Thambi 2', cursive;
@@ -271,6 +376,63 @@
             margin-left: 6%;
             color: rgb(94, 94, 94);
         }
+        #topic-eight{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-nine{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-ten{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-eleven{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-twelve{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-thirteen{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+        #topic-fourteen{
+            font-family: 'Baloo Thambi 2', cursive;
+            display: flex;
+            font-size: 14pt;
+            text-align: center;
+            margin-left: 6%;
+            color: rgb(94, 94, 94);
+        }
+
 
         #down-arrow{
             font-family: 'Baloo Thambi 2', cursive;
@@ -321,6 +483,56 @@
             color: rgb(94, 94, 94);
             transition: 0.3s;
         }
+        #down-arrow8{
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow9{
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow10{
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow11{
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow12{
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow13{
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+        #down-arrow14{
+            font-family: 'Baloo Thambi 2', cursive;
+            font-size: 13pt;
+            margin-right: 4%;
+            color: rgb(94, 94, 94);
+            transition: 0.3s;
+        }
+
 
         #container{
             display: flex;
@@ -417,7 +629,92 @@
                 position: relative;
                 top: 20%;
                 margin: 5% 15% 5% 15%;
+                }  
+            #button8{
+                padding: 15px 45px 15px 45px;
+                background-color: #46c75f;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
                 }        
+            #button9{
+                padding: 15px 45px 15px 45px;
+                background-color: #46c75f;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            #button10{
+                padding: 15px 45px 15px 45px;
+                background-color: #46c75f;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            #button11{
+                padding: 15px 45px 15px 45px;
+                background-color: #46c75f;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            #button12{
+                padding: 15px 45px 15px 45px;
+                background-color: #46c75f;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            #button13{
+                padding: 15px 45px 15px 45px;
+                background-color: #46c75f;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+            #button14{
+                padding: 15px 45px 15px 45px;
+                background-color: #46c75f;
+                border-radius: 50px;
+                font-family: 'Baloo Thambi 2', cursive;
+                font-size: 14pt;
+                color: white;
+                cursor: pointer;
+                position: relative;
+                top: 20%;
+                margin: 5% 15% 5% 15%;
+                }        
+      
             
             #Button-text{
                 display: flex;
@@ -471,6 +768,49 @@
             display: none;
             transition: 0.5s;
         }
+
+        #topic_eight-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+        }
+
+        #topic_nine-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+        }
+
+        #topic_ten-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+        }
+
+        #topic_eleven-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+        }
+
+        #topic_twelve-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+        }
+
+        #topic_thirteen-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+        }
+
+        #topic_fourteen-container{
+            display: block;
+            display: none;
+            transition: 0.5s;
+        }
+        
 
 
         .container{
@@ -564,4 +904,25 @@
 
     .pollution{
         margin-top:10%;
+    }
+
+    .air{
+        width: 55%;
+    }
+
+    .a{
+        font-family: 'Baloo Thambi 2', cursive;
+        font-size: 14pt;
+        color: rgb(102, 102, 102);
+        line-height: 17pt;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8%; 
+        margin-bottom: 0%;
+    }
+
+    .line{
+        width: 85%;
+        margin-top: 20%;
     }
