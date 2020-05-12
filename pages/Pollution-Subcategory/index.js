@@ -5,6 +5,8 @@ import Menu from '../../comps/Menu';
 import {data, ChangeData} from '../../data';
 import Router from 'next/router';
 
+const Arrow = require('./arrow.svg');
+
 const PollutionSubcategory = () => <div id='pollution-subcategory'>
 
 <div id='flex-icons'>
@@ -18,10 +20,10 @@ const PollutionSubcategory = () => <div id='pollution-subcategory'>
 <div id='container' onClick={ToggleAir}>
     <div className='drop-down'>
         <p id='droughts'>Air</p>
-        <span id='down-arrow' className="material-icons">
+        {/* <span id='down-arrow' className="material-icons">
             keyboard_arrow_down
-        </span>
-
+        </span> */}
+        <img id='down-arrow' src={Arrow} />
     </div>
 </div>
 
@@ -64,9 +66,10 @@ const PollutionSubcategory = () => <div id='pollution-subcategory'>
 <div id='container2' onClick={ToggleWater}>
     <div className='drop-down'>
         <p id='droughts'>Water</p>
-        <span id='down-arrow2' className="material-icons">
+        {/* <span id='down-arrow2' className="material-icons">
             keyboard_arrow_down
-        </span>
+        </span> */}
+        <img id='down-arrow2' src={Arrow} />
     </div>
 </div>
 
@@ -107,9 +110,10 @@ const PollutionSubcategory = () => <div id='pollution-subcategory'>
 <div id='container2' onClick={ToggleLand}>
     <div className='drop-down'>
         <p id='droughts'>Land</p>
-        <span id='down-arrow3' className="material-icons">
+        {/* <span id='down-arrow3' className="material-icons">
             keyboard_arrow_down
-        </span>
+        </span> */}
+        <img id='down-arrow3' src={Arrow} />
     </div>
 </div>
 

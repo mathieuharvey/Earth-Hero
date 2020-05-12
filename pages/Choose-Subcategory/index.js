@@ -5,6 +5,8 @@ import Menu from '../../comps/Menu';
 import {data, ChangeData} from '../../data';
 import Router from 'next/router';
 
+const Arrow = require('./arrow.svg');
+
 const ChooseSubCategory = () => <div id='choose-subcategory'>
     <div id='flex-icons'>
         <div><Icon /></div>
@@ -17,10 +19,10 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 <div id='container' onClick={ToggleDrought}>
     <div className='drop-down'>
         <p id='droughts'>Droughts</p>
-        <span id='down-arrow' className="material-icons">
+        {/* <span id='down-arrow' className="material-icons">
             keyboard_arrow_down
-        </span>
-
+        </span> */}
+        <img id='down-arrow' src={Arrow} />
     </div>
 </div>
 
@@ -71,9 +73,10 @@ const ChooseSubCategory = () => <div id='choose-subcategory'>
 <div id='container2' onClick={ToggleFlood}>
     <div className='drop-down'>
         <p id='droughts'>Floods</p>
-        <span id='down-arrow2' className="material-icons">
+        {/* <span id='down-arrow2' className="material-icons">
             keyboard_arrow_down
-        </span>
+        </span> */}
+        <img id='down-arrow2' src={Arrow} />
     </div>
 </div>
 
