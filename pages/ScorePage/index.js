@@ -3,6 +3,7 @@ import './Scorepage.css';
 import GreenButton from '../../comps/Green-button';
 import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
+import { data } from '../../data';
 
 
 
@@ -18,9 +19,9 @@ const ScorePage = () => <div id='score-page'>
 {/* Topic 1 */}
         <div id='container' onClick={ToggleOne}>
             <div className='drop-down1'>
-                <p id='topic-one'>Topic 1</p>
+                <p id='topic-one'>Wildfires</p>
                 <span id='down-arrow' >
-                    0/5
+                    {data.score}/4
                 </span>
 
             </div>
@@ -83,9 +84,9 @@ const ScorePage = () => <div id='score-page'>
 {/* Topic 2 */}
 <div id='container' onClick={ToggleTwo}>
             <div className='drop-down2'>
-                <p id='topic-two'>Topic 2</p>
+                <p id='topic-two'>Water Shortage</p>
                 <span id='down-arrow2' >
-                    0/5
+                    {data.score}/4
                 </span>
 
             </div>
@@ -151,9 +152,9 @@ const ScorePage = () => <div id='score-page'>
 {/* Topic 3 */}
 <div id='container' onClick={ToggleThree}>
             <div className='drop-down3'>
-                <p id='topic-three'>Topic 3</p>
+                <p id='topic-three'>Famine</p>
                 <span id='down-arrow3' >
-                    0/5
+                    0/4
                 </span>
 
             </div>
