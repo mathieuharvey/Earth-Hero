@@ -9,29 +9,41 @@ import {data} from '../../data';
 
 var CardSideImg = require('../../images/card-side.png');
 var CardSideImgLeft = require('../../images/card-left.svg');
-var wildfires2 = require('../../images/wildfire_2.png')
+var wildfires2 = require('../../images/wildfire_2.png');
+var watershortage2 = require('../../images/water-shortage-2.svg');
+var famine2 = require('../../images/famine-2.svg');
+var wildlife2 = require('../../images/wildlife-2.svg');
+var icebergmelting2 = require('../../images/iceberg-melting-2.svg');
+var cities2 = require('../../images/cities-floods-2.svg');
 
 const ProblemCard = () => {
     var text = "";
     var category = "";
+    var problemcardimg = "";
     if(data.subcategory === "wildfires"){
         text = "Wildfires destroy homes of humans and animals and are also a major health risk. Because of wildfires, many are left without their homes, but also animals who live in the forests. Approximately 800 million animals have died due to wildfires so far. Wildfires also produce smoke that is inhaled by adults and children who live in the affected areas. This is very dangerous, causing breathing problems and even lung damage for many.";
         category = "Wildfires";
+        problemcardimg = wildfires2;
     }else if(data.subcategory === "watershortage"){
         text = "Water shortage is a huge issue to many countries as many cannot find clean water for drinking or cleaning. In severe cases, water shortage can cause dehydration and other health problems. Also, many people have access to water, but it is polluted water which is very dangerous to drink. Water shortage is no joke, and hundreds of thousands of people get very ill, or even worse, die from a lack of water or from ingesting polluted water.";
         category = "Water Shortage";
+        problemcardimg = watershortage2;
     }else if(data.subcategory === "famine"){
         text = "Famines cause people to develop serious diseases, and quite often death from starvation. Famines cause millions to suffer from hunger and starvation. Depending on how severe the famine is or how long it lasts, it can wipe out large numbers of people.";
         category = "Famine";
+        problemcardimg = famine2;
     }else if(data.subcategory === "wildlife"){
         text = "Droughts harming the wildlife is no good. Imagine the place you live in being destroyed, and you have no supply of food or water. And on top of that, you are at risk of deadly diseases! This is why droughts affecting the wildlife is a huge concern that should be taken seriously.";
         category = "Wildlife";
+        problemcardimg = wildlife2;
     }else if(data.subcategory === "icebergmelting"){
         text = "If icebergs are melting over the years, where is all that ice going? Well, it’s being melted into water right into the ocean which is now causing sea levels to rise. These rising sea levels can now lead to more problems such as flooding and erosion in some areas. Iceberg melting even puts polar bears in harm! This is because they have to swim farther between icebergs when hunting for food and are exerting more energy. This causes them to physically suffer and are struggling to reproduce. They are now listed as a threatened species.";
         category = "Iceberg Melting";
+        problemcardimg = icebergmelting2;
     }else if(data.subcategory === "cities"){
         text = "Flooding cities is definitely a problem because people’s homes are sinking and being destroyed. Hundreds of thousands of houses have been destroyed by floods, causing people to have to move out (which is expensive!). It’s not just homes that are sinking, but other buildings have the capability of sinking too. Floods may just be excess amounts of water, but they can be more dangerous than you think when it comes to parts of the ground sinking when they can’t absorb all the water.";
         category = "Cities";
+        problemcardimg = cities2;
     }else if(data.subcategory === "carbonfootprint"){
         text = "If you were to record your carbon footprint, you may or may not discover a problem with it in regards to creating too much carbon dioxide throughout your day. Some people produce air pollution way more than others. For instance, it would not be ideal to drive to every single place you went, never turned the lights off, and never recycled if you were trying to keep your carbon footprint low. If your carbon footprint is too high, you are contributing to the already high pollution on Earth!";
         category = "Carbon Footprint";
@@ -59,7 +71,7 @@ const ProblemCard = () => {
     }
 
     return <div id="helpcard">
-        <img id='problemcardimg' src={wildfires2}/>
+        <img id='problemcardimg' src={problemcardimg}/>
         <Icon />
         <InfoCard 
             category= {category}

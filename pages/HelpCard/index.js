@@ -10,6 +10,11 @@ import {data, ChangeData} from '../../data';
 var CardSideImgLeft = require('../../images/card-left.svg');
 var checkmarkIcon = require('../../images/checkmark.svg');
 var wildfires3 = require('../../images/wildfire_3.png');
+var watershortage3 = require('../../images/water-shortage-3.svg');
+var famine3 = require('../../images/famine-3.svg');
+var wildlife3 = require('../../images/wildlife-3.svg');
+var icebergmelting3 = require('../../images/iceberg-melting-3.png');
+var cities3 = require('../../images/cities-floods-3.svg');
 
 const HelpCard = () => {
     var text = "";
@@ -18,6 +23,7 @@ const HelpCard = () => {
     var help2 = "";
     var help3 = "";
     var help4 = "";
+    var helpcardimg = "";
     if(data.subcategory === "wildfires"){
         category = "Wildfires";
         text = "There are many ways you can help prevent wildfires from starting and keeping our environment safe:";
@@ -25,6 +31,7 @@ const HelpCard = () => {
         help2= "2. Do not throw away any matches, cigarettes, or other smoking materials onto any part of the ground outside.";
         help3 = "3. Only start campfires in an appropriate fire pit and ensure your surroundings are safe.";
         help4 = "4. If it's windy out, don't start a fire!";
+        helpcardimg = wildfires3;
         ChangeLessonComplete("wildfireslesson");
     }else if(data.subcategory === "watershortage"){
         category = "Water Shortage";
@@ -33,6 +40,7 @@ const HelpCard = () => {
         help2 = "2. Raise awareness! Tell your family, friends, or spread the word online.";
         help3 = "3. Donate to charities that support helping to bring clean water around the world.";
         help4 = "4. Conserve water by taking shorter showers and never leaving the sink running";
+        helpcardimg = watershortage3;
         ChangeLessonComplete("watershortagelesson");
     }else if(data.subcategory === "famine"){
         category = "Famine";
@@ -40,12 +48,14 @@ const HelpCard = () => {
         help1 = "1. Donate to charities that support helping people in famines.";
         help2 = "2. Donate food for those who need it.";
         help3 = "3. Spread the word! Tell people you know about the issue and encourage others to donate.";
+        helpcardimg = famine3;
         ChangeLessonComplete("faminelesson");
     }else if(data.subcategory === "wildlife"){
         category = "Wildlife";
         text = "There are definitely some ways you can help save the wildlife from droughts!";
         help1 = "1. Cut down on the amount of water you use.";
         help2 = "2. Spread the word and encourage others to conserve water.";
+        helpcardimg = wildlife3;
         ChangeLessonComplete("wildlifelesson");
     }else if(data.subcategory === "icebergmelting"){
         category = "Iceberg Melting";
@@ -53,12 +63,14 @@ const HelpCard = () => {
         help1 = "1. Bike or walk to school or work and avoid using a car when you can.";
         help2 = "2. Use public transit as much as possible.";
         help3 = "3. Always recycle!";
+        helpcardimg = icebergmelting3;
         ChangeLessonComplete("icebergmeltinglesson");
     }else if(data.subcategory === "cities"){
         category = "Cities";
         text = "Here’s a few simple things you can do to help prevent flooding in your area:";
         help1 = "1. Keep leaves and other debris out of outdoor drains.";
         help2 = "2. Ensure your gutters are not clogged";
+        helpcardimg = cities3;
         ChangeLessonComplete("citieslesson");
     }else if(data.subcategory === "carbonfootprint"){
         category = "Carbon Footprint";
@@ -127,7 +139,7 @@ const HelpCard = () => {
         document.getElementById('next-icon').style.margin = "5px";
         document.getElementById('next-icon').src = checkmarkIcon;
     }}> 
-    <img id='helpcardimg' src={wildfires3}/>
+    <img id='helpcardimg' src={helpcardimg}/>
         <Icon />
         <InfoCard 
             category= {category}
