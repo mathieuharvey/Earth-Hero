@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import './quiz.css';
 import Link from 'next/link';
 import Icon from '../../comps/Icon';
@@ -6,7 +6,12 @@ import Menu from '../../comps/Menu';
 import Router from 'next/router';
 import { data } from '../../data';
 
-const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizChoice2, quizChoice3, quizChoice4, onSelect}) => <div>
+const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizChoice2, quizChoice3, quizChoice4, onSelect}) => {
+    const [num, setnum]= useState(0)
+    useEffect(()=>{
+        setnum(0);
+    },[quizNumber]);
+return <div>
  <Icon />
     <div id='quiz-container'>
         <div id="quiz-category">{category}</div>
@@ -18,32 +23,36 @@ const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizCh
         <div id="quiz-question" >{quizQuestion}</div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice1}</p>
-                <input onClick={()=>{
+                <input checked={num===1} onClick={()=>{
                     onSelect(1);
+                    setnum(1);
                 }} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice2}</p>
-                <input onClick={()=>{
+                <input checked={num===2} onClick={()=>{
                     onSelect(2);
+                    setnum(2);
                 }} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice3}</p>
-                <input onClick={()=>{
+                <input checked={num===3} onClick={()=>{
                     onSelect(3);
+                    setnum(3);
                 }} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
         </div>
         <div className="quiz-choices">
             <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice4}</p>
-                <input onClick={()=>{
+                <input checked={num===4} onClick={()=>{
                     onSelect(4);
+                    setnum(4);
                 }} type='radio' name='radio' />
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
             </label>
@@ -61,6 +70,7 @@ const Quiz = ({category, quizName, quizNumber, quizQuestion, quizChoice1, quizCh
     </div>
     <Menu />
 </div>
+}
 
 function HighlightButtonQuiz(){
     document.querySelector("#button1").style.backgroundColor = '#46c75f';
