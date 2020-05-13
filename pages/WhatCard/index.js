@@ -8,29 +8,42 @@ import Router from 'next/router';
 import {data} from '../../data';
 
 var CardSideImg = require('../../images/card-side.png');
-var wildfires1 = require('../../images/wildfire_1.png')
+var wildfires1 = require('../../images/wildfire_1.png');
+var watershortage1 = require('../../images/water-shortage-1.svg');
+var famine1 = require('../../images/famine-1.svg');
+var wildlife1 = require('../../images/wildlife-1.svg');
+var icebergmelting1 = require('../../images/iceberg-melting-1.svg');
+var cities1 = require('../../images/cities-floods-1.svg');
+
 
 const WhatCard = () => {
     var text = "";
     var category = "";
+    var whatcardimg = "";
     if(data.subcategory === "wildfires"){
         text = "Wildfires are fires that are out of control and burn in the wildland vegetation. They can burn forests, savannas, grasslands, and many other ecosystems. Wildfires can start from either natural occurrence or by humans. For instance, a natural occurrence would be a lightning strike, and a human cause could be from making a spark. Wildfires are most prone to start when the ecosystem is dry. This is why areas where it does not rain often are most likely to have wildfires. Sometimes wildfires can be good for the ecosystems by killing bad diseases and insects that harm trees, but quite often wildfires spread fast and are very dangerous.";
         category = "Wildfires";
+        whatcardimg = wildfires1;
     }else if(data.subcategory === "watershortage"){
         text = "Water shortage, or water scarcity, is the lack of available water resources to meet the demands of water usage in an area. In other words, it’s running out of clean water supply in a certain area. There are several countries around the world that have dry environments and suffer from water shortage. You might think that if 70% of the earth is just water that this wouldn’t be a problem! However, most of that water is the ocean which consists of salt water, and that is not drinkable.";
         category = "Water Shortage";
+        whatcardimg = watershortage1;
     }else if(data.subcategory === "famine"){
         text = "Famine is when there is a shortage of food for people within an area. This can occur from crop failure, droughts, floods, or other natural disasters. If an environment is too dry or flooded, crops will not grow. Crops can often develop diseases that prevent them from growing, leading to famines in severe cases. There have been multiple instances of famines in the past, and they are still an ongoing problem today.";
         category = "Famine";
+        whatcardimg = famine1;
     }else if(data.subcategory === "wildlife"){
         text = "Wildlife is greatly impacted by droughts. In general, droughts cause a large decrease in the population of animals. This is because of droughts, plants do not grow and animals lose their supply of food. Droughts can also cause diseases that harm wildlife, and their environments that they live in could also be negatively impacted. Droughts can also cause wildlife to migrate, and their habitats could be destroyed.";
         category = "Wildlife";
+        whatcardimg = wildlife1;
     }else if(data.subcategory === "icebergmelting"){
         text = "Because of global warming and the gradual increase of Earth’s temperature, icebergs are beginning to melt year after year. Research has shown that over the past several years the icebergs have been gradually decreasing in size. This is because they are slowly melting from the increase in temperature. Why is the temperature increasing? That is because of air pollution and carbon dioxide that has accumulated in the atmosphere and collects sunlight reflecting off of Earth’s surface. This heat is trapped within the atmosphere and causes the planet to get hotter.";
         category = "Iceberg Melting";
+        whatcardimg = icebergmelting1;
     }else if(data.subcategory === "cities"){
         text = "Many cities around the world are being affected by floods on the regular. These floods can be caused by heavy precipitation, icebergs melting from global warming, or sometimes drains could be plugged. Low lying cities are even more prone to flooding. And since global warming has just continued to get worse over the years, more and more cities are going to be experiencing floods.";
         category = "Cities";
+        whatcardimg = cities1;
     }else if(data.subcategory === "carbonfootprint"){
         text = "A carbon footprint is the amount of carbon dioxide released into the air from a person’s activities. You can think of it like the footprint humans leave behind when they emit carbon dioxide. Some people like to keep track of their carbon footprint by recording how much greenhouse gas they release into the air each day to help out the planet.";
         category = "Carbon Footprint";
@@ -57,7 +70,7 @@ const WhatCard = () => {
         category = "Wildlife";
     }
     return <div id="whatcard">
-        <img id='whatcardimg' src={wildfires1}/>
+        <img id='whatcardimg' src={whatcardimg}/>
     <Icon />
     <div>
         <InfoCard
