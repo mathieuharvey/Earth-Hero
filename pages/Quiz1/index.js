@@ -32,7 +32,7 @@ const Quiz1 = () =>{
                 quizChoice1:"Wet and rainy environments",
                 quizChoice2:"Dry environments",
                 quizChoice3:"Snowy and cold environments",
-                quizChoice4:"Choice 4",
+                quizChoice4:"",
                 answer:2
             },
             {
@@ -61,8 +61,8 @@ const Quiz1 = () =>{
                 quizQuestion:"True or false: Wildfires can start from natural disasters.",
                 quizChoice1:"True",
                 quizChoice2:"False",
-                quizChoice3:"True",
-                quizChoice4:"False",
+                quizChoice3:"",
+                quizChoice4:"",
                 answer:1
             },
             // {
@@ -85,8 +85,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or false: Dry environments tend to suffer from water shortage more than wet environments.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -96,7 +96,7 @@ const Quiz1 = () =>{
                 quizChoice1: "The water is too cold",
                 quizChoice2: "The water is polluted",
                 quizChoice3: "The water has minerals in it",
-                quizChoice4: "Choice 4",
+                quizChoice4: "",
                 answer:2
             },
             {
@@ -116,7 +116,7 @@ const Quiz1 = () =>{
                 quizChoice1: "Donate clean water to charities and families in need",
                 quizChoice2: "Keep the sink running often",
                 quizChoice3: "Take longer showers",
-                quizChoice4: "Choice 4",
+                quizChoice4: "",
                 answer:1
             },
             // {
@@ -159,8 +159,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or false: Famine can be caused by crop failure.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -169,8 +169,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or false: Famine can lead to increase in intelligence.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:2
             }
         ]
@@ -203,8 +203,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or false: Droughts are increasing the population of wildlife.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:2
             },
             {
@@ -213,8 +213,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or false: You can help stop droughts by conserving water.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:2
             }
         ]
@@ -227,8 +227,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Polar bears are suffering because of the icebergs melting.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -247,8 +247,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Icebergs have been decreasing in size over several years.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -257,8 +257,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Icebergs cause an increase in sea levels.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             }
         ]
@@ -281,8 +281,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Floods cause people to move out of their homes.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -291,8 +291,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: When there are floods, the grounds are always able to absorb the water.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:2
             },
             {
@@ -301,8 +301,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Buildings are at a higher risk of sinking from floods.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             }
         ]
@@ -332,21 +332,21 @@ const Quiz1 = () =>{
             {
                 quizName: "Question 3",
                 quizNumber: "3/4",
-                quizQuestion: "True/False: Things as simple as taking transportation can make a difference in reducing your carbon footprint.",
+                quizQuestion: "True or False: Things as simple as taking transportation can make a difference in reducing your carbon footprint.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
                 quizName: "Question 4",
                 quizNumber: "4/4",
-                quizQuestion: "True/False: A person's activities can show their carbon footprint amount.",
+                quizQuestion: "True or False: A person's activities can show their carbon footprint amount.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             }
         ]
@@ -359,8 +359,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True/False: Acid rain can harm animals.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -379,8 +379,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Acid rain helps speed up the growing rate of trees.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:2
             },
             {
@@ -403,8 +403,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True/False: Pollution can cause breathing problems.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -433,8 +433,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True/False: Limiting your time outdoors in polluted area can cause less damage to your lungs.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             }
         ]
@@ -467,8 +467,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True/False: Marine life are being harmed by the amount of plastic and garbage in the ocean.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -477,8 +477,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True/False: When garbage is being transported to the landfills, most of the garbage ends up in the oceans",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             }
         ]
@@ -501,8 +501,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Eutrophication leads to a decrease in plant growth.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:2
             },
             {
@@ -511,8 +511,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Eutrophication can cause harm to the fish and make the water unsafe to drink.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -535,8 +535,8 @@ const Quiz1 = () =>{
                 quizQuestion: "The majority of water on Earth is:",
                 quizChoice1: "Salt water (undrinkable)",
                 quizChoice2: "Fresh water (drinkable)",
-                quizChoice3: "Choice 3",
-                quizChoice4: "Choice 4",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -545,8 +545,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Most of the water that is not salt water is still contaminated with poisonous chemicals.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -555,8 +555,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: The water that comes from the sinks, toilets, and showers end up polluting the water.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -565,8 +565,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Without clean water, the ecosystem and wildlife will suffer.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             }
         ]
@@ -589,8 +589,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: The most polluted areas are the most populated ones.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -600,7 +600,7 @@ const Quiz1 = () =>{
                 quizChoice1: "Lung problems",
                 quizChoice2: "Diseases",
                 quizChoice3: "All of the above",
-                quizChoice4: "Choice 4",
+                quizChoice4: "",
                 answer:3
             },
             {
@@ -633,8 +633,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or false: Higher pollution rates kill most of the wildlife.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {
@@ -643,8 +643,8 @@ const Quiz1 = () =>{
                 quizQuestion: "True or False: Many of the wildlife mistaken the garbage for food.",
                 quizChoice1: "True",
                 quizChoice2: "False",
-                quizChoice3: "True",
-                quizChoice4: "False",
+                quizChoice3: "",
+                quizChoice4: "",
                 answer:1
             },
             {

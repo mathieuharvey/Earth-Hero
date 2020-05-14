@@ -22,40 +22,40 @@ return <div>
         <hr />
         <div id="quiz-question" >{quizQuestion}</div>
         <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice1}</p>
+        {(quizChoice1 !== "") ?   <label  onClick={HighlightButtonQuiz} className='container1'> 
                 <input checked={num===1} onClick={()=>{
                     onSelect(1);
                     setnum(1);
-                }} type='radio' name='radio' />
+                }} type='radio' name='radio' /> <p>{quizChoice1}</p>
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
-            </label>
+            </label>: null}
         </div>
         <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice2}</p>
+        {(quizChoice2 !== "") ?  <label  onClick={HighlightButtonQuiz} className='container1'>
                 <input checked={num===2} onClick={()=>{
                     onSelect(2);
                     setnum(2);
-                }} type='radio' name='radio' />
+                }} type='radio' name='radio'  /><p>{quizChoice2}</p>
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
-            </label>
+            </label>: null}
         </div>
         <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice3}</p>
+        {(quizChoice3 !== "") ?  <label  onClick={HighlightButtonQuiz} className='container1'>
                 <input checked={num===3} onClick={()=>{
                     onSelect(3);
                     setnum(3);
-                }} type='radio' name='radio' />
+                }} type='radio' name='radio' /> <p>{quizChoice3}</p>
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
-            </label>
+            </label>: null}
         </div>
         <div className="quiz-choices">
-            <label  onClick={HighlightButtonQuiz} className='container1'><p>{quizChoice4}</p>
+        {(quizChoice4 !== "") ?   <label  onClick={HighlightButtonQuiz} className='container1'>
                 <input checked={num===4} onClick={()=>{
                     onSelect(4);
                     setnum(4);
-                }} type='radio' name='radio' />
+                }} type='radio' name='radio' /> <p>{quizChoice4}</p>
                 <span  onClick={HighlightButtonQuiz} className='checkmark'></span>
-            </label>
+            </label>: null}
         </div>
 
 
