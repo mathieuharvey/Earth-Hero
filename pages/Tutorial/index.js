@@ -5,7 +5,6 @@ import Icon from '../../comps/Icon';
 import Menu from '../../comps/Menu';
 import Link from 'next/link';
 
-const iconImg = require('./favicon.png');
 const Tut1 = require('./tutorialgif1.gif');
 const Tut2 = require('./tut2.gif');
 const Tut3 = require('./tut3.gif');
