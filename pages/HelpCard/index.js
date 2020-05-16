@@ -16,11 +16,9 @@ var wildlife3 = require('../../images/wildlife-3.svg');
 var icebergmelting3 = require('../../images/iceberg-melting-3.png');
 var cities3 = require('../../images/cities-floods-3.svg');
 var carbonfootprint3 = require('../../images/carbon-footprint-3.svg');
-var acidrain3 = ('../../images/acid-rain-3.svg');
-var respiratoryproblems3 = ('../../images/respiratory-problems-3.svg');
-var marinelife3 = ('../../images/marine-life-3.svg');
-var eutrophication3 = ('../../images/eutrophication-3.svg');
-var citiesdroughts3 = ('../../images/cities-droughts-3.svg');
+var acidrain3 = require('../../images/acid-rain-3.svg');
+var respiratoryproblems3 = require('../../images/respiratory-problems-3.svg');
+
 
 const HelpCard = () => {
     var text = "";
