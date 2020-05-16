@@ -15,11 +15,11 @@ var wildlife1 = require('../../images/wildlife-1.svg');
 var icebergmelting1 = require('../../images/iceberg-melting-1.svg');
 var cities1 = require('../../images/cities-floods-1.svg');
 var carbonfootprint1 = require('../../images/carbon-footprint-1.svg');
-var acidrain1 = ('../../images/acid-rain-1.svg');
-var respiratoryproblems1 = ('../../images/respiratory-problems-1.svg');
-var marinelife1 = ('../../images/marine-life-1.svg');
-var eutrophication1 = ('../../images/eutrophication-1.svg');
-var citiesdroughts1 = ('../../images/cities-droughts-1.svg');
+var acidrain1 = require('../../images/acid-rain-1.svg');
+var respiratoryproblems1 = require('../../images/respiratory-problems-1.svg');
+var marinelife1 = require('../../images/marine-life-1.svg');
+var eutrophication1 = require('../../images/eutrophication-1.svg');
+var citiesdroughts1 = require('../../images/cities-droughts-1.svg');
 
 const WhatCard = () => {
     var text = "";
@@ -64,6 +64,7 @@ const WhatCard = () => {
     }else if(data.subcategory === "marinelife"){
         text = "The ocean has been known to be getting more polluted over the years. This pollution comes in the form of garbage, waste, and primarily plastic. When people litter and when plastic is transported to landfill sites, it sometimes ends up in rivers and streams, eventually leading to the ocean. Also, there is an extraordinary amount of plastic that is being generated each year, and only 9% of it is being recycled. The rest is garbage, and some of it is contributing to polluting the ocean and causing great harm to all sorts of marine life.";
         category = "Marine Life";
+        whatcardimg = marinelife1;
     }else if(data.subcategory === "eutrophication"){
         text = "Eutrophication is the gradual increase of phosphorus in an aging body of water. This increase in phosphorus leads to an increase of plant growth, and forms extensive mats of floating mats. It can be caused from multiple factors including sewage being dumped in bodies of water, natural events like floods, and many others.";
         category = "Eutrophication";

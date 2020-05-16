@@ -7,7 +7,7 @@ import Router from 'next/router';
 
 import {data} from '../../data';
 
-var respiratoryproblems1 = ('../../images/respiratory-problems-1.svg');
+var respiratoryproblems1 = require('../../images/respiratory-problems-1.svg');
 var wildlife1 = require('../../images/wildlife-1.svg');
 var CardSideImg = require('../../images/card-side.png');
 var CardSideImgLeft = require('../../images/card-left.svg');
@@ -18,11 +18,10 @@ var wildlife2 = require('../../images/wildlife-2.svg');
 var icebergmelting2 = require('../../images/iceberg-melting-2.svg');
 var cities2 = require('../../images/cities-floods-2.svg');
 var carbonfootprint2 = require('../../images/carbon-footprint-2.svg');
-var acidrain2 = ('../../images/acid-rain-2.svg');
-var respiratoryproblems2 = ('../../images/respiratory-problems-2.svg');
-var marinelife2 = ('../../images/marine-life-2.svg');
-var eutrophication2 = ('../../images/eutrophication-2.svg');
-var citiesdroughts2 = ('../../images/cities-droughts-2.svg');
+var acidrain2 = require('../../images/acid-rain-2.svg');
+var respiratoryproblems2 = require('../../images/respiratory-problems-2.svg');
+var marinelife2 = require('../../images/marine-life-2.svg');
+var eutrophication2 = require('../../images/eutrophication-2.svg');
 
 const ProblemCard = () => {
     var text = "";
@@ -79,7 +78,6 @@ const ProblemCard = () => {
     }else if(data.subcategory === "pollutioncities"){
         text = "People in these cities are suffering from all sorts of health problems including disease from ingesting toxic water and respiratory problems from breathing in polluted air. Overall, it is not safe to live in a polluted city for an extended amount of time. But some people have no choice but to live in these areas.";
         category = "Cities";
-        problemcardimg = citiesdroughts2;
         problemcardimg = respiratoryproblems1;
     }else if(data.subcategory === "pollutionwildlife"){
         text = "The higher pollution rates unfortunately ends up killing a lot of the wildlife out there. Some wildlife accidentally eat garbage that has been left on the ground because they think it’s food, and this kills a lot of animals. Also, since pollution is contributing to the increase in temperatures, this harms types of wildlife that are adapted to living in colder environments. Overall, air pollution is doing no good for the lungs of wildlife either.";
