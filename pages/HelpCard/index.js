@@ -15,6 +15,12 @@ var famine3 = require('../../images/famine-3.svg');
 var wildlife3 = require('../../images/wildlife-3.svg');
 var icebergmelting3 = require('../../images/iceberg-melting-3.png');
 var cities3 = require('../../images/cities-floods-3.svg');
+var carbonfootprint3 = require('../../images/carbon-footprint-3.svg');
+var acidrain3 = ('../../images/acid-rain-3.svg');
+var respiratoryproblems3 = ('../../images/respiratory-problems-3.svg');
+var marinelife3 = ('../../images/marine-life-3.svg');
+var eutrophication3 = ('../../images/eutrophication-3.svg');
+var citiesdroughts3 = ('../../images/cities-droughts-3.svg');
 
 const HelpCard = () => {
     var text = "";
@@ -78,12 +84,14 @@ const HelpCard = () => {
         help1 = "1. Take public transit rather than always using a car.";
         help2 = "2. Recycle and use a compost bucket.";
         help3 = "3. Use energy-efficient appliances.";
+        helpcardimg = carbonfootprint3;
         ChangeLessonComplete("carbonfootprintlesson");
     }else if(data.subcategory === "acidrain"){
         category = "Acid Rain";
         text = "The primary way to help the issue of acid rain is to reduce air pollution. Here are some ways you can reduce the amount of pollution you produce:";
         help1 = "1. Take public transit whenever possible.";
         help2 = "2. Conserve energy. Turn off lights that aren’t being used and don’t keep electronic equipment turned on if they aren’t being used.";
+        helpcardimg = acidrain3;
         ChangeLessonComplete("acidrainlesson");
     }else if(data.subcategory === "respiratoryproblems"){
         category = "Respiratory Problems";
@@ -91,6 +99,7 @@ const HelpCard = () => {
         help1 = "1. If you live in an extremely polluted area, limit your time outdoors.";
         help2 = "2. Check your local air quality report and adjust your daily activity according to the report.";
         help3 = "3. Use a mask if necessary and if you are in an area with very polluted air.";
+        helpcardimg = respiratoryproblems3;
         ChangeLessonComplete("respiratoryproblemslesson");
     }else if(data.subcategory === "marinelife"){
         category = "Marine Life";
@@ -98,12 +107,14 @@ const HelpCard = () => {
         help1 = "1. Reduce your use of plastic, especially single-use plastic.";
         help2 = "2. Take some time to clean up any litter you see.";
         help3 = "3. Make an effort to use eco-friendly products and containers to limit the amount of garbage you produce.";
+        helpcardimg = carbonfootprint3;
         ChangeLessonComplete("marinelifelesson");
     }else if(data.subcategory === "eutrophication"){
         category = "Eutrophication";
         text = "There are a few small things you can do to make a difference and help stop eutrophication:";
         help1 = "1. Use a compost bin for food waste.";
         help2 = "2. Reduce air pollution by taking public transit and going green.";
+        helpcardimg = acidrain3;
         ChangeLessonComplete("eutrophicationlesson");
     }else if(data.subcategory === "drinkingwater"){
         category = "Drinking Water";
@@ -111,6 +122,7 @@ const HelpCard = () => {
         help1 = "1. Reduce your use of water. Keep the amount of water waste you produce down by taking shorter showers and never keeping the sink running.";
         help2 = "2. Properly dispose of any harmful chemicals you use; don’t just dump everything down the sink!";
         help3 = "3. Avoid using chemicals to clean. Use something more natural instead such as baking soda or vinegar.";
+        helpcardimg = watershortage3;
         ChangeLessonComplete("drinkingwaterlesson");
     }else if(data.subcategory === "pollutioncities"){
         category = "Cities";
@@ -118,6 +130,7 @@ const HelpCard = () => {
         help1 = "1. Bike or walk as much as you can anytime you go somewhere and limit the amount of times you drive in a car.";
         help2 = "2. Always pick up your garbage and dispose of it properly.";
         help3 = "3. Use eco-friendly products.";
+        helpcardimg = carbonfootprint3;
         ChangeLessonComplete("pollutioncitieslesson");
     }else if(data.subcategory === "pollutionwildlife"){
         category = "Wildlife";
@@ -125,6 +138,7 @@ const HelpCard = () => {
         help1 = "1. Don’t litter! Always pick up your garbage and dispose of it properly.";
         help2 = "2. Bike or walk to school or work.";
         help3 = "3. Stay green! Always recycle or compost and use reusable dishes and containers.";
+        helpcardimg = carbonfootprint3;
         ChangeLessonComplete("pollutionwildlifelesson");
     }
 
