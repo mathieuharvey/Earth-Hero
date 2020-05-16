@@ -7,6 +7,8 @@ import Router from 'next/router';
 
 import {data} from '../../data';
 
+var respiratoryproblems1 = ('../../images/respiratory-problems-1.svg');
+var wildlife1 = require('../../images/wildlife-1.svg');
 var CardSideImg = require('../../images/card-side.png');
 var CardSideImgLeft = require('../../images/card-left.svg');
 var wildfires2 = require('../../images/wildfire_2.png');
@@ -15,6 +17,12 @@ var famine2 = require('../../images/famine-2.svg');
 var wildlife2 = require('../../images/wildlife-2.svg');
 var icebergmelting2 = require('../../images/iceberg-melting-2.svg');
 var cities2 = require('../../images/cities-floods-2.svg');
+var carbonfootprint2 = require('../../images/carbon-footprint-2.svg');
+var acidrain2 = ('../../images/acid-rain-2.svg');
+var respiratoryproblems2 = ('../../images/respiratory-problems-2.svg');
+var marinelife2 = ('../../images/marine-life-2.svg');
+var eutrophication2 = ('../../images/eutrophication-2.svg');
+var citiesdroughts2 = ('../../images/cities-droughts-2.svg');
 
 const ProblemCard = () => {
     var text = "";
@@ -47,27 +55,36 @@ const ProblemCard = () => {
     }else if(data.subcategory === "carbonfootprint"){
         text = "If you were to record your carbon footprint, you may or may not discover a problem with it in regards to creating too much carbon dioxide throughout your day. Some people produce air pollution way more than others. For instance, it would not be ideal to drive to every single place you went, never turned the lights off, and never recycled if you were trying to keep your carbon footprint low. If your carbon footprint is too high, you are contributing to the already high pollution on Earth!";
         category = "Carbon Footprint";
+        problemcardimg = carbonfootprint2;
     }else if(data.subcategory === "acidrain"){
         text = "When acid rain develops, it can harm forests, fish, plants, lakes, and rivers. Acid rain can cause trees to have a slower growth rate, and sometimes it can completely kill trees. In lakes, once the acid rain gets into the water it starts to kill off certain types of fish that cannot live with the different pH level. Overall, acid rain is quite toxic to many animals, plants, and the environment in general.";
         category = "Acid Rain";
+        problemcardimg = acidrain2;
     }else if(data.subcategory === "respiratoryproblems"){
         text = "Respiratory problems can be very dangerous to most people’s lives, and it impacts people’s quality of life. Air pollution can cause conditions such as asthma, or something much more severe like lung cancer. Also, air pollution can affect other organs in the body besides the lungs. This includes the digestive system, nervous system, heart, and urinary system.";
         category = "Respiratory Problems";
+        problemcardimg = respiratoryproblems2;
     }else if(data.subcategory === "marinelife"){
         text = "Pollution in the ocean is a huge problem as it’s causing a huge threat to marine life. Whales are sometimes found with plastic bags wrapped around their fins causing them physical harm. Turtles and many other marine life are found dead with plastics and garbage in their stomach. Pollution in the ocean is causing starvation, suffering, and death to a large majority of marine life.";
         category = "Marine Life";
+        problemcardimg = marinelife2;
     }else if(data.subcategory === "eutrophication"){
         text = "Eutrophication is very dangerous for the Earth’s well-being for many reasons. It threatens the lives of fish, and it reduces the quality of water and is making more water around the world not safe for drinking. If eutrophication is making water dangerous to drink in some areas, this leads to a risk of people being poisoned from the water.";
         category = "Eutrophication";
+        problemcardimg = eutrophication2;
     }else if(data.subcategory === "drinkingwater"){
         text = "It’s quite concerning that such a small percentage of the world’s water is safe to drink. You could probably imagine why it would be a big problem if we were to run out of fresh drinking water. People would have poor hygiene, we wouldn’t be able to keep things clean, people would catch diseases from drinking contaminated water, and in extreme cases people would probably get really thirsty! In addition, wildlife and ecosystems would also suffer.";
         category = "Drinking Water";
+        problemcardimg = watershortage2;
     }else if(data.subcategory === "pollutioncities"){
         text = "People in these cities are suffering from all sorts of health problems including disease from ingesting toxic water and respiratory problems from breathing in polluted air. Overall, it is not safe to live in a polluted city for an extended amount of time. But some people have no choice but to live in these areas.";
         category = "Cities";
+        problemcardimg = citiesdroughts2;
+        problemcardimg = respiratoryproblems1;
     }else if(data.subcategory === "pollutionwildlife"){
         text = "The higher pollution rates unfortunately ends up killing a lot of the wildlife out there. Some wildlife accidentally eat garbage that has been left on the ground because they think it’s food, and this kills a lot of animals. Also, since pollution is contributing to the increase in temperatures, this harms types of wildlife that are adapted to living in colder environments. Overall, air pollution is doing no good for the lungs of wildlife either.";
         category = "Wildlife";
+        problemcardimg = wildlife1;
     }
 
     return <div id="helpcard">

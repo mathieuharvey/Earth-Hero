@@ -14,7 +14,12 @@ var famine1 = require('../../images/famine-1.svg');
 var wildlife1 = require('../../images/wildlife-1.svg');
 var icebergmelting1 = require('../../images/iceberg-melting-1.svg');
 var cities1 = require('../../images/cities-floods-1.svg');
-
+var carbonfootprint1 = require('../../images/carbon-footprint-1.svg');
+var acidrain1 = ('../../images/acid-rain-1.svg');
+var respiratoryproblems1 = ('../../images/respiratory-problems-1.svg');
+var marinelife1 = ('../../images/marine-life-1.svg');
+var eutrophication1 = ('../../images/eutrophication-1.svg');
+var citiesdroughts1 = ('../../images/cities-droughts-1.svg');
 
 const WhatCard = () => {
     var text = "";
@@ -47,27 +52,34 @@ const WhatCard = () => {
     }else if(data.subcategory === "carbonfootprint"){
         text = "A carbon footprint is the amount of carbon dioxide released into the air from a person’s activities. You can think of it like the footprint humans leave behind when they emit carbon dioxide. Some people like to keep track of their carbon footprint by recording how much greenhouse gas they release into the air each day to help out the planet.";
         category = "Carbon Footprint";
+        whatcardimg = carbonfootprint1;
     }else if(data.subcategory === "acidrain"){
         text = "Acid rain is precipitation that contains acidic components in it. These acidic components include sulfuric or nitric acid. But don’t worry! Acid rain is never acidic enough to harm you. Also, acid rain doesn’t just come in the form of rain. It could also be in the form of snow, hail, fog, or even dust. Acid rain is a result of air pollution because when fuels are burned, chemicals that harm the environment are released and eventually add up to air pollution.";
         category = "Acid Rain";
+        whatcardimg = acidrain1;
     }else if(data.subcategory === "respiratoryproblems"){
         text = "Respiratory problems cover a large amount of problems one can have with their lungs and ability to breathe. When it comes to air pollution, there’s a wide variety of different lung diseases and conditions people can develop. Respiratory problems could include symptoms like coughing, difficulty breathing, or a disease that physically affects the lungs.";
         category = "Respiratory Problems";
+        whatcardimg = respiratoryproblems1;
     }else if(data.subcategory === "marinelife"){
         text = "The ocean has been known to be getting more polluted over the years. This pollution comes in the form of garbage, waste, and primarily plastic. When people litter and when plastic is transported to landfill sites, it sometimes ends up in rivers and streams, eventually leading to the ocean. Also, there is an extraordinary amount of plastic that is being generated each year, and only 9% of it is being recycled. The rest is garbage, and some of it is contributing to polluting the ocean and causing great harm to all sorts of marine life.";
         category = "Marine Life";
     }else if(data.subcategory === "eutrophication"){
         text = "Eutrophication is the gradual increase of phosphorus in an aging body of water. This increase in phosphorus leads to an increase of plant growth, and forms extensive mats of floating mats. It can be caused from multiple factors including sewage being dumped in bodies of water, natural events like floods, and many others.";
         category = "Eutrophication";
+        whatcardimg = eutrophication1;
     }else if(data.subcategory === "drinkingwater"){
         text = "There may be more water than there is land on Earth, but the large majority of that water is salt water, which is no use for drinking. Even worse, some water that isn’t salt water is still contaminated with poisonous chemicals which adds to the total percentage of contaminated water on Earth. Since everyone produces water waste, water that comes out from sinks, showers, and toilets, this all is collected and ends up polluting the water.";
         category = "Drinking Water";
+        whatcardimg = marinelife1;
     }else if(data.subcategory === "pollutioncities"){
         text = "Countless amounts of cities are suffering from pollution all around the globe. Some cities are cleaner than others, but the ones that are very polluted are facing a number of problems. These cities are facing air pollution from too many vehicles going around, pollution in their water, and pollution laying around on the ground such as garbage and litter. The cities that are most polluted tend to be the most populated and crowded. The more people there are in a city, the more cars there are and the more people there are to produce water waste.";
         category = "Cities";
+        whatcardimg = citiesdroughts1;
     }else if(data.subcategory === "pollutionwildlife"){
         text = "Not only are people being affected by the increase of pollution around the world, but it’s also harming wildlife. Pollution is causing a big effect on the habitats of wildlife and their well-being. Pollution harms wildlife just as much as it does to humans. This pollution could be the increase in temperature, acid rain, or garbage that has been littered.";
         category = "Wildlife";
+        whatcardimg = wildlife1;
     }
     return <div id="whatcard">
         <img id='whatcardimg' src={whatcardimg}/>
